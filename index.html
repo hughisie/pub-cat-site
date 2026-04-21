@@ -251,6 +251,12 @@
     background: var(--paper);
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     display: flex; flex-direction: column; gap: 12px;
+    transition: transform 200ms var(--ease), box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+  }
+  .property:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10), 0 10px 40px rgba(0,0,0,0.05);
+    border-color: rgba(200,16,46,0.35);
   }
   .property .kind {
     font-family: var(--mono); font-size: 10px; letter-spacing: 3px;
@@ -430,37 +436,38 @@
     text-transform: uppercase; color: var(--red);
   }
 
-  /* Cursor-following Pub cat — lives over all content below hero */
-  #pub-follower {
-    position: fixed;
-    left: 0; top: 0;
-    transform: translate(-120px, -120px);
+  /* Section cats — static mark in each section, eyes track the cursor */
+  .section-cat {
+    position: absolute;
+    width: var(--size, 80px);
+    height: var(--size, 80px);
     pointer-events: none;
-    z-index: 25;
-    opacity: 0;
-    transition: opacity 320ms ease;
-    will-change: transform;
-    display: flex; flex-direction: column; align-items: center; gap: 2px;
+    z-index: 2;
+    filter: drop-shadow(0 4px 14px rgba(200,16,46,0.15));
   }
-  #pub-follower.is-visible { opacity: 1; }
-  #pub-follower svg {
-    filter: drop-shadow(0 6px 18px rgba(200,16,46,0.25));
-    transition: transform 160ms var(--ease);
+  .section-cat svg { display: block; width: 100%; height: 100%; }
+  .section-cat .cat-eye {
+    transition: cy 80ms linear, cx 80ms linear, ry 140ms ease-out;
+    transform-box: fill-box;
   }
-  #pub-follower.is-hiding svg { transform: scale(0.88); }
-  #pub-follower .pf-label {
-    font-family: var(--mono); font-size: 9px; letter-spacing: 3px;
-    text-transform: uppercase; color: var(--red);
-    background: var(--paper);
-    padding: 2px 8px; border-radius: 100px;
-    border: 1px solid var(--rule);
-    opacity: 0.9;
+  /* Placements */
+  .section-cat-tr { top: clamp(48px, 8vh, 96px); right: clamp(24px, 5vw, 80px); }
+  .section-cat-tl { top: clamp(48px, 8vh, 96px); left: clamp(24px, 5vw, 80px); }
+  .section-cat-center {
+    position: relative;
+    left: 50%; top: 0;
+    margin: 0 auto clamp(32px, 6vh, 64px);
+    transform: translateX(-50%);
   }
-  @media (max-width: 780px), (hover: none) {
-    #pub-follower { display: none; }
+  .founder .section-cat { filter: drop-shadow(0 4px 14px rgba(200,16,46,0.35)); }
+  /* Sections need relative positioning to anchor the absolute cats */
+  main section { position: relative; }
+
+  @media (max-width: 780px) {
+    .section-cat-tr, .section-cat-tl { width: calc(var(--size, 80px) * 0.7); height: calc(var(--size, 80px) * 0.7); }
   }
   @media (prefers-reduced-motion: reduce) {
-    #pub-follower { display: none; }
+    .section-cat .cat-eye { transition: none; }
   }
 
   .faq details {
@@ -634,28 +641,17 @@
 
 <main id="main">
 
-  <!-- Cursor-following Pub cat — lives for the whole content area -->
-  <div id="pub-follower" aria-hidden="true">
-    <svg viewBox="0 0 100 100" width="64" height="64">
-      <!-- Head (ink with red fur variant via brand); we use the red dot-cat -->
-      <g>
-        <!-- ears -->
-        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
-        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
-        <!-- face -->
-        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
-        <!-- eyes (react-positioned via JS) -->
-        <g id="pf-eyes">
-          <ellipse id="pf-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
-          <ellipse id="pf-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
-        </g>
-      </g>
-    </svg>
-    <span class="pf-label">pub</span>
-  </div>
-
   <!-- WHAT · the one-liner that search engines index -->
   <section id="what" class="section-head" aria-labelledby="what-h">
+    <div class="section-cat section-cat-tr" data-cat style="--size:96px;" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="96" height="96">
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <ellipse class="cat-eye cat-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+      </svg>
+    </div>
     <div class="eyebrow">What is Pub.cat</div>
     <h2 id="what-h">An <em>AI-native</em> media company, run by one.</h2>
     <p>Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites, translates and publishes at the marginal cost of electricity.</p>
@@ -664,6 +660,15 @@
 
   <!-- CYBERTRON · the product page, SaaS-framed -->
   <section id="cybertron" aria-labelledby="cyber-h">
+    <div class="section-cat section-cat-tl" data-cat style="--size:80px;" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="80" height="80">
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <ellipse class="cat-eye cat-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+      </svg>
+    </div>
     <div class="eyebrow">The product</div>
     <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Cybertron. <em>Soon as SaaS.</em></h2>
     <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
@@ -689,6 +694,15 @@
 
   <!-- PROPERTIES · live proof, with logos -->
   <section id="properties" aria-labelledby="props-h">
+    <div class="section-cat section-cat-tr" data-cat style="--size:88px;" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="88" height="88">
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <ellipse class="cat-eye cat-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+      </svg>
+    </div>
     <div class="eyebrow">Live properties</div>
     <h2 id="props-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Proof in production.</h2>
     <p style="max-width:640px;font-size:18px;line-height:1.55;opacity:0.85;">Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.</p>
@@ -791,6 +805,15 @@
 
   <!-- FAQ · for SEO and investor FAQ schema -->
   <section id="faq" class="faq" aria-labelledby="faq-h">
+    <div class="section-cat section-cat-tl" data-cat style="--size:72px;" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="72" height="72">
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <ellipse class="cat-eye cat-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+      </svg>
+    </div>
     <div class="eyebrow">Frequently asked</div>
     <h2 id="faq-h" class="section-head" style="padding:0;margin:16px 0 40px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Before you ask.</h2>
     <details open>
@@ -821,6 +844,15 @@
 
   <!-- CONTACT · four CTAs, one inbox -->
   <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="section-cat section-cat-center" data-cat style="--size:120px;" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="120" height="120">
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <ellipse class="cat-eye cat-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+      </svg>
+    </div>
     <h2 id="contact-h">Talk to us.</h2>
     <p style="font-size:18px;line-height:1.55;opacity:0.85;max-width:560px;margin-left:auto;margin-right:auto;">One inbox reaches one human. Pick the door you came through and we will reply within 48 hours.</p>
 
@@ -883,137 +915,102 @@
 })();
 
 // ─────────────────────────────────────────────────────────────
-// Cursor-following Pub cat
-// Appears only once the user has scrolled past the hero.
-// Lerps toward the cursor with trailing easing. Eyes track the
-// cursor within the socket. Random blinks + occasional ear twitch.
+// Section cats — static marks in each section whose eyes track
+// the cursor. Each cat's eyes offset within their sockets based
+// on the direction from the cat's rendered centre to the cursor.
+// Random blink cycle (with 22% chance of a double-blink). Skips
+// on touch devices and for prefers-reduced-motion.
 // ─────────────────────────────────────────────────────────────
 (function () {
-  const follower = document.getElementById('pub-follower');
-  if (!follower) return;
-  const svg = follower.querySelector('svg');
-  const eyeL = document.getElementById('pf-eye-l');
-  const eyeR = document.getElementById('pf-eye-r');
-  if (!svg || !eyeL || !eyeR) return;
-
-  // Respect reduced motion
+  const cats = Array.from(document.querySelectorAll('[data-cat]'));
+  if (!cats.length) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  // Skip on touch devices
-  if (window.matchMedia('(hover: none)').matches) return;
 
-  // ── State
+  // Per-cat state: its rendered centre (in viewport coords) + its eye refs.
+  const state = cats.map((node) => {
+    const svg = node.querySelector('svg');
+    return {
+      node,
+      svg,
+      eyeL: svg && svg.querySelector('.cat-eye-l'),
+      eyeR: svg && svg.querySelector('.cat-eye-r'),
+      cx: 0, cy: 0,          // viewport centre, refreshed on scroll/resize
+    };
+  }).filter((s) => s.eyeL && s.eyeR);
+
+  const measure = () => {
+    state.forEach((s) => {
+      const r = s.node.getBoundingClientRect();
+      s.cx = r.left + r.width / 2;
+      s.cy = r.top + r.height / 2;
+    });
+  };
+  measure();
+  window.addEventListener('scroll', measure, { passive: true });
+  window.addEventListener('resize', measure);
+
+  // Pointer tracking
   let tx = window.innerWidth / 2;
   let ty = window.innerHeight / 2;
-  let x = tx, y = ty;           // rendered position
-  let visible = false;
-  let lastMove = 0;
-  let blinkT = 0;               // 0–1 blink progress; 0 = open, 1 = closed
-  let blinkDir = 0;             // -1 open, 1 close, 0 idle
-  let nextBlinkAt = performance.now() + 1800 + Math.random() * 4200;
-
-  const HERO_TRIGGER = () => {
-    const hero = document.getElementById('hero-stage');
-    if (!hero) return true;
-    return (hero.getBoundingClientRect().bottom < window.innerHeight * 0.4);
-  };
-
-  // Pointer
+  let dirty = true;
   window.addEventListener('mousemove', (e) => {
-    tx = e.clientX;
-    ty = e.clientY;
-    lastMove = performance.now();
-    const shouldShow = HERO_TRIGGER();
-    if (shouldShow && !visible) {
-      visible = true;
-      follower.classList.add('is-visible');
-    } else if (!shouldShow && visible) {
-      visible = false;
-      follower.classList.remove('is-visible');
-    }
+    tx = e.clientX; ty = e.clientY; dirty = true;
   }, { passive: true });
 
-  window.addEventListener('mouseleave', () => {
-    follower.classList.add('is-hiding');
-  });
-  window.addEventListener('mouseenter', () => {
-    follower.classList.remove('is-hiding');
-  });
-
-  // Hide when cursor sits over interactive elements so we don't block clicks
-  // (follower is pointer-events: none, but visually it's nicer to fade briefly)
-  let overInteractive = false;
-  document.addEventListener('mouseover', (e) => {
-    const t = e.target;
-    if (t && t.closest && t.closest('a, button, summary, input, textarea')) {
-      if (!overInteractive) {
-        overInteractive = true;
-        follower.style.opacity = '0.35';
-      }
-    } else if (overInteractive) {
-      overInteractive = false;
-      follower.style.opacity = '';
-    }
-  });
-
-  // ── rAF loop
-  const FOLLOW_EASE = 0.14;     // how quickly the body catches up
-  const EYE_MAX_OFFSET = 1.8;   // in SVG units; head is 100 wide
+  // Blink cycle — shared across cats so they feel like a family
+  let blinkT = 0;
+  let blinkDir = 0;               // 0 idle, 1 closing, -1 opening
+  let nextBlinkAt = performance.now() + 2000 + Math.random() * 3500;
   const BLINK_DUR_MS = 140;
 
+  // Eye constants (SVG units, head is 100 wide)
+  const EYE_L_X = 38, EYE_R_X = 62, EYE_Y = 52;
+  const EYE_MAX_DX = 2.2;         // how far eyes can track horizontally
+  const EYE_MAX_DY = 1.6;         // vertically
+  const TRACK_DIST = 400;         // pixels beyond which tracking is fully saturated
+
+  let lastTs = 0;
   const step = (now) => {
-    // Body: trailing lerp toward cursor
-    x += (tx - x) * FOLLOW_EASE;
-    y += (ty - y) * FOLLOW_EASE;
-    // Slight upward offset + horizontal so cat sits above-right of cursor
-    follower.style.transform = 'translate3d(' + (x + 18) + 'px,' + (y - 58) + 'px,0)';
+    const dt = lastTs ? (now - lastTs) : 16;
+    lastTs = now;
 
-    // Eyes: compute direction toward cursor within an allowed range
-    const dx = Math.max(-1, Math.min(1, (tx - x) / 200));
-    const dy = Math.max(-1, Math.min(1, (ty - y) / 200));
-    const exL = 38 + dx * EYE_MAX_OFFSET;
-    const eyL = 52 + dy * EYE_MAX_OFFSET;
-    const exR = 62 + dx * EYE_MAX_OFFSET;
-    const eyR = 52 + dy * EYE_MAX_OFFSET;
-
-    // Blink schedule
-    if (blinkDir === 0 && now >= nextBlinkAt) {
-      blinkDir = 1;              // start closing
-    }
+    // Blink state machine
+    if (blinkDir === 0 && now >= nextBlinkAt) blinkDir = 1;
     if (blinkDir === 1) {
-      blinkT += 16 / BLINK_DUR_MS;
+      blinkT += dt / BLINK_DUR_MS;
       if (blinkT >= 1) { blinkT = 1; blinkDir = -1; }
     } else if (blinkDir === -1) {
-      blinkT -= 16 / BLINK_DUR_MS;
+      blinkT -= dt / BLINK_DUR_MS;
       if (blinkT <= 0) {
         blinkT = 0; blinkDir = 0;
-        // Occasional double-blink
-        const doubleBlink = Math.random() < 0.22;
-        nextBlinkAt = now + (doubleBlink ? 180 : (1800 + Math.random() * 4800));
+        const dbl = Math.random() < 0.22;
+        nextBlinkAt = now + (dbl ? 160 : 2400 + Math.random() * 5200);
       }
     }
     const ry = 5.4 * (1 - blinkT) + 0.6 * blinkT;
 
-    eyeL.setAttribute('cx', exL.toFixed(2));
-    eyeL.setAttribute('cy', eyL.toFixed(2));
-    eyeL.setAttribute('ry', ry.toFixed(2));
-    eyeR.setAttribute('cx', exR.toFixed(2));
-    eyeR.setAttribute('cy', eyR.toFixed(2));
-    eyeR.setAttribute('ry', ry.toFixed(2));
+    // Update every cat's eyes
+    if (dirty || blinkDir !== 0) {
+      for (let i = 0; i < state.length; i++) {
+        const s = state[i];
+        const dx = Math.max(-1, Math.min(1, (tx - s.cx) / TRACK_DIST));
+        const dy = Math.max(-1, Math.min(1, (ty - s.cy) / TRACK_DIST));
+        const offX = dx * EYE_MAX_DX;
+        const offY = dy * EYE_MAX_DY;
+
+        s.eyeL.setAttribute('cx', (EYE_L_X + offX).toFixed(2));
+        s.eyeL.setAttribute('cy', (EYE_Y + offY).toFixed(2));
+        s.eyeL.setAttribute('ry', ry.toFixed(2));
+        s.eyeR.setAttribute('cx', (EYE_R_X + offX).toFixed(2));
+        s.eyeR.setAttribute('cy', (EYE_Y + offY).toFixed(2));
+        s.eyeR.setAttribute('ry', ry.toFixed(2));
+      }
+      dirty = false;
+    }
 
     requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
-
-  // Visibility tied to scroll (covers keyboard scrollers too)
-  const onScroll = () => {
-    if (HERO_TRIGGER()) {
-      if (!visible) { visible = true; follower.classList.add('is-visible'); }
-    } else if (visible) {
-      visible = false; follower.classList.remove('is-visible');
-    }
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
 })();
 </script>
 
