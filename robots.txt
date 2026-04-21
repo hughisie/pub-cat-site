@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Welcome, search engines and well-behaved crawlers.
+# AI crawlers: we are AI-native ourselves — crawl away.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://pub.cat/sitemap.xml

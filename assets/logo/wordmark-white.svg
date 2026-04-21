@@ -1,0 +1,13 @@
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+    
+    <text x="20" y="120" fill="#f7f5ef">pub</text>
+    <g transform="translate(240, 48)">
+      <path d="M 26 39 L 32 21 L 43 34 Z" fill="#C8102E"></path>
+      <path d="M 74 39 L 68 21 L 57 34 Z" fill="#C8102E"></path>
+      <circle cx="50" cy="56" r="29" fill="#C8102E"></circle>
+      <circle cx="41" cy="54" r="2.7" fill="#f7f5ef"></circle>
+      <circle cx="59" cy="54" r="2.7" fill="#f7f5ef"></circle>
+    </g>
+    <text x="340" y="120" fill="#f7f5ef">cat</text>
+  </svg>

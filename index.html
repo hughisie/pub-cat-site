@@ -1,0 +1,2946 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#F7F5EF" />
+<meta name="color-scheme" content="light" />
+
+<title>Pub.cat · One founder. Every department. An AI-native media company.</title>
+<meta name="description" content="Pub.cat is an AI-native media company run by one person. Software agents source, verify, write, translate and publish news at the marginal cost of electricity. Our content pipeline, Cybertron, is soon available as SaaS for independent publishers. Built by Owen Hughes in Barcelona." />
+<meta name="keywords" content="AI-native company, one-person company, solo founder, AI media company, autonomous newsroom, agentic AI, AI agents, media technology, AI publishing, multi-agent architecture, Cybertron pipeline, Pub.cat, Owen Hughes, Barcelona" />
+<meta name="author" content="Owen Hughes" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+<meta name="googlebot" content="index,follow" />
+<link rel="canonical" href="https://pub.cat/" />
+
+<link rel="icon" href="/assets/logo/dot-cat-red.svg" type="image/svg+xml" />
+<link rel="mask-icon" href="/assets/logo/dot-cat-red.svg" color="#C8102E" />
+<link rel="apple-touch-icon" href="/assets/logo/dot-cat-red.svg" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pub.cat" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Pub.cat · One founder. Every department." />
+<meta property="og:description" content="An AI-native media company run by one person. Software agents do the work of a newsroom, at the marginal cost of electricity." />
+<meta property="og:url" content="https://pub.cat/" />
+<meta property="og:image" content="https://pub.cat/assets/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Pub.cat. Small red cat mark on paper background with the tagline 'Small. Mighty.'" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pub.cat · One founder. Every department." />
+<meta name="twitter:description" content="An AI-native media company run by one person. Built in Barcelona." />
+<meta name="twitter:image" content="https://pub.cat/assets/og.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","@id":"https://pub.cat/#org","name":"Pub.cat","alternateName":"pub.cat","url":"https://pub.cat/","logo":"https://pub.cat/assets/logo/wordmark-red.svg","image":"https://pub.cat/assets/og.png","description":"An AI-native media company: one founder, a corridor of software agents, a newsroom at the marginal cost of electricity.","foundingDate":"2025","founder":{"@type":"Person","name":"Owen Hughes","jobTitle":"Founder & CEO","nationality":"GB"},"numberOfEmployees":{"@type":"QuantitativeValue","value":1},"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressRegion":"Catalonia","addressCountry":"ES"},"parentOrganization":{"@type":"Organization","name":"RetroShell Ltd","address":{"@type":"PostalAddress","addressCountry":"GB"}},"slogan":"Small. Mighty.","sameAs":["https://barna.news","https://retroshell.com"],"knowsAbout":["AI-native companies","Agentic AI","Multi-agent systems","Autonomous publishing","Media technology","One-person companies","Generative AI newsrooms"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://pub.cat/#website","url":"https://pub.cat/","name":"Pub.cat","publisher":{"@id":"https://pub.cat/#org"},"inLanguage":"en-GB"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cybertron","applicationCategory":"BusinessApplication","operatingSystem":"Linux, Google Cloud Functions","description":"Cybertron is a 13-module autonomous content pipeline: ingestion, de-duplication, source-tier verification, multilingual rewriting, SEO-optimised publishing, and cross-platform distribution. Runs without human headcount.","author":{"@id":"https://pub.cat/#org"},"offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","price":"0","priceCurrency":"GBP"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Pub.cat?","acceptedAnswer":{"@type":"Answer","text":"Pub.cat is an AI-native media holding company run by a single founder. A suite of AI agents covers editorial, engineering, operations and sales. Each new publication is a configuration file, not a hire."}},{"@type":"Question","name":"What is Cybertron?","acceptedAnswer":{"@type":"Answer","text":"Cybertron is Pub.cat's proprietary content pipeline. Thirteen modules: ingest, cluster, verify, research, draft, translate, edit, image, SEO, publish, distribute, monitor, analytics. Built for our own properties, opening as SaaS to other publishers in 2026."}},{"@type":"Question","name":"How many employees does Pub.cat have?","acceptedAnswer":{"@type":"Answer","text":"One human. Everything else is software. The organisation is designed to scale horizontally without headcount."}},{"@type":"Question","name":"What does Pub.cat publish today?","acceptedAnswer":{"@type":"Answer","text":"Barna.News (English-language news for Barcelona), Catalan.News (Catalan edition), and RetroShell (retro gaming news plus e-commerce) are live."}}]}
+</script>
+<style>
+  /* =========================================
+     Pub.cat — production landing page
+     Brand: Paper #F7F5EF, Ink #1E1D1B, Liverpool Red #C8102E
+     70% Paper · 25% Ink · 5% Red
+     ========================================= */
+  :root {
+    --red: #C8102E;
+    --ink: #1E1D1B;
+    --paper: #F7F5EF;
+    --paper-2: #ECE8DE;
+    --rule: rgba(30,29,27,0.12);
+    --mute: rgba(30,29,27,0.6);
+    --sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --serif: 'Fraunces', Georgia, serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+    --ease: cubic-bezier(0.2, 0, 0, 1);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html { scroll-behavior: smooth; }
+  body { overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, h4 { margin: 0; font-weight: 500; letter-spacing: -0.01em; }
+
+  /* ===== Hero stage: sticky scroll-scrub container ===== */
+  #hero-stage {
+    position: relative;
+    height: 600vh;            /* scroll runway for the 14s timeline */
+    background: var(--paper);
+  }
+  #hero-stage .pin {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  #root {
+    position: absolute;
+    inset: 0;
+  }
+
+  /* Scroll prompt (subtle cue) */
+  .scroll-prompt {
+    position: absolute;
+    right: 28px; bottom: 28px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 3px;
+    text-transform: uppercase; color: rgba(30,29,27,0.45);
+    animation: scrollPulse 2.4s ease-in-out infinite;
+    z-index: 3; pointer-events: none;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(4px); }
+  }
+
+  /* Progress rail */
+  .progress-rail {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: transparent;
+    z-index: 40;
+    pointer-events: none;
+  }
+  .progress-rail span {
+    display: block; height: 100%;
+    background: var(--red);
+    width: 0%;
+    transition: width 90ms linear;
+  }
+
+  /* Nav — floats clear over hero, gains a paper backdrop on scroll */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 28px;
+    z-index: 50;
+    background: transparent;
+    transition: background 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+    border-bottom: 1px solid transparent;
+  }
+  .nav.is-scrolled {
+    background: rgba(247, 245, 239, 0.88);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom-color: var(--rule);
+  }
+  .nav .brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--sans); font-weight: 600; font-size: 15px;
+    letter-spacing: -0.01em; color: var(--ink);
+    padding: 6px 12px 6px 10px;
+    background: rgba(247, 245, 239, 0.72);
+    border-radius: 100px;
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .nav.is-scrolled .brand { background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; padding: 0; }
+  .nav .brand img { width: 22px; height: 22px; display: block; }
+  .nav .links {
+    display: flex; align-items: center; gap: 24px;
+    font-size: 12px; font-family: var(--mono); letter-spacing: 2px;
+    text-transform: uppercase; color: var(--ink);
+  }
+  .nav .links a {
+    opacity: 0.75; padding: 8px 4px;
+    transition: opacity 120ms ease;
+  }
+  .nav .links a:hover { opacity: 1; }
+  .nav .links a.primary { background: var(--ink); color: var(--paper); padding: 10px 18px; border-radius: 100px; opacity: 1; letter-spacing: 0; font-family: var(--sans); text-transform: none; font-size: 13px; }
+  .nav .links a.primary:hover { background: var(--red); }
+  @media (max-width: 720px) {
+    .nav .links a:not(.primary) { display: none; }
+    .nav { padding: 10px 16px; }
+  }
+  /* ===== Content sections below hero ===== */
+  main section {
+    padding: clamp(72px, 10vh, 144px) 5vw;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--red);
+  }
+  .section-head h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 16px 0 24px;
+    font-weight: 400;
+  }
+  .section-head h2 em { color: var(--red); font-style: italic; }
+  .section-head p {
+    max-width: 640px;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--ink);
+    opacity: 0.85;
+  }
+
+  .dept-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 48px;
+  }
+  @media (max-width: 720px) { .dept-grid { grid-template-columns: 1fr; } }
+  .dept {
+    background: var(--paper);
+    padding: 28px;
+  }
+  .dept .role {
+    font-family: var(--mono);
+    font-size: 10px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--red);
+    margin-bottom: 10px;
+  }
+  .dept h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .dept p {
+    font-size: 15px; line-height: 1.55;
+    color: var(--ink); opacity: 0.82;
+  }
+
+  .properties {
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 48px;
+  }
+  @media (max-width: 780px) { .properties { grid-template-columns: 1fr; } }
+  .property {
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 32px;
+    background: var(--paper);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .property .kind {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--mute);
+  }
+  .property h3 {
+    font-family: var(--serif); font-size: 36px; line-height: 1.05;
+    font-weight: 400; letter-spacing: -0.02em;
+  }
+  .property h3 em { color: var(--red); font-style: normal; font-weight: 500; }
+  .property p { font-size: 15px; line-height: 1.55; color: var(--ink); opacity: 0.82; flex: 1; }
+  .property a.more {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--red);
+    border-bottom: 1px solid var(--red); padding-bottom: 2px;
+    align-self: flex-start;
+  }
+
+  /* Property head — logo + kind label on one row */
+  .property-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 4px;
+  }
+  .property-logo {
+    width: 56px; height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: var(--paper-2);
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .property-logo-placeholder {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--red);
+    font-family: var(--serif); font-size: 32px; font-weight: 500;
+    background: var(--paper);
+    border: 1px dashed var(--rule);
+    box-shadow: none;
+  }
+  .property-next { opacity: 0.88; }
+
+  /* Cursor-following Pub cat — lives over all content below hero */
+  #pub-follower {
+    position: fixed;
+    left: 0; top: 0;
+    transform: translate(-120px, -120px);
+    pointer-events: none;
+    z-index: 25;
+    opacity: 0;
+    transition: opacity 320ms ease;
+    will-change: transform;
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+  }
+  #pub-follower.is-visible { opacity: 1; }
+  #pub-follower svg {
+    filter: drop-shadow(0 6px 18px rgba(200,16,46,0.25));
+    transition: transform 160ms var(--ease);
+  }
+  #pub-follower.is-hiding svg { transform: scale(0.88); }
+  #pub-follower .pf-label {
+    font-family: var(--mono); font-size: 9px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--red);
+    background: var(--paper);
+    padding: 2px 8px; border-radius: 100px;
+    border: 1px solid var(--rule);
+    opacity: 0.9;
+  }
+  @media (max-width: 780px), (hover: none) {
+    #pub-follower { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #pub-follower { display: none; }
+  }
+
+  .faq details {
+    border-top: 1px solid var(--rule);
+    padding: 24px 0;
+  }
+  .faq details:last-child { border-bottom: 1px solid var(--rule); }
+  .faq summary {
+    cursor: pointer;
+    font-family: var(--serif);
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    list-style: none;
+    display: flex; justify-content: space-between; align-items: baseline; gap: 24px;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; font-family: var(--mono); font-size: 18px; color: var(--red); }
+  .faq details[open] summary::after { content: '−'; }
+  .faq details p {
+    margin-top: 16px; font-size: 16px; line-height: 1.6;
+    color: var(--ink); opacity: 0.82; max-width: 720px;
+  }
+
+  .contact {
+    text-align: center;
+    padding: clamp(120px, 16vh, 200px) 5vw;
+  }
+  .contact h2 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5vw, 80px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 32px;
+    font-weight: 400;
+  }
+  .contact h2 em { color: var(--red); font-style: italic; }
+  .contact .mailto {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 14px 28px;
+    border: 1px solid var(--ink);
+    border-radius: 100px;
+    transition: background 120ms ease, color 120ms ease;
+  }
+  .contact .mailto:hover { background: var(--ink); color: var(--paper); }
+
+  footer.site-foot {
+    border-top: 1px solid var(--rule);
+    padding: 32px 5vw;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--mute);
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+
+  /* ===== Hide prototype dev UI in production ===== */
+  .tweaks, .scroll-hint { display: none !important; }
+
+  /* Tweaks panel (unused but preserved) */
+  .tweaks {
+    position: fixed;
+    bottom: 72px; right: 18px;
+    width: 280px;
+    background: rgba(20,19,17,0.92);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #f7f5ef;
+    z-index: 10;
+    display: none;
+  }
+  .tweaks.open { display: block; }
+  .tweaks h4 {
+    margin: 0 0 12px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(247,245,239,0.6);
+  }
+  .tweaks .row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .tweaks .row:last-child { border-bottom: none; }
+  .tweaks label { flex: 1; font-size: 11px; }
+  .tweaks input[type=range] { width: 100px; }
+  .tweaks input[type=text] {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+    color: #f7f5ef; padding: 4px 8px; border-radius: 4px;
+    font-family: inherit; font-size: 11px; width: 120px;
+  }
+  .tweaks .toggle {
+    width: 32px; height: 18px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    position: relative; cursor: pointer;
+    transition: background 160ms;
+  }
+  .tweaks .toggle.on { background: #C8102E; }
+  .tweaks .toggle::after {
+    content: '';
+    position: absolute;
+    left: 2px; top: 2px;
+    width: 14px; height: 14px;
+    background: #f7f5ef;
+    border-radius: 50%;
+    transition: left 160ms;
+  }
+  .tweaks .toggle.on::after { left: 16px; }
+
+  .scroll-hint {
+    position: fixed; top: 50%; right: 18px;
+    transform: translateY(-50%);
+    color: rgba(247,245,239,0.4);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    z-index: 5;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Skip link for a11y -->
+<a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+<!-- Scroll progress rail -->
+<div class="progress-rail" aria-hidden="true"><span id="progress-bar"></span></div>
+
+<!-- Fixed minimal nav -->
+<nav class="nav" aria-label="Primary">
+  <a href="#main" class="brand">
+    <img src="/assets/logo/dot-cat-red.svg" alt="" />
+    <span>pub.cat</span>
+  </a>
+  <div class="links">
+    <a href="#cybertron">Cybertron</a>
+    <a href="#properties">Properties</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="primary">Get in touch</a>
+  </div>
+</nav>
+
+<!-- =========================================
+     HERO · scroll-scrub video with overlaid chapters
+     Investor-grade narrative in 5 chapters, mapped
+     to the 14s timeline (wake → scan → write → translate → publish → end).
+     ========================================= -->
+<section id="hero-stage" aria-label="Pub.cat. One founder. Every department.">
+  <div class="pin">
+    <div id="root"></div>
+
+    <!-- SEO-crawlable h1 behind the video (visually hidden, semantically primary) -->
+    <h1 style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+      Pub.cat. An AI-native media company run by one founder.
+    </h1>
+
+    <!-- Overlay chapters removed: the scene-baked captions carry the narrative. -->
+    <!-- Scroll hint only: a subtle prompt to keep scrolling. -->
+    <div class="scroll-prompt" aria-hidden="true">Scroll</div>
+  </div>
+</section>
+
+<main id="main">
+
+  <!-- Cursor-following Pub cat — lives for the whole content area -->
+  <div id="pub-follower" aria-hidden="true">
+    <svg viewBox="0 0 100 100" width="64" height="64">
+      <!-- Head (ink with red fur variant via brand); we use the red dot-cat -->
+      <g>
+        <!-- ears -->
+        <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
+        <path d="M80 38 L72 18 L62 34 Z" fill="#C8102E"/>
+        <!-- face -->
+        <ellipse cx="50" cy="54" rx="34" ry="30" fill="#C8102E"/>
+        <!-- eyes (react-positioned via JS) -->
+        <g id="pf-eyes">
+          <ellipse id="pf-eye-l" cx="38" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+          <ellipse id="pf-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
+        </g>
+      </g>
+    </svg>
+    <span class="pf-label">pub</span>
+  </div>
+
+  <!-- WHAT · the one-liner that search engines index -->
+  <section id="what" class="section-head" aria-labelledby="what-h">
+    <div class="eyebrow">What is Pub.cat</div>
+    <h2 id="what-h">An <em>AI-native</em> media company, run by one.</h2>
+    <p>Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites and publishes at the marginal cost of electricity. We are soon offering it as SaaS to every independent publisher who wants the same leverage.</p>
+  </section>
+
+  <!-- CYBERTRON · the product page, SaaS-framed -->
+  <section id="cybertron" aria-labelledby="cyber-h">
+    <div class="eyebrow">The product</div>
+    <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Cybertron. <em>Soon as SaaS.</em></h2>
+    <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
+
+    <div class="dept-grid" style="margin-top:56px;">
+      <div class="dept"><div class="role">Module 01 · Ingest</div><h3>200+ source feeds, one firehose.</h3><p>RSS, APIs, sitemaps, social signals, public filings. Normalised, timestamped, credited.</p></div>
+      <div class="dept"><div class="role">Module 02 · Cluster</div><h3>Duplicates collapsed automatically.</h3><p>Semantic clustering groups related items into story candidates. Hotness scoring surfaces the signal.</p></div>
+      <div class="dept"><div class="role">Module 03 · Verify</div><h3>Primary sources, tiered.</h3><p>Source reliability tiers, named-source checks, and cross-reference against authoritative data before anything writes.</p></div>
+      <div class="dept"><div class="role">Module 04 · Research</div><h3>Evidence bundles built on demand.</h3><p>Related coverage, public records, prior context. Pulled and attributed before the draft is generated.</p></div>
+      <div class="dept"><div class="role">Module 05 · Draft</div><h3>House voice, model-agnostic.</h3><p>Routing across Claude, Gemini, Grok. Locale-tuned prompts. Brand voice enforced at prompt layer, not discretion.</p></div>
+      <div class="dept"><div class="role">Module 06 · Translate</div><h3>Multilingual by default.</h3><p>English, Catalan, Spanish today. Any market tomorrow. One pipeline, one configuration file per locale.</p></div>
+      <div class="dept"><div class="role">Module 07 · Edit</div><h3>A subs desk that never sleeps.</h3><p>Grammar, clarity, banned phrases, factual re-checks. Style guide enforced down to the Oxford comma.</p></div>
+      <div class="dept"><div class="role">Module 08 · Image</div><h3>Licensed images, correctly credited.</h3><p>Feature image selection, alt text, banner stripping, proper attribution. No copyright surprises.</p></div>
+      <div class="dept"><div class="role">Module 09 · SEO</div><h3>Structured data, built in.</h3><p>Schema.org, sitemap, OG, canonical. Google News compliance. Cross-property internal linking for compounding authority.</p></div>
+      <div class="dept"><div class="role">Module 10 · Publish</div><h3>Ghost and WordPress, natively.</h3><p>Push to any Ghost or WordPress instance via API. Scheduling, categories, authors, tags, all handled.</p></div>
+      <div class="dept"><div class="role">Module 11 · Distribute</div><h3>Channel-specific social packs.</h3><p>X, Reddit, Facebook, WhatsApp, LinkedIn. Each channel treated on its own terms, not copy-pasted.</p></div>
+      <div class="dept"><div class="role">Module 12 · Monitor</div><h3>Audit agent on a cron.</h3><p>Scheduled process and security audits. Critical findings halt publication until cleared. Not advisory.</p></div>
+      <div class="dept"><div class="role">Module 13 · Analytics</div><h3>What worked, what did not.</h3><p>Plausible plus Google Search Console, unified. Story-level attribution back to which source, which model, which channel.</p></div>
+    </div>
+
+    <p style="margin-top:48px;max-width:680px;font-size:15px;line-height:1.55;opacity:0.7;font-family:var(--mono);letter-spacing:0.5px;">Every module is swappable. Every stage is logged. Nothing is black-boxed. Built to run without us, engineered so another publisher can run it too.</p>
+  </section>
+
+  <!-- PROPERTIES · live proof, with logos -->
+  <section id="properties" aria-labelledby="props-h">
+    <div class="eyebrow">Live properties</div>
+    <h2 id="props-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Proof in production.</h2>
+    <p style="max-width:640px;font-size:18px;line-height:1.55;opacity:0.85;">Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.</p>
+    <div class="properties">
+      <article class="property">
+        <div class="property-head">
+          <img class="property-logo" src="/assets/properties/barna.png" alt="Barna.News logo" width="56" height="56" loading="lazy" />
+          <span class="kind">English · Barcelona</span>
+        </div>
+        <h3>Barna<em>.News</em></h3>
+        <p>The English-language news daily for Barcelona's international residents. Politics, culture, transport, community. Fifteen to twenty-five stories every day, written by software and read by humans.</p>
+        <a class="more" href="https://barna.news" rel="noopener">Visit Barna.News →</a>
+      </article>
+      <article class="property">
+        <div class="property-head">
+          <!-- Catalan.News logo: typographic wordmark in their senyera red -->
+          <svg class="property-logo" viewBox="0 0 56 56" width="56" height="56" aria-label="Catalan.News logo">
+            <rect width="56" height="56" rx="10" fill="#EA1004"/>
+            <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="500" font-size="34" fill="#F9DA1D">c</text>
+            <circle cx="40" cy="15" r="2.4" fill="#F9DA1D"/>
+          </svg>
+          <span class="kind">Catalan · Barcelona</span>
+        </div>
+        <h3>Catalan<em>.News</em></h3>
+        <p>The Catalan-language edition. Same pipeline, localised voice, indexed by Google News for catalanoparlants at home and abroad.</p>
+        <a class="more" href="https://catalan.news" rel="noopener">Visit Catalan.News →</a>
+      </article>
+      <article class="property">
+        <div class="property-head">
+          <img class="property-logo" src="/assets/properties/retroshell.png" alt="RetroShell logo" width="56" height="56" loading="lazy" />
+          <span class="kind">English · Retro gaming</span>
+        </div>
+        <h3>Retro<em>Shell</em></h3>
+        <p>A retro-gaming publication with e-commerce attached. News, collectibles, exclusive merchandise. Vertical test for the "publication plus shop" pattern.</p>
+        <a class="more" href="https://retroshell.com" rel="noopener">Visit RetroShell →</a>
+      </article>
+      <article class="property property-next">
+        <div class="property-head">
+          <div class="property-logo property-logo-placeholder" aria-hidden="true">+</div>
+          <span class="kind">Roadmap 2026</span>
+        </div>
+        <h3>Next cities, next <em>verticals</em>.</h3>
+        <p>Madrid. Málaga. A London vertical. Multi-language expansion across European cities. Each is a configuration file in Cybertron, not a hire.</p>
+        <a class="more" href="#contact">Talk to us →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ · for SEO and investor FAQ schema -->
+  <section id="faq" class="faq" aria-labelledby="faq-h">
+    <div class="eyebrow">Frequently asked</div>
+    <h2 id="faq-h" class="section-head" style="padding:0;margin:16px 0 40px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Before you ask.</h2>
+    <details open>
+      <summary>Who runs Pub.cat?</summary>
+      <p>Owen Hughes, founder and sole director of RetroShell Ltd (UK), trading as Pub.cat from Barcelona. One human makes every decision. Everything else is software.</p>
+    </details>
+    <details>
+      <summary>What is Cybertron?</summary>
+      <p>Cybertron is our proprietary content pipeline. Thirteen modules covering ingestion, de-duplication, verification, research, drafting, translation, editing, imagery, SEO, publishing, distribution, monitoring and analytics. Built for Pub.cat's own properties today, preparing for public beta as SaaS in 2026.</p>
+    </details>
+    <details>
+      <summary>When does Cybertron open to other publishers?</summary>
+      <p>A small invite-only cohort in 2026, followed by broader beta access. If you are an independent publisher and want in, email us and we will get you on the list.</p>
+    </details>
+    <details>
+      <summary>What makes Cybertron different from a bare LLM API?</summary>
+      <p>The orchestration, the source tiering, the editorial gates, the per-locale tuning, the publisher-side integrations, and years of compounding editorial calibration. Models are the commodity. The pipeline is the product.</p>
+    </details>
+    <details>
+      <summary>Is Pub.cat raising investment?</summary>
+      <p>We talk to operators who understand media technology: CMS companies, roll-ups, and media-tech investors. If that is you, the email below reaches us directly.</p>
+    </details>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Talk to us.</h2>
+    <p style="margin-bottom:32px;font-size:18px;line-height:1.55;opacity:0.85;max-width:540px;margin-left:auto;margin-right:auto;">Cybertron SaaS waitlist, investor enquiries, press, and partnerships. One email reaches one human.</p>
+    <a class="mailto" href="mailto:hi@pub.cat?subject=Pub.cat%20enquiry">hi@pub.cat</a>
+    <p style="margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mute);">Barcelona · London · Replies within 48 hours</p>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <span>© 2026 Pub.cat · RetroShell Ltd</span>
+  <span>Barcelona · London</span>
+  <span>Small. Mighty.</span>
+</footer>
+
+<!-- tweaks panel removed in production -->
+
+<script>
+// ─────────────────────────────────────────────────────────────
+// Nav floating background on scroll (activates once past the hero)
+// ─────────────────────────────────────────────────────────────
+(function () {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
+  const onScroll = () => {
+    if (window.scrollY > 60) nav.classList.add('is-scrolled');
+    else nav.classList.remove('is-scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// ─────────────────────────────────────────────────────────────
+// Cursor-following Pub cat
+// Appears only once the user has scrolled past the hero.
+// Lerps toward the cursor with trailing easing. Eyes track the
+// cursor within the socket. Random blinks + occasional ear twitch.
+// ─────────────────────────────────────────────────────────────
+(function () {
+  const follower = document.getElementById('pub-follower');
+  if (!follower) return;
+  const svg = follower.querySelector('svg');
+  const eyeL = document.getElementById('pf-eye-l');
+  const eyeR = document.getElementById('pf-eye-r');
+  if (!svg || !eyeL || !eyeR) return;
+
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Skip on touch devices
+  if (window.matchMedia('(hover: none)').matches) return;
+
+  // ── State
+  let tx = window.innerWidth / 2;
+  let ty = window.innerHeight / 2;
+  let x = tx, y = ty;           // rendered position
+  let visible = false;
+  let lastMove = 0;
+  let blinkT = 0;               // 0–1 blink progress; 0 = open, 1 = closed
+  let blinkDir = 0;             // -1 open, 1 close, 0 idle
+  let nextBlinkAt = performance.now() + 1800 + Math.random() * 4200;
+
+  const HERO_TRIGGER = () => {
+    const hero = document.getElementById('hero-stage');
+    if (!hero) return true;
+    return (hero.getBoundingClientRect().bottom < window.innerHeight * 0.4);
+  };
+
+  // Pointer
+  window.addEventListener('mousemove', (e) => {
+    tx = e.clientX;
+    ty = e.clientY;
+    lastMove = performance.now();
+    const shouldShow = HERO_TRIGGER();
+    if (shouldShow && !visible) {
+      visible = true;
+      follower.classList.add('is-visible');
+    } else if (!shouldShow && visible) {
+      visible = false;
+      follower.classList.remove('is-visible');
+    }
+  }, { passive: true });
+
+  window.addEventListener('mouseleave', () => {
+    follower.classList.add('is-hiding');
+  });
+  window.addEventListener('mouseenter', () => {
+    follower.classList.remove('is-hiding');
+  });
+
+  // Hide when cursor sits over interactive elements so we don't block clicks
+  // (follower is pointer-events: none, but visually it's nicer to fade briefly)
+  let overInteractive = false;
+  document.addEventListener('mouseover', (e) => {
+    const t = e.target;
+    if (t && t.closest && t.closest('a, button, summary, input, textarea')) {
+      if (!overInteractive) {
+        overInteractive = true;
+        follower.style.opacity = '0.35';
+      }
+    } else if (overInteractive) {
+      overInteractive = false;
+      follower.style.opacity = '';
+    }
+  });
+
+  // ── rAF loop
+  const FOLLOW_EASE = 0.14;     // how quickly the body catches up
+  const EYE_MAX_OFFSET = 1.8;   // in SVG units; head is 100 wide
+  const BLINK_DUR_MS = 140;
+
+  const step = (now) => {
+    // Body: trailing lerp toward cursor
+    x += (tx - x) * FOLLOW_EASE;
+    y += (ty - y) * FOLLOW_EASE;
+    // Slight upward offset + horizontal so cat sits above-right of cursor
+    follower.style.transform = 'translate3d(' + (x + 18) + 'px,' + (y - 58) + 'px,0)';
+
+    // Eyes: compute direction toward cursor within an allowed range
+    const dx = Math.max(-1, Math.min(1, (tx - x) / 200));
+    const dy = Math.max(-1, Math.min(1, (ty - y) / 200));
+    const exL = 38 + dx * EYE_MAX_OFFSET;
+    const eyL = 52 + dy * EYE_MAX_OFFSET;
+    const exR = 62 + dx * EYE_MAX_OFFSET;
+    const eyR = 52 + dy * EYE_MAX_OFFSET;
+
+    // Blink schedule
+    if (blinkDir === 0 && now >= nextBlinkAt) {
+      blinkDir = 1;              // start closing
+    }
+    if (blinkDir === 1) {
+      blinkT += 16 / BLINK_DUR_MS;
+      if (blinkT >= 1) { blinkT = 1; blinkDir = -1; }
+    } else if (blinkDir === -1) {
+      blinkT -= 16 / BLINK_DUR_MS;
+      if (blinkT <= 0) {
+        blinkT = 0; blinkDir = 0;
+        // Occasional double-blink
+        const doubleBlink = Math.random() < 0.22;
+        nextBlinkAt = now + (doubleBlink ? 180 : (1800 + Math.random() * 4800));
+      }
+    }
+    const ry = 5.4 * (1 - blinkT) + 0.6 * blinkT;
+
+    eyeL.setAttribute('cx', exL.toFixed(2));
+    eyeL.setAttribute('cy', eyL.toFixed(2));
+    eyeL.setAttribute('ry', ry.toFixed(2));
+    eyeR.setAttribute('cx', exR.toFixed(2));
+    eyeR.setAttribute('cy', eyR.toFixed(2));
+    eyeR.setAttribute('ry', ry.toFixed(2));
+
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+
+  // Visibility tied to scroll (covers keyboard scrollers too)
+  const onScroll = () => {
+    if (HERO_TRIGGER()) {
+      if (!visible) { visible = true; follower.classList.add('is-visible'); }
+    } else if (visible) {
+      visible = false; follower.classList.remove('is-visible');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+
+<!-- Tweak defaults (editable via the toolbar Tweaks switch) -->
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "darkBackground": false,
+  "tagline": "Small. Mighty.",
+  "speed": 1,
+  "scrollScrub": true,
+  "showCaptions": true
+}/*EDITMODE-END*/;
+window.__tweaks = { ...TWEAK_DEFAULTS };
+</script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" data-presets="react">
+
+// animations.jsx
+// Reusable animation starter: Stage, Timeline, Sprite, easing helpers.
+// Usage (in an HTML file that loads React + Babel):
+//
+//   <Stage width={1280} height={720} duration={10} background="#f6f4ef">
+//     <MyScene />
+//   </Stage>
+//
+// Inside <Stage>, any child can call useTime() to read the current
+// playhead (seconds). Or wrap content in <Sprite start={1} end={4}>...</Sprite>
+// to only render during that window -- children receive a `localTime` and
+// `progress` via the useSprite() hook.
+//
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── Easing functions (hand-rolled, Popmotion-style) ─────────────────────────
+// All easings take t ∈ [0,1] and return eased t ∈ [0,1] (may overshoot for back/elastic).
+const Easing = {
+  linear: (t) => t,
+
+  // Quad
+  easeInQuad:    (t) => t * t,
+  easeOutQuad:   (t) => t * (2 - t),
+  easeInOutQuad: (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t),
+
+  // Cubic
+  easeInCubic:    (t) => t * t * t,
+  easeOutCubic:   (t) => (--t) * t * t + 1,
+  easeInOutCubic: (t) => (t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1),
+
+  // Quart
+  easeInQuart:    (t) => t * t * t * t,
+  easeOutQuart:   (t) => 1 - (--t) * t * t * t,
+  easeInOutQuart: (t) => (t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t),
+
+  // Expo
+  easeInExpo:  (t) => (t === 0 ? 0 : Math.pow(2, 10 * (t - 1))),
+  easeOutExpo: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+  easeInOutExpo: (t) => {
+    if (t === 0) return 0;
+    if (t === 1) return 1;
+    if (t < 0.5) return 0.5 * Math.pow(2, 20 * t - 10);
+    return 1 - 0.5 * Math.pow(2, -20 * t + 10);
+  },
+
+  // Sine
+  easeInSine:    (t) => 1 - Math.cos((t * Math.PI) / 2),
+  easeOutSine:   (t) => Math.sin((t * Math.PI) / 2),
+  easeInOutSine: (t) => -(Math.cos(Math.PI * t) - 1) / 2,
+
+  // Back (overshoot)
+  easeOutBack: (t) => {
+    const c1 = 1.70158, c3 = c1 + 1;
+    return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+  },
+  easeInBack: (t) => {
+    const c1 = 1.70158, c3 = c1 + 1;
+    return c3 * t * t * t - c1 * t * t;
+  },
+  easeInOutBack: (t) => {
+    const c1 = 1.70158, c2 = c1 * 1.525;
+    return t < 0.5
+      ? (Math.pow(2 * t, 2) * ((c2 + 1) * 2 * t - c2)) / 2
+      : (Math.pow(2 * t - 2, 2) * ((c2 + 1) * (t * 2 - 2) + c2) + 2) / 2;
+  },
+
+  // Elastic
+  easeOutElastic: (t) => {
+    const c4 = (2 * Math.PI) / 3;
+    if (t === 0) return 0;
+    if (t === 1) return 1;
+    return Math.pow(2, -10 * t) * Math.sin((t * 10 - 0.75) * c4) + 1;
+  },
+};
+
+// ── Core interpolation helpers ──────────────────────────────────────────────
+
+// Clamp a value to [min, max]
+const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+
+// interpolate([0, 0.5, 1], [0, 100, 50], ease?) -> fn(t)
+// Popmotion-style: linearly maps t across input keyframes to output values,
+// with optional easing per segment (single fn or array of fns).
+function interpolate(input, output, ease = Easing.linear) {
+  return (t) => {
+    if (t <= input[0]) return output[0];
+    if (t >= input[input.length - 1]) return output[output.length - 1];
+    for (let i = 0; i < input.length - 1; i++) {
+      if (t >= input[i] && t <= input[i + 1]) {
+        const span = input[i + 1] - input[i];
+        const local = span === 0 ? 0 : (t - input[i]) / span;
+        const easeFn = Array.isArray(ease) ? (ease[i] || Easing.linear) : ease;
+        const eased = easeFn(local);
+        return output[i] + (output[i + 1] - output[i]) * eased;
+      }
+    }
+    return output[output.length - 1];
+  };
+}
+
+// animate({from, to, start, end, ease})(t) — simpler single-segment tween.
+// Returns `from` before `start`, `to` after `end`.
+function animate({ from = 0, to = 1, start = 0, end = 1, ease = Easing.easeInOutCubic }) {
+  return (t) => {
+    if (t <= start) return from;
+    if (t >= end) return to;
+    const local = (t - start) / (end - start);
+    return from + (to - from) * ease(local);
+  };
+}
+
+// ── Timeline context ────────────────────────────────────────────────────────
+
+const TimelineContext = React.createContext({ time: 0, duration: 10, playing: false });
+
+const useTime = () => React.useContext(TimelineContext).time;
+const useTimeline = () => React.useContext(TimelineContext);
+
+// ── Sprite ──────────────────────────────────────────────────────────────────
+// Renders children only when the playhead is inside [start, end]. Provides
+// a sub-context with `localTime` (seconds since start) and `progress` (0..1).
+//
+//   <Sprite start={2} end={5}>
+//     {({ localTime, progress }) => <Thing x={progress * 100} />}
+//   </Sprite>
+//
+// Or as a plain wrapper — children can call useSprite() themselves.
+
+const SpriteContext = React.createContext({ localTime: 0, progress: 0, duration: 0 });
+const useSprite = () => React.useContext(SpriteContext);
+
+function Sprite({ start = 0, end = Infinity, children, keepMounted = false }) {
+  const { time } = useTimeline();
+  const visible = time >= start && time <= end;
+  if (!visible && !keepMounted) return null;
+
+  const duration = end - start;
+  const localTime = Math.max(0, time - start);
+  const progress = duration > 0 && isFinite(duration)
+    ? clamp(localTime / duration, 0, 1)
+    : 0;
+
+  const value = { localTime, progress, duration, visible };
+
+  return (
+    <SpriteContext.Provider value={value}>
+      {typeof children === 'function' ? children(value) : children}
+    </SpriteContext.Provider>
+  );
+}
+
+// ── Sample sprite components ────────────────────────────────────────────────
+
+// TextSprite: fades/slides text in on entry, holds, then fades out on exit.
+// Props: text, x, y, size, color, font, entryDur, exitDur, align
+function TextSprite({
+  text,
+  x = 0, y = 0,
+  size = 48,
+  color = '#111',
+  font = 'Inter, system-ui, sans-serif',
+  weight = 600,
+  entryDur = 0.45,
+  exitDur = 0.35,
+  entryEase = Easing.easeOutBack,
+  exitEase = Easing.easeInCubic,
+  align = 'left',
+  letterSpacing = '-0.01em',
+}) {
+  const { localTime, duration } = useSprite();
+  const exitStart = Math.max(0, duration - exitDur);
+
+  let opacity = 1;
+  let ty = 0;
+
+  if (localTime < entryDur) {
+    const t = entryEase(clamp(localTime / entryDur, 0, 1));
+    opacity = t;
+    ty = (1 - t) * 16;
+  } else if (localTime > exitStart) {
+    const t = exitEase(clamp((localTime - exitStart) / exitDur, 0, 1));
+    opacity = 1 - t;
+    ty = -t * 8;
+  }
+
+  const translateX = align === 'center' ? '-50%' : align === 'right' ? '-100%' : '0';
+
+  return (
+    <div style={{
+      position: 'absolute',
+      left: x, top: y,
+      transform: `translate(${translateX}, ${ty}px)`,
+      opacity,
+      fontFamily: font,
+      fontSize: size,
+      fontWeight: weight,
+      color,
+      letterSpacing,
+      whiteSpace: 'pre',
+      lineHeight: 1.1,
+      willChange: 'transform, opacity',
+    }}>
+      {text}
+    </div>
+  );
+}
+
+// ImageSprite: scales + fades in; optional Ken Burns drift during hold.
+function ImageSprite({
+  src,
+  x = 0, y = 0,
+  width = 400, height = 300,
+  entryDur = 0.6,
+  exitDur = 0.4,
+  kenBurns = false,
+  kenBurnsScale = 1.08,
+  radius = 12,
+  fit = 'cover',
+  placeholder = null, // {label: string} for striped placeholder
+}) {
+  const { localTime, duration } = useSprite();
+  const exitStart = Math.max(0, duration - exitDur);
+
+  let opacity = 1;
+  let scale = 1;
+
+  if (localTime < entryDur) {
+    const t = Easing.easeOutCubic(clamp(localTime / entryDur, 0, 1));
+    opacity = t;
+    scale = 0.96 + 0.04 * t;
+  } else if (localTime > exitStart) {
+    const t = Easing.easeInCubic(clamp((localTime - exitStart) / exitDur, 0, 1));
+    opacity = 1 - t;
+    scale = (kenBurns ? kenBurnsScale : 1) + 0.02 * t;
+  } else if (kenBurns) {
+    const holdSpan = exitStart - entryDur;
+    const holdT = holdSpan > 0 ? (localTime - entryDur) / holdSpan : 0;
+    scale = 1 + (kenBurnsScale - 1) * holdT;
+  }
+
+  const content = placeholder ? (
+    <div style={{
+      width: '100%', height: '100%',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      background: 'repeating-linear-gradient(135deg, #e9e6df 0 10px, #dcd8cf 10px 20px)',
+      color: '#6b6458',
+      fontFamily: 'JetBrains Mono, ui-monospace, monospace',
+      fontSize: 13,
+      letterSpacing: '0.04em',
+      textTransform: 'uppercase',
+    }}>
+      {placeholder.label || 'image'}
+    </div>
+  ) : (
+    <img src={src} alt="" style={{ width: '100%', height: '100%', objectFit: fit, display: 'block' }} />
+  );
+
+  return (
+    <div style={{
+      position: 'absolute',
+      left: x, top: y,
+      width, height,
+      opacity,
+      transform: `scale(${scale})`,
+      transformOrigin: 'center',
+      borderRadius: radius,
+      overflow: 'hidden',
+      willChange: 'transform, opacity',
+    }}>
+      {content}
+    </div>
+  );
+}
+
+// RectSprite: simple rectangle that animates position/size/color via props.
+// Useful demo primitive — takes a `render` fn for per-frame customization.
+function RectSprite({
+  x = 0, y = 0,
+  width = 100, height = 100,
+  color = '#111',
+  radius = 8,
+  entryDur = 0.4,
+  exitDur = 0.3,
+  render, // optional: (ctx) => style overrides
+}) {
+  const spriteCtx = useSprite();
+  const { localTime, duration } = spriteCtx;
+  const exitStart = Math.max(0, duration - exitDur);
+
+  let opacity = 1;
+  let scale = 1;
+
+  if (localTime < entryDur) {
+    const t = Easing.easeOutBack(clamp(localTime / entryDur, 0, 1));
+    opacity = clamp(localTime / entryDur, 0, 1);
+    scale = 0.4 + 0.6 * t;
+  } else if (localTime > exitStart) {
+    const t = Easing.easeInQuad(clamp((localTime - exitStart) / exitDur, 0, 1));
+    opacity = 1 - t;
+    scale = 1 - 0.15 * t;
+  }
+
+  const overrides = render ? render(spriteCtx) : {};
+
+  return (
+    <div style={{
+      position: 'absolute',
+      left: x, top: y,
+      width, height,
+      background: color,
+      borderRadius: radius,
+      opacity,
+      transform: `scale(${scale})`,
+      transformOrigin: 'center',
+      willChange: 'transform, opacity',
+      ...overrides,
+    }} />
+  );
+}
+
+
+function Stage({
+  width = 1280,
+  height = 720,
+  duration = 10,
+  background = '#f6f4ef',
+  fps = 60,
+  loop = true,
+  autoplay = true,
+  persistKey = 'animstage',
+  children,
+}) {
+  const [time, setTime] = React.useState(() => {
+    try {
+      const v = parseFloat(localStorage.getItem(persistKey + ':t') || '0');
+      return isFinite(v) ? clamp(v, 0, duration) : 0;
+    } catch { return 0; }
+  });
+  const [playing, setPlaying] = React.useState(autoplay);
+  const [hoverTime, setHoverTime] = React.useState(null);
+  const [scale, setScale] = React.useState(1);
+
+  const stageRef = React.useRef(null);
+  const canvasRef = React.useRef(null);
+  const rafRef = React.useRef(null);
+  const lastTsRef = React.useRef(null);
+
+  // Persist playhead
+  React.useEffect(() => {
+    try { localStorage.setItem(persistKey + ':t', String(time)); } catch {}
+  }, [time, persistKey]);
+
+  // Auto-scale to fit viewport
+  React.useEffect(() => {
+    if (!stageRef.current) return;
+    const el = stageRef.current;
+    const measure = () => {
+      const barH = 44; // playback bar height
+      const s = Math.min(
+        el.clientWidth / width,
+        (el.clientHeight - barH) / height
+      );
+      setScale(Math.max(0.05, s));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    window.addEventListener('resize', measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', measure);
+    };
+  }, [width, height]);
+
+  // Animation loop
+  React.useEffect(() => {
+    if (!playing) {
+      lastTsRef.current = null;
+      return;
+    }
+    const step = (ts) => {
+      if (lastTsRef.current == null) lastTsRef.current = ts;
+      const dt = (ts - lastTsRef.current) / 1000;
+      lastTsRef.current = ts;
+      setTime((t) => {
+        let next = t + dt;
+        if (next >= duration) {
+          if (loop) next = next % duration;
+          else { next = duration; setPlaying(false); }
+        }
+        return next;
+      });
+      rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      lastTsRef.current = null;
+    };
+  }, [playing, duration, loop]);
+
+  // Keyboard: space = play/pause, ← → = seek
+  React.useEffect(() => {
+    const onKey = (e) => {
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        setPlaying(p => !p);
+      } else if (e.code === 'ArrowLeft') {
+        setTime(t => clamp(t - (e.shiftKey ? 1 : 0.1), 0, duration));
+      } else if (e.code === 'ArrowRight') {
+        setTime(t => clamp(t + (e.shiftKey ? 1 : 0.1), 0, duration));
+      } else if (e.key === '0' || e.code === 'Home') {
+        setTime(0);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [duration]);
+
+  const displayTime = hoverTime != null ? hoverTime : time;
+
+  const ctxValue = React.useMemo(
+    () => ({ time: displayTime, duration, playing, setTime, setPlaying }),
+    [displayTime, duration, playing]
+  );
+
+  return (
+    <div
+      ref={stageRef}
+      style={{
+        position: 'absolute', inset: 0,
+        display: 'flex', flexDirection: 'column',
+        alignItems: 'center',
+        background: '#0a0a0a',
+        fontFamily: 'Inter, system-ui, sans-serif',
+      }}
+    >
+      {/* Canvas area — vertically centered in remaining space */}
+      <div style={{
+        flex: 1,
+        width: '100%',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        overflow: 'hidden',
+        minHeight: 0,
+      }}>
+        <div
+          ref={canvasRef}
+          style={{
+            width, height,
+            background,
+            position: 'relative',
+            transform: `scale(${scale})`,
+            transformOrigin: 'center',
+            flexShrink: 0,
+            boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
+            overflow: 'hidden',
+          }}
+        >
+          <TimelineContext.Provider value={ctxValue}>
+            {children}
+          </TimelineContext.Provider>
+        </div>
+      </div>
+
+      {/* Playback bar — stacked below canvas, never overlapping */}
+      <PlaybackBar
+        time={displayTime}
+        actualTime={time}
+        duration={duration}
+        playing={playing}
+        onPlayPause={() => setPlaying(p => !p)}
+        onReset={() => { setTime(0); }}
+        onSeek={(t) => setTime(t)}
+        onHover={(t) => setHoverTime(t)}
+      />
+    </div>
+  );
+}
+
+// ── Playback bar ────────────────────────────────────────────────────────────
+// Play/pause, return-to-begin, scrub track, time display.
+// Uses fixed-width time fields so layout doesn't thrash.
+
+function PlaybackBar({ time, duration, playing, onPlayPause, onReset, onSeek, onHover }) {
+  const trackRef = React.useRef(null);
+  const [dragging, setDragging] = React.useState(false);
+
+  const timeFromEvent = React.useCallback((e) => {
+    const rect = trackRef.current.getBoundingClientRect();
+    const x = clamp((e.clientX - rect.left) / rect.width, 0, 1);
+    return x * duration;
+  }, [duration]);
+
+  const onTrackMove = (e) => {
+    if (!trackRef.current) return;
+    const t = timeFromEvent(e);
+    if (dragging) {
+      onSeek(t);
+    } else {
+      onHover(t);
+    }
+  };
+
+  const onTrackLeave = () => {
+    if (!dragging) onHover(null);
+  };
+
+  const onTrackDown = (e) => {
+    setDragging(true);
+    const t = timeFromEvent(e);
+    onSeek(t);
+    onHover(null);
+  };
+
+  React.useEffect(() => {
+    if (!dragging) return;
+    const onUp = () => setDragging(false);
+    const onMove = (e) => {
+      if (!trackRef.current) return;
+      const t = timeFromEvent(e);
+      onSeek(t);
+    };
+    window.addEventListener('mouseup', onUp);
+    window.addEventListener('mousemove', onMove);
+    return () => {
+      window.removeEventListener('mouseup', onUp);
+      window.removeEventListener('mousemove', onMove);
+    };
+  }, [dragging, timeFromEvent, onSeek]);
+
+  const pct = duration > 0 ? (time / duration) * 100 : 0;
+  const fmt = (t) => {
+    const total = Math.max(0, t);
+    const m = Math.floor(total / 60);
+    const s = Math.floor(total % 60);
+    const cs = Math.floor((total * 100) % 100);
+    return `${String(m).padStart(1, '0')}:${String(s).padStart(2, '0')}.${String(cs).padStart(2, '0')}`;
+  };
+
+  const mono = 'JetBrains Mono, ui-monospace, SFMono-Regular, monospace';
+
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', gap: 12,
+      padding: '8px 16px',
+      background: 'rgba(20,20,20,0.92)',
+      borderTop: '1px solid rgba(255,255,255,0.08)',
+      width: '100%',
+      maxWidth: 680,
+      alignSelf: 'center',
+
+      borderRadius: 8,
+      color: '#f6f4ef',
+      fontFamily: 'Inter, system-ui, sans-serif',
+      userSelect: 'none',
+      flexShrink: 0,
+    }}>
+      <IconButton onClick={onReset} title="Return to start (0)">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M3 2v10M12 2L5 7l7 5V2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round"/>
+        </svg>
+      </IconButton>
+      <IconButton onClick={onPlayPause} title="Play/pause (space)">
+        {playing ? (
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <rect x="3" y="2" width="3" height="10" fill="currentColor"/>
+            <rect x="8" y="2" width="3" height="10" fill="currentColor"/>
+          </svg>
+        ) : (
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 2l9 5-9 5V2z" fill="currentColor"/>
+          </svg>
+        )}
+      </IconButton>
+
+      {/* Current time: fixed width so it doesn't thrash */}
+      <div style={{
+        fontFamily: mono,
+        fontSize: 12,
+        fontVariantNumeric: 'tabular-nums',
+        width: 64, textAlign: 'right',
+        color: '#f6f4ef',
+      }}>
+        {fmt(time)}
+      </div>
+
+      {/* Scrub track */}
+      <div
+        ref={trackRef}
+        onMouseMove={onTrackMove}
+        onMouseLeave={onTrackLeave}
+        onMouseDown={onTrackDown}
+        style={{
+          flex: 1,
+          height: 22,
+          position: 'relative',
+          cursor: 'pointer',
+          display: 'flex', alignItems: 'center',
+        }}
+      >
+        <div style={{
+          position: 'absolute',
+          left: 0, right: 0, height: 4,
+          background: 'rgba(255,255,255,0.12)',
+          borderRadius: 2,
+        }}/>
+        <div style={{
+          position: 'absolute',
+          left: 0, width: `${pct}%`, height: 4,
+          background: 'oklch(72% 0.12 250)',
+          borderRadius: 2,
+        }}/>
+        <div style={{
+          position: 'absolute',
+          left: `${pct}%`, top: '50%',
+          width: 12, height: 12,
+          marginLeft: -6, marginTop: -6,
+          background: '#fff',
+          borderRadius: 6,
+          boxShadow: '0 2px 4px rgba(0,0,0,0.4)',
+        }}/>
+      </div>
+
+      {/* Duration: fixed width */}
+      <div style={{
+        fontFamily: mono,
+        fontSize: 12,
+        fontVariantNumeric: 'tabular-nums',
+        width: 64, textAlign: 'left',
+        color: 'rgba(246,244,239,0.55)',
+      }}>
+        {fmt(duration)}
+      </div>
+    </div>
+  );
+}
+
+function IconButton({ children, onClick, title }) {
+  const [hover, setHover] = React.useState(false);
+  return (
+    <button
+      onClick={onClick}
+      title={title}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        width: 28, height: 28,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: hover ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.04)',
+        border: '1px solid rgba(255,255,255,0.1)',
+        borderRadius: 6,
+        color: '#f6f4ef',
+        cursor: 'pointer',
+        padding: 0,
+        transition: 'background 120ms',
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+
+Object.assign(window, {
+  Easing, interpolate, animate, clamp,
+  TimelineContext, useTime, useTimeline,
+  Sprite, SpriteContext, useSprite,
+  TextSprite, ImageSprite, RectSprite,
+  Stage, PlaybackBar,
+});
+
+
+</script>
+<script type="text/babel" data-presets="react">
+// pub.jsx — The Pub cat, animatable. Stays strictly on-model: two triangle
+// ears, circle head, two cream dot eyes. Supports blink, squint, head tilt,
+// ear wiggle, and optional paws (small red nubs poking out the bottom).
+
+function PubCat({
+  size = 200,
+  inverted = false,        // paper on red vs red on paper
+  blinkState = 0,          // 0 = open, 1 = fully closed
+  squintState = 0,         // 0 = round, 1 = happy arc (for "working" expression)
+  tilt = 0,                // degrees
+  earWiggle = 0,           // -1..1
+  bob = 0,                 // px vertical offset (breathing)
+  pawsOut = 0,             // 0..1 how far paws extend below
+  style = {},
+}) {
+  const fg = inverted ? '#f7f5ef' : '#C8102E';
+  const eye = inverted ? '#C8102E' : '#f7f5ef';
+
+  // Ear wiggle pivots: each ear rotates slightly around its base (inner corner).
+  const leftEarRot = -earWiggle * 8;   // negative so outward
+  const rightEarRot = earWiggle * 8;
+
+  // Eye path: transitions from a circle (blink=0) → thin line (blink=1),
+  // or to a happy upward arc (squint=1).
+  const eyeR = 5.4;
+  const openH = eyeR * 2;
+  const blinkH = Math.max(0.8, openH * (1 - blinkState));
+
+  const renderEye = (cx) => {
+    if (squintState > 0.02) {
+      // Happy squint: ^ shape
+      const amp = 5 * squintState;
+      return (
+        <path
+          d={`M ${cx - 6} ${108 + amp * 0.3} Q ${cx} ${108 - amp} ${cx + 6} ${108 + amp * 0.3}`}
+          stroke={eye}
+          strokeWidth={2.6}
+          strokeLinecap="round"
+          fill="none"
+        />
+      );
+    }
+    return (
+      <ellipse
+        cx={cx}
+        cy={108}
+        rx={eyeR}
+        ry={blinkH / 2}
+        fill={eye}
+      />
+    );
+  };
+
+  return (
+    <div
+      style={{
+        width: size,
+        height: size,
+        display: 'inline-block',
+        transform: `translateY(${bob}px) rotate(${tilt}deg)`,
+        transformOrigin: 'center 70%',
+        ...style,
+      }}
+    >
+      <svg viewBox="0 0 200 200" width={size} height={size} style={{ overflow: 'visible' }}>
+        {/* paws (drawn behind the body so they look like they emerge from under) */}
+        {pawsOut > 0.01 && (
+          <>
+            <ellipse cx="78" cy={168 + (1 - pawsOut) * -4} rx="9" ry={6 * pawsOut} fill={fg} />
+            <ellipse cx="122" cy={168 + (1 - pawsOut) * -4} rx="9" ry={6 * pawsOut} fill={fg} />
+          </>
+        )}
+
+        {/* left ear (pivot at inner base, ~86,68) */}
+        <g style={{ transform: `rotate(${leftEarRot}deg)`, transformOrigin: '86px 68px' }}>
+          <path d="M 52 78 L 64 42 L 86 68 Z" fill={fg} />
+        </g>
+        {/* right ear */}
+        <g style={{ transform: `rotate(${rightEarRot}deg)`, transformOrigin: '114px 68px' }}>
+          <path d="M 148 78 L 136 42 L 114 68 Z" fill={fg} />
+        </g>
+
+        {/* head */}
+        <circle cx="100" cy="112" r="58" fill={fg} />
+
+        {/* eyes */}
+        {renderEye(82)}
+        {renderEye(118)}
+      </svg>
+    </div>
+  );
+}
+
+Object.assign(window, { PubCat });
+
+</script>
+<script type="text/babel" data-presets="react">
+// scenes.jsx — individual scene components composing the 14s Pub story.
+// All scenes sit inside a 1920x1080 Stage; they read useTime()/useSprite().
+
+// ────────────────────────────────────────────────────────────────
+// Shared constants
+// ────────────────────────────────────────────────────────────────
+const STAGE_W = 1920;
+const STAGE_H = 1080;
+const RED = '#C8102E';
+const INK = '#1E1D1B';
+const PAPER = '#F7F5EF';
+const PAPER_2 = '#ECE8DE';
+const SERIF = "'Fraunces', Georgia, serif";
+const SANS = "'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif";
+const MONO = "'JetBrains Mono', ui-monospace, monospace";
+
+// Small helper: fade in + out over a window.
+function fadeWindow(t, start, end, inDur = 0.3, outDur = 0.3) {
+  if (t < start) return 0;
+  if (t > end) return 0;
+  const local = t - start;
+  const total = end - start;
+  if (local < inDur) return Easing.easeOutCubic(local / inDur);
+  if (local > total - outDur) return 1 - Easing.easeInCubic((local - (total - outDur)) / outDur);
+  return 1;
+}
+
+// ────────────────────────────────────────────────────────────────
+// Registration-mark corners (brand detail, ever-present)
+// ────────────────────────────────────────────────────────────────
+function Crosses() {
+  const c = (x, y) => (
+    <g key={`${x}-${y}`} transform={`translate(${x} ${y})`}>
+      <line x1="-9" y1="0" x2="9" y2="0" stroke={INK} strokeOpacity="0.35" strokeWidth="1.5" />
+      <line x1="0" y1="-9" x2="0" y2="9" stroke={INK} strokeOpacity="0.35" strokeWidth="1.5" />
+    </g>
+  );
+  return (
+    <svg
+      viewBox={`0 0 ${STAGE_W} ${STAGE_H}`}
+      width={STAGE_W}
+      height={STAGE_H}
+      style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}
+    >
+      {c(40, 40)}
+      {c(STAGE_W - 40, 40)}
+      {c(40, STAGE_H - 40)}
+      {c(STAGE_W - 40, STAGE_H - 40)}
+    </svg>
+  );
+}
+
+// Corner meta text — like a running header on every frame
+function MetaHeader({ label }) {
+  return (
+    <>
+      <div style={{
+        position: 'absolute',
+        top: 36, left: 72,
+        fontFamily: MONO, fontSize: 14, letterSpacing: 2,
+        textTransform: 'uppercase', color: 'rgba(30,29,27,0.55)',
+      }}>
+        pub.cat · media technology
+      </div>
+      <div style={{
+        position: 'absolute',
+        top: 36, right: 72,
+        fontFamily: MONO, fontSize: 14, letterSpacing: 2,
+        textTransform: 'uppercase', color: 'rgba(30,29,27,0.55)',
+      }}>
+        {label}
+      </div>
+    </>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────
+// SCENE 1 · Wake up (0 – 2.0s)
+// ────────────────────────────────────────────────────────────────
+function SceneWake() {
+  return (
+    <Sprite start={0} end={2.2}>
+      {({ localTime }) => {
+        const t = localTime;
+        // Fade in whole scene quickly
+        const intro = Easing.easeOutCubic(clamp(t / 0.5, 0, 1));
+
+        // Blink cycle: starts CLOSED, opens at 0.4s, slow blink at 1.2s
+        let blink = 0;
+        if (t < 0.45) blink = 1 - Easing.easeOutCubic(clamp(t / 0.45, 0, 1));
+        else if (t > 1.15 && t < 1.4) blink = Math.sin(((t - 1.15) / 0.25) * Math.PI);
+
+        // Ear wiggle at 0.6s (wake-up stretch)
+        let wiggle = 0;
+        if (t > 0.55 && t < 1.1) {
+          const w = (t - 0.55) / 0.55;
+          wiggle = Math.sin(w * Math.PI * 2) * (1 - w);
+        }
+
+        // Subtle bob
+        const bob = Math.sin(t * 1.6) * 1.4;
+
+        // Tilt (little head turn at end)
+        const tilt = t > 1.5 ? Easing.easeOutCubic(clamp((t - 1.5) / 0.5, 0, 1)) * 4 : 0;
+
+        // Scale pop
+        const scale = interpolate([0, 0.5, 2.2], [0.82, 1.0, 1.0], Easing.easeOutBack)(t);
+
+        // Exit fade
+        const exit = 1 - Easing.easeInCubic(clamp((t - 1.9) / 0.3, 0, 1));
+        const opacity = intro * exit;
+
+        return (
+          <div style={{ position: 'absolute', inset: 0, opacity }}>
+            {/* Soft halo behind cat */}
+            <div
+              style={{
+                position: 'absolute',
+                left: STAGE_W / 2 - 260, top: STAGE_H / 2 - 260,
+                width: 520, height: 520,
+                borderRadius: '50%',
+                background: 'radial-gradient(circle, rgba(200,16,46,0.10) 0%, rgba(200,16,46,0) 60%)',
+                opacity: intro * (t > 0.4 ? 1 : 0.3),
+              }}
+            />
+
+            {/* Pub, centered */}
+            <div
+              style={{
+                position: 'absolute',
+                left: STAGE_W / 2,
+                top: STAGE_H / 2,
+                transform: `translate(-50%, -50%) scale(${scale})`,
+              }}
+            >
+              <PubCat size={320} blinkState={blink} earWiggle={wiggle} bob={bob} tilt={tilt} />
+            </div>
+
+            {/* Caption below */}
+            <div style={{
+              position: 'absolute',
+              left: 0, right: 0,
+              top: STAGE_H / 2 + 230,
+              textAlign: 'center',
+              fontFamily: MONO, fontSize: 16, letterSpacing: 3,
+              textTransform: 'uppercase', color: 'rgba(30,29,27,0.55)',
+              opacity: fadeWindow(t, 0.7, 1.95, 0.35, 0.3),
+            }}>
+              meet pub
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+// scenes-v2.jsx — Continuous-timeline scenes for Pub.cat Video.
+// Replaces the hard-cut Sprite scenes with shared elements that morph
+// across boundaries. Expects window globals: React, useTime, Easing,
+// PubCat, STAGE_W, STAGE_H, RED, INK, PAPER, PAPER_2, SERIF, SANS, MONO.
+
+// ── Geographic data: simplified continent outlines (lon, lat in degrees)
+const CONTINENTS = [
+  // North America
+  [[-165,70],[-140,70],[-125,55],[-125,40],[-118,32],[-105,25],[-95,18],[-85,15],[-82,25],[-80,30],[-78,35],[-75,42],[-72,45],[-65,45],[-60,48],[-55,52],[-60,60],[-70,65],[-80,70],[-95,73],[-120,73],[-145,70],[-165,70]],
+  [[-92,17],[-85,13],[-78,9],[-75,12],[-80,15],[-88,18],[-92,17]],
+  // South America
+  [[-80,12],[-70,12],[-60,10],[-50,0],[-42,-8],[-38,-15],[-40,-25],[-50,-35],[-58,-40],[-65,-50],[-72,-54],[-75,-45],[-78,-35],[-80,-20],[-81,-5],[-80,12]],
+  // Greenland
+  [[-55,60],[-40,60],[-20,70],[-25,82],[-45,83],[-55,75],[-55,60]],
+  // Europe mainland
+  [[-10,36],[0,36],[10,38],[15,40],[28,38],[30,42],[40,45],[45,50],[40,58],[30,62],[15,65],[5,62],[-5,58],[-10,50],[-10,36]],
+  // Scandinavia
+  [[5,58],[12,55],[18,58],[25,65],[30,70],[20,71],[10,65],[5,58]],
+  // UK/Ireland
+  [[-8,50],[-2,50],[0,54],[-4,58],[-8,54],[-8,50]],
+  // Africa
+  [[-18,35],[-5,35],[10,35],[20,32],[32,30],[35,22],[42,15],[48,12],[50,5],[42,-5],[40,-18],[35,-27],[20,-34],[15,-32],[10,-20],[5,-8],[-5,5],[-15,15],[-17,20],[-18,35]],
+  // Arabia
+  [[35,30],[45,25],[55,20],[55,12],[48,12],[42,15],[38,22],[35,30]],
+  // Asia mass
+  [[30,60],[40,55],[55,50],[70,45],[85,48],[100,50],[115,45],[130,45],[140,50],[150,55],[155,62],[140,68],[120,70],[100,72],[80,72],[60,70],[40,68],[30,62],[30,60]],
+  // India
+  [[70,32],[78,30],[88,28],[92,22],[82,10],[77,8],[72,20],[70,32]],
+  // SE Asia
+  [[95,25],[102,22],[107,15],[108,10],[105,5],[100,5],[95,15],[95,25]],
+  // China coast
+  [[108,38],[118,38],[122,32],[120,25],[108,22],[105,30],[108,38]],
+  // Japan
+  [[133,32],[140,35],[143,40],[145,43],[141,45],[135,38],[133,32]],
+  // Indonesia
+  [[95,3],[105,-2],[115,-5],[125,-5],[135,-3],[140,0],[130,2],[115,2],[100,3],[95,3]],
+  // Australia
+  [[115,-25],[125,-15],[135,-12],[145,-12],[153,-25],[150,-35],[140,-38],[130,-35],[120,-35],[115,-25]],
+  // New Zealand
+  [[170,-35],[175,-38],[176,-43],[172,-46],[168,-43],[170,-35]],
+  // Antarctica strip
+  [[-180,-70],[180,-70],[180,-82],[-180,-82],[-180,-70]],
+];
+
+function orthoProject(lon, lat, yaw, radius) {
+  const lonR = (lon - yaw) * Math.PI / 180;
+  const latR = lat * Math.PI / 180;
+  const cosLat = Math.cos(latR);
+  const x = radius * cosLat * Math.sin(lonR);
+  const y = -radius * Math.sin(latR);
+  const z = cosLat * Math.cos(lonR);
+  return { x, y, z, visible: z > 0 };
+}
+
+function polyToOrthoPath(poly, yaw, radius) {
+  let str = '';
+  let zsum = 0, n = 0, anyVisible = false;
+  for (let i = 0; i < poly.length; i++) {
+    const [lon, lat] = poly[i];
+    const p = orthoProject(lon, lat, yaw, radius);
+    if (p.visible) anyVisible = true;
+    zsum += p.z; n++;
+    let px = p.x, py = p.y;
+    if (!p.visible) {
+      const mag = Math.hypot(p.x, p.y) || 1;
+      px = (p.x / mag) * radius;
+      py = (p.y / mag) * radius;
+    }
+    str += (i === 0 ? 'M' : 'L') + px.toFixed(2) + ',' + py.toFixed(2) + ' ';
+  }
+  str += 'Z';
+  return { path: str, avgZ: n ? zsum / n : 0, anyVisible };
+}
+
+function equirect(lon, lat, mapW, mapH, offsetX, offsetY) {
+  offsetX = offsetX || 0; offsetY = offsetY || 0;
+  return {
+    x: offsetX + ((lon + 180) / 360) * mapW,
+    y: offsetY + ((90 - lat) / 180) * mapH,
+  };
+}
+
+function polyToEquirectPath(poly, mapW, mapH, offsetX, offsetY) {
+  let str = '';
+  for (let i = 0; i < poly.length; i++) {
+    const [lon, lat] = poly[i];
+    const p = equirect(lon, lat, mapW, mapH, offsetX, offsetY);
+    str += (i === 0 ? 'M' : 'L') + p.x.toFixed(2) + ',' + p.y.toFixed(2) + ' ';
+  }
+  str += 'Z';
+  return str;
+}
+
+// ────────────────────────────────────────────────────────────────
+// SCENE 2 · Scan — Pub watches a rotating Earth
+// ────────────────────────────────────────────────────────────────
+function SceneScan() {
+  const t = useTime();
+  const op = Math.max(0,
+    Math.min(1, (t - 1.8) / 0.4) *
+    Math.min(1, Math.max(0, (5.0 - t) / 0.4))
+  );
+  if (op <= 0.001) return null;
+
+  const localT = t - 2.0;
+  const SIGNAL_POINTS = [
+    { lon: -74, lat: 40, start: 0.6 },
+    { lon: 2, lat: 48, start: 0.9 },
+    { lon: 139, lat: 35, start: 1.2 },
+    { lon: 77, lat: 28, start: 1.5 },
+    { lon: -46, lat: -23, start: 1.8 },
+    { lon: 31, lat: 30, start: 2.1 },
+    { lon: 151, lat: -33, start: 2.4 },
+  ];
+
+  const yaw = localT * 28;
+  const R = 200;
+
+  const projected = CONTINENTS.map((poly, i) => {
+    const r = polyToOrthoPath(poly, yaw, R);
+    return { path: r.path, avgZ: r.avgZ, anyVisible: r.anyVisible, key: i };
+  }).filter(p => p.anyVisible).sort((a, b) => a.avgZ - b.avgZ);
+
+  const FEED = [
+    'reuters · markets open', 'bloomberg · pmi mixed', 'ft · ecb holds',
+    'nikkei · tokyo +0.4%', 'handelsblatt · dax flat', 'xinhua · cny stable',
+    'bbc · brief released', 'rtr · oil steady',
+  ];
+  const tickerOp = Math.max(0, Math.min(1, (localT - 0.3) / 0.4)) *
+                   Math.max(0, Math.min(1, (2.4 - localT) / 0.4));
+  const tickerSpeed = 220;
+
+  const vb = `${-R * 1.2} ${-R * 1.2} ${R * 2.4} ${R * 2.4}`;
+
+  return (
+    <div style={{ position: 'absolute', inset: 0, opacity: op }}>
+      <div style={{
+        position: 'absolute',
+        left: STAGE_W / 2, top: STAGE_H / 2 + 20,
+        transform: 'translate(-50%, -50%)',
+      }}>
+        <svg width={R * 2.4} height={R * 2.4} viewBox={vb} style={{ overflow: 'visible' }}>
+          <defs>
+            <clipPath id="sphereClip"><circle cx="0" cy="0" r={R} /></clipPath>
+            <pattern id="halftoneGlobe" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse">
+              <circle cx="3.5" cy="3.5" r="1.5" fill={INK} />
+            </pattern>
+            <pattern id="halftoneGlobeFine" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
+              <circle cx="2.5" cy="2.5" r="0.9" fill={INK} />
+            </pattern>
+          </defs>
+          {/* paper disc (no gradient — editorial flat) */}
+          <circle cx="0" cy="0" r={R} fill={PAPER_2} />
+          {/* Graticule: crisp thin lines, meridian spacing every 30° */}
+          <g clipPath="url(#sphereClip)" opacity="0.35">
+            {[-60, -30, 0, 30, 60].map((lat, i) => {
+              const y = -R * Math.sin(lat * Math.PI / 180);
+              const rx = R * Math.cos(lat * Math.PI / 180);
+              return <ellipse key={'lat'+i} cx="0" cy={y} rx={rx} ry={rx * 0.14 + 1}
+                fill="none" stroke={INK} strokeWidth={lat === 0 ? 0.8 : 0.5} />;
+            })}
+            {[0, 30, 60, 90, 120, 150].map((lon, i) => {
+              const off = ((lon - yaw) % 360 + 360) % 360;
+              const rx = R * Math.abs(Math.sin(off * Math.PI / 180));
+              return <ellipse key={'lon'+i} cx="0" cy="0" rx={rx} ry={R}
+                fill="none" stroke={INK} strokeWidth="0.5" />;
+            })}
+          </g>
+          {/* Red misregistration ghost: offset behind ink plate */}
+          <g clipPath="url(#sphereClip)" transform="translate(1.5, 1.2)">
+            {projected.map(p => (
+              <path key={'r'+p.key} d={p.path} fill={RED} fillOpacity="0.22" />
+            ))}
+          </g>
+          {/* Ink plate: halftone continents */}
+          <g clipPath="url(#sphereClip)">
+            {projected.map(p => {
+              const isBack = p.avgZ < 0.3;
+              return (
+                <path
+                  key={p.key}
+                  d={p.path}
+                  fill={isBack ? 'url(#halftoneGlobeFine)' : 'url(#halftoneGlobe)'}
+                  opacity={0.55 + 0.35 * Math.max(0, p.avgZ)}
+                />
+              );
+            })}
+          </g>
+          {/* Crosshair register marks at graticule intersections (every 30°, front-side only) */}
+          <g clipPath="url(#sphereClip)" opacity="0.28">
+            {[-60, -30, 0, 30, 60].flatMap((lat) =>
+              [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((lon) => {
+                const p = orthoProject(lon, lat, yaw, R);
+                if (!p.visible || p.z < 0.35) return null;
+                return (
+                  <g key={`${lat}-${lon}`} transform={`translate(${p.x} ${p.y})`}>
+                    <line x1="-3" y1="0" x2="3" y2="0" stroke={INK} strokeWidth="0.7" />
+                    <line x1="0" y1="-3" x2="0" y2="3" stroke={INK} strokeWidth="0.7" />
+                  </g>
+                );
+              })
+            )}
+          </g>
+          {SIGNAL_POINTS.map((s, i) => {
+            const age = localT - s.start;
+            if (age < 0 || age > 1.4) return null;
+            const p = orthoProject(s.lon, s.lat, yaw, R);
+            if (!p.visible) return null;
+            const pT = age / 1.4;
+            const scale = Easing.easeOutCubic(pT);
+            const opB = 1 - pT;
+            return (
+              <g key={i}>
+                <circle cx={p.x} cy={p.y} r={3 + scale * 2} fill={RED} opacity={opB} />
+                <circle cx={p.x} cy={p.y} r={10 * scale} fill="none"
+                  stroke={RED} strokeWidth="1.5" opacity={opB * 0.6} />
+              </g>
+            );
+          })}
+          {/* Plate edge */}
+          <circle cx="0" cy="0" r={R} fill="none" stroke={INK} strokeOpacity="0.45" strokeWidth="1.2" />
+          {/* Corner register crosshairs outside the sphere */}
+          {[[-R-18,-R-18],[R+18,-R-18],[-R-18,R+18],[R+18,R+18]].map(([cx, cy], i) => (
+            <g key={i} transform={`translate(${cx} ${cy})`}>
+              <circle cx="0" cy="0" r="5" fill="none" stroke={INK} strokeOpacity="0.35" strokeWidth="0.8" />
+              <line x1="-8" y1="0" x2="8" y2="0" stroke={INK} strokeOpacity="0.35" strokeWidth="0.8" />
+              <line x1="0" y1="-8" x2="0" y2="8" stroke={INK} strokeOpacity="0.35" strokeWidth="0.8" />
+            </g>
+          ))}
+          {/* Plate caption */}
+          <text x="0" y={R + 46} textAnchor="middle"
+            fontFamily="JetBrains Mono, monospace" fontSize="10" letterSpacing="3"
+            fill={INK} fillOpacity="0.5">
+            PLATE · WORLD · {Math.round(yaw) % 360}°
+          </text>
+        </svg>
+      </div>
+
+      <div style={{
+        position: 'absolute',
+        bottom: 130, left: 0, right: 0, height: 28,
+        overflow: 'hidden',
+        opacity: tickerOp,
+        maskImage: 'linear-gradient(to right, transparent 0, black 10%, black 90%, transparent 100%)',
+        WebkitMaskImage: 'linear-gradient(to right, transparent 0, black 10%, black 90%, transparent 100%)',
+      }}>
+        {FEED.map((f, i) => {
+          const baseX = STAGE_W + i * 280;
+          const x = baseX - localT * tickerSpeed;
+          return (
+            <div key={i} style={{
+              position: 'absolute',
+              left: x, top: 4,
+              fontFamily: MONO, fontSize: 13, letterSpacing: 2,
+              color: 'rgba(30,29,27,0.45)',
+              textTransform: 'uppercase', whiteSpace: 'nowrap',
+            }}>
+              {'→  '}{f}
+            </div>
+          );
+        })}
+      </div>
+
+      <div style={{
+        position: 'absolute',
+        left: 72, bottom: 200,
+        fontFamily: SERIF, fontSize: 72,
+        letterSpacing: -2, color: INK, lineHeight: 1,
+        opacity: Math.max(0, Math.min(1, (localT - 0.4) / 0.4)) *
+                 Math.max(0, Math.min(1, (2.6 - localT) / 0.3)),
+      }}>
+        <span style={{ color: 'rgba(30,29,27,0.45)' }}>he watches </span>
+        <em style={{ color: RED, fontStyle: 'italic' }}>everything.</em>
+      </div>
+      <div style={{
+        position: 'absolute',
+        left: 72, bottom: 160,
+        fontFamily: MONO, fontSize: 13, letterSpacing: 2,
+        textTransform: 'uppercase', color: 'rgba(30,29,27,0.55)',
+        opacity: Math.max(0, Math.min(1, (localT - 0.6) / 0.4)) *
+                 Math.max(0, Math.min(1, (2.6 - localT) / 0.3)),
+      }}>
+        12,000 sources · 200 feeds · 6 continents
+      </div>
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────
+// SCENE 3 · Write — slides up, then shrinks to become EN source card
+// ────────────────────────────────────────────────────────────────
+function SceneWrite() {
+  const t = useTime();
+  const HEADLINE = 'Markets open calm after central bank brief.';
+  const BODY = [
+    'By Pub.cat desk · 08:14 GMT', '',
+    'Equities across major indices opened within',
+    'a narrow band Monday after the central bank',
+    'reaffirmed its current policy stance. Two',
+    'sources at the meeting confirmed no change',
+    'to the deposit rate.',
+  ];
+
+  const slideT = Math.max(0, Math.min(1, (t - 4.2) / 0.7));
+  const slideY = (1 - Easing.easeOutCubic(slideT)) * 900;
+
+  const exitT = Math.max(0, Math.min(1, (t - 7.3) / 0.6));
+  const morphEase = Easing.easeInOutCubic(exitT);
+  const pageScale = 1 - morphEase * 0.75;
+  const exitOp = 1 - Math.max(0, (exitT - 0.6) / 0.4);
+
+  if (t < 4.2) return null;
+  if (exitOp <= 0.02) return null;
+
+  const localT = t - 4.5;
+  const typeProgress = Math.max(0, Math.min(1, (localT - 0.5) / 1.5));
+  const visibleChars = Math.floor(typeProgress * HEADLINE.length);
+  const typedHeadline = HEADLINE.slice(0, visibleChars);
+  const bodyProgress = Math.max(0, Math.min(1, (localT - 1.9) / 0.7));
+  const cursorOn = Math.floor(localT * 2) % 2 === 0;
+  const stampT = Math.max(0, Math.min(1, (localT - 2.3) / 0.35));
+  const stampScale = stampT > 0 ? 1.8 - 0.8 * Easing.easeOutBack(stampT) : 0;
+  const pawTap = Math.abs(Math.sin(localT * 8)) * 0.4;
+
+  const fullW = 1120, fullH = 640;
+  const centerY = STAGE_H / 2 - 180 * (1 - morphEase);
+  const pubBaseX = STAGE_W / 2;
+  const pubBaseY = 380 - (1 - slideT) * 900;
+  const pubMorphY = STAGE_H / 2;
+  const pubX = pubBaseX;
+  const pubY = pubBaseY + (pubMorphY - pubBaseY) * morphEase;
+
+  return (
+    <div style={{ position: 'absolute', inset: 0, opacity: exitOp }}>
+      <div style={{
+        position: 'absolute',
+        left: STAGE_W / 2,
+        top: centerY + slideY,
+        width: fullW, height: fullH,
+        marginLeft: -fullW / 2,
+        transform: `scale(${pageScale})`,
+        transformOrigin: 'center',
+        background: '#fff',
+        border: `1px solid rgba(30,29,27,${0.15 + morphEase * 0.05})`,
+        borderRadius: 14,
+        boxShadow: morphEase > 0 ? '0 8px 24px rgba(0,0,0,0.08)' : '0 30px 80px rgba(0,0,0,0.08)',
+        padding: '56px 72px',
+        opacity: slideT,
+      }}>
+        <div style={{
+          fontFamily: MONO, fontSize: 13, letterSpacing: 2,
+          textTransform: 'uppercase', color: 'rgba(30,29,27,0.55)',
+          marginBottom: 28, display: 'flex', justifyContent: 'space-between',
+        }}>
+          <span>pub.cat · world · EN</span>
+          <span>{morphEase > 0.3 ? 'ready' : 'draft · 0.3'}</span>
+        </div>
+        <div style={{
+          fontSize: 68, lineHeight: 1.05, letterSpacing: -1.8,
+          fontFamily: SERIF, fontWeight: 400, minHeight: 156, color: INK,
+        }}>
+          {typedHeadline}
+          {typeProgress < 1 && typeProgress > 0 && cursorOn && (
+            <span style={{ display: 'inline-block', width: 4, height: 56, background: INK, marginLeft: 4, verticalAlign: 'baseline', transform: 'translateY(6px)' }} />
+          )}
+        </div>
+        <div style={{ marginTop: 32, fontFamily: SANS, fontSize: 20, lineHeight: 1.6, color: 'rgba(30,29,27,0.75)' }}>
+          {BODY.map((line, i) => {
+            const lineRevealPoint = i / BODY.length;
+            const visible = bodyProgress > lineRevealPoint;
+            return (
+              <div key={i} style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? 'translateY(0)' : 'translateY(6px)',
+                transition: 'opacity 200ms, transform 200ms',
+                minHeight: line ? 32 : 16,
+                color: i === 0 ? 'rgba(30,29,27,0.55)' : 'rgba(30,29,27,0.75)',
+                fontFamily: i === 0 ? MONO : SANS,
+                fontSize: i === 0 ? 13 : 20,
+                letterSpacing: i === 0 ? 2 : 'normal',
+                textTransform: i === 0 ? 'uppercase' : 'none',
+                marginBottom: i === 0 ? 16 : 4,
+              }}>
+                {line || '\u00A0'}
+              </div>
+            );
+          })}
+        </div>
+        {stampT > 0 && morphEase < 0.3 && (
+          <div style={{
+            position: 'absolute', right: 60, bottom: 60,
+            transform: `rotate(-8deg) scale(${stampScale})`,
+            opacity: stampT,
+            border: `3px solid ${RED}`, color: RED,
+            padding: '8px 18px', fontFamily: MONO,
+            fontSize: 24, fontWeight: 700, letterSpacing: 3,
+            borderRadius: 6, background: 'rgba(200,16,46,0.04)',
+          }}>VERIFIED</div>
+        )}
+      </div>
+
+      {typeProgress < 1 && typeProgress > 0 && morphEase < 0.2 && [0, 1, 2].map(i => {
+        const age = (localT * 6 + i * 0.33) % 1;
+        return (
+          <div key={i} style={{
+            position: 'absolute',
+            left: STAGE_W / 2 - 2 + (i - 1) * 20,
+            top: 490 + slideY * 0.5 - age * 30,
+            width: 3, height: 3,
+            background: INK, opacity: 1 - age,
+            borderRadius: '50%',
+          }} />
+        );
+      })}
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────
+// SCENE 4 · Translate — cards radiate, then collapse into plane
+// ────────────────────────────────────────────────────────────────
+function SceneTranslate() {
+  const t = useTime();
+  const LANGUAGES = [
+    { code: 'ES', text: 'Mercados abren en calma tras el informe del BCE.', ang: -90 },
+    { code: 'DE', text: 'Märkte öffnen ruhig nach EZB-Erklärung.', ang: -45 },
+    { code: 'FR', text: 'Marchés ouvrent calmes après le brief BCE.', ang: 0 },
+    { code: 'IT', text: 'Mercati aprono calmi dopo la BCE.', ang: 45 },
+    { code: 'PT', text: 'Mercados abrem calmos após o BCE.', ang: 90 },
+    { code: 'ZH', text: '央行简报后市场平稳开盘。', ang: 135 },
+    { code: 'JA', text: '中央銀行発表後、市場は落ち着いた。', ang: 180 },
+    { code: 'AR', text: 'الأسواق تفتح بهدوء بعد إفادة البنك المركزي.', ang: -135 },
+  ];
+
+  const sceneOp = Math.max(0, Math.min(1, (t - 7.5) / 0.4));
+  if (t < 7.5) return null;
+  const collapseT = Math.max(0, Math.min(1, (t - 10.3) / 0.7));
+  const collapseEase = Easing.easeInOutCubic(collapseT);
+  const fadeOut = 1 - Math.max(0, Math.min(1, (t - 10.7) / 0.4));
+  const op = sceneOp * fadeOut;
+  if (op <= 0.02) return null;
+
+  const localT = t - 7.5;
+  const baseX = STAGE_W / 2;
+  const baseY = STAGE_H / 2;
+
+  return (
+    <div style={{ position: 'absolute', inset: 0, opacity: op }}>
+      <div style={{
+        position: 'absolute',
+        left: 72, top: 140,
+        fontFamily: SERIF, fontSize: 56,
+        letterSpacing: -1.5, color: INK, lineHeight: 1,
+        opacity: Math.max(0, Math.min(1, (localT - 0.2) / 0.3)) * (1 - collapseEase),
+      }}>
+        one story. <em style={{ color: RED, fontStyle: 'italic' }}>every language.</em>
+      </div>
+
+      <div style={{
+        position: 'absolute',
+        left: baseX, top: baseY,
+        transform: `translate(-50%, -50%) scale(${1 - collapseEase * 0.4})`,
+        width: 280,
+        background: '#fff',
+        border: '1px solid rgba(30,29,27,0.15)',
+        borderRadius: 10,
+        padding: '16px 20px',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
+      }}>
+        <div style={{
+          fontFamily: MONO, fontSize: 11, letterSpacing: 2,
+          color: RED, marginBottom: 6,
+        }}>EN · SOURCE</div>
+        <div style={{
+          fontFamily: SERIF, fontSize: 16, lineHeight: 1.2,
+          letterSpacing: -0.2, color: INK,
+        }}>
+          Markets open calm after central bank brief.
+        </div>
+      </div>
+
+      {LANGUAGES.map((lang, i) => {
+        const startT = 0.2 + i * 0.11;
+        const cardT = Math.max(0, Math.min(1, (localT - startT) / 0.5));
+        if (cardT <= 0) return null;
+        const eased = Easing.easeOutBack(cardT);
+        const rad = lang.ang * Math.PI / 180;
+        const maxDist = 520, maxDistY = 260;
+        const dist = maxDist * eased * (1 - collapseEase);
+        const distY = maxDistY * eased * (1 - collapseEase);
+        const x = baseX + Math.cos(rad) * dist;
+        const y = baseY + Math.sin(rad) * distY;
+        const cardScale = (0.5 + 0.5 * eased) * (1 - collapseEase * 0.7);
+        return (
+          <div key={lang.code} style={{
+            position: 'absolute',
+            left: x, top: y,
+            transform: `translate(-50%, -50%) scale(${cardScale})`,
+            opacity: cardT * (1 - collapseEase * 0.3),
+            width: 300,
+            background: '#fff',
+            border: '1px solid rgba(30,29,27,0.12)',
+            borderRadius: 10,
+            padding: '18px 22px',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
+            direction: lang.code === 'AR' ? 'rtl' : 'ltr',
+          }}>
+            <div style={{
+              fontFamily: MONO, fontSize: 11, letterSpacing: 2,
+              color: RED, marginBottom: 8,
+            }}>{lang.code}</div>
+            <div style={{
+              fontFamily: SERIF, fontSize: 20, lineHeight: 1.2,
+              letterSpacing: -0.3, color: INK,
+            }}>{lang.text}</div>
+          </div>
+        );
+      })}
+
+      <svg style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} width={STAGE_W} height={STAGE_H}>
+        {LANGUAGES.map((lang, i) => {
+          const startT = 0.05 + i * 0.11;
+          const lineT = Math.max(0, Math.min(1, (localT - startT) / 0.4));
+          if (lineT <= 0) return null;
+          const rad = lang.ang * Math.PI / 180;
+          const maxDist = 520, maxDistY = 260;
+          const eL = Easing.easeOutCubic(lineT) * (1 - collapseEase);
+          const x2 = baseX + Math.cos(rad) * maxDist * eL;
+          const y2 = baseY + Math.sin(rad) * maxDistY * eL;
+          return (
+            <line key={i} x1={baseX} y1={baseY} x2={x2} y2={y2}
+              stroke={RED} strokeOpacity={0.25 * (1 - collapseEase)}
+              strokeWidth="1.5" strokeDasharray="2 5" />
+          );
+        })}
+      </svg>
+
+      <div style={{
+        display: 'none',
+      }}>
+      </div>
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────
+// SCENE 5 · Publish — plane over real map, dropping papers on cities
+// ────────────────────────────────────────────────────────────────
+function ScenePublish() {
+  const t = useTime();
+  const op = Math.max(0, Math.min(1, (t - 10.6) / 0.4)) *
+             Math.max(0, Math.min(1, (13.0 - t) / 0.3));
+  if (op <= 0.02) return null;
+
+  const localT = t - 10.7;
+  const mapW = 1600, mapH = 800;
+  const mapX = (STAGE_W - mapW) / 2;
+  const mapY = STAGE_H / 2 - mapH / 2 + 40;
+
+  const CITIES = [
+    { name: 'LONDON', lon: -0.1, lat: 51.5, dropT: 0.55 },
+    { name: 'NEW YORK', lon: -74, lat: 40.7, dropT: 0.80 },
+    { name: 'MADRID', lon: -3.7, lat: 40.4, dropT: 1.05 },
+    { name: 'BERLIN', lon: 13.4, lat: 52.5, dropT: 1.25 },
+    { name: 'TOKYO', lon: 139.7, lat: 35.7, dropT: 1.45 },
+    { name: 'SÃO PAULO', lon: -46.6, lat: -23.5, dropT: 1.65 },
+    { name: 'MUMBAI', lon: 72.9, lat: 19.1, dropT: 1.82 },
+    { name: 'SYDNEY', lon: 151.2, lat: -33.9, dropT: 1.98 },
+    { name: 'CAIRO', lon: 31.2, lat: 30.0, dropT: 2.12 },
+  ];
+
+  const planeT = Math.max(0, Math.min(1, localT / 2.3));
+  const ePlane = Easing.easeInOutSine(planeT);
+  const planeX = STAGE_W * 0.08 + ePlane * (STAGE_W * 0.84);
+  const planeY = mapY + mapH * 0.18 + Math.sin(planeT * Math.PI * 1.2) * 120 - ePlane * 30;
+  const planeRot = -6 + Math.sin(planeT * Math.PI * 2) * 4;
+
+  const counterT = Math.max(0, Math.min(1, (localT - 0.3) / 1.9));
+  // Eased ramp to a 6-figure view count to reflect real reach.
+  const counter = Math.floor(Easing.easeOutCubic(counterT) * 487392);
+
+  return (
+    <div style={{ position: 'absolute', inset: 0, opacity: op }}>
+      <div style={{
+        position: 'absolute',
+        left: 72, top: 110,
+        fontFamily: SERIF, fontSize: 56,
+        letterSpacing: -1.5, color: INK, lineHeight: 1,
+        opacity: Math.max(0, Math.min(1, (localT - 0.2) / 0.3)),
+      }}>
+        then he <em style={{ color: RED, fontStyle: 'italic' }}>publishes.</em>
+      </div>
+      <div style={{
+        position: 'absolute',
+        right: 72, top: 92,
+        textAlign: 'right',
+        opacity: Math.max(0, Math.min(1, (localT - 0.3) / 0.3)),
+      }}>
+        <div style={{
+          fontFamily: MONO, fontSize: 14, letterSpacing: 4,
+          textTransform: 'uppercase', color: 'rgba(30,29,27,0.6)',
+          marginBottom: 8,
+        }}>
+          VIEWS · LIVE
+        </div>
+        <div style={{
+          fontFamily: SERIF, fontStyle: 'italic', fontSize: 104,
+          color: RED, lineHeight: 0.95, letterSpacing: -2,
+          fontVariantNumeric: 'tabular-nums',
+        }}>
+          {counter.toLocaleString()}
+        </div>
+        <div style={{
+          fontFamily: MONO, fontSize: 11, letterSpacing: 3,
+          textTransform: 'uppercase', color: 'rgba(30,29,27,0.45)',
+          marginTop: 6,
+        }}>
+          readers · 90 countries · past 24h
+        </div>
+      </div>
+
+      <svg style={{ position: 'absolute', left: mapX, top: mapY }} width={mapW} height={mapH}>
+        <defs>
+          <pattern id="mapHalftone" x="0" y="0" width="9" height="9" patternUnits="userSpaceOnUse">
+            <circle cx="4.5" cy="4.5" r="1.8" fill={INK} />
+          </pattern>
+          <clipPath id="mapClip">
+            <rect x="0" y="0" width={mapW} height={mapH} rx="4" />
+          </clipPath>
+          {CONTINENTS.map((poly, i) => (
+            <clipPath key={'cc'+i} id={`cont${i}`}>
+              <path d={polyToEquirectPath(poly, mapW, mapH, 0, 0)} />
+            </clipPath>
+          ))}
+        </defs>
+        {/* plate frame (top + bottom bars as print sheet edges) */}
+        <rect x="0" y="0" width={mapW} height={mapH} fill={PAPER_2} fillOpacity="0.4" rx="4" />
+        <rect x="0" y="0" width={mapW} height="1" fill={INK} fillOpacity="0.5" />
+        <rect x="0" y={mapH - 1} width={mapW} height="1" fill={INK} fillOpacity="0.5" />
+        {/* Graticule */}
+        <g clipPath="url(#mapClip)" opacity="0.5">
+          {[-60, -30, 0, 30, 60].map((lat, i) => {
+            const y = ((90 - lat) / 180) * mapH;
+            return <line key={i} x1="0" y1={y} x2={mapW} y2={y}
+              stroke={INK} strokeWidth={lat === 0 ? 0.9 : 0.5}
+              strokeOpacity={lat === 0 ? 0.4 : 0.2}
+              strokeDasharray={lat === 0 ? '0' : '3 6'} />;
+          })}
+          {[-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150].map((lon, i) => {
+            const x = ((lon + 180) / 360) * mapW;
+            return <line key={'v'+i} x1={x} y1="0" x2={x} y2={mapH}
+              stroke={INK} strokeOpacity={lon === 0 ? 0.35 : 0.15}
+              strokeWidth={lon === 0 ? 0.8 : 0.5}
+              strokeDasharray={lon === 0 ? '0' : '3 6'} />;
+          })}
+        </g>
+        {/* Red misregistration: continents offset in red, drawn first */}
+        {CONTINENTS.map((poly, i) => (
+          <path key={'rm'+i} d={polyToEquirectPath(poly, mapW, mapH, 2, 1.5)}
+            fill={RED} fillOpacity="0.18" />
+        ))}
+        {/* Halftone-filled continents (each poly clipped, then patterned rect) */}
+        {CONTINENTS.map((_, i) => (
+          <g key={'h'+i} clipPath={`url(#cont${i})`}>
+            <rect x="0" y="0" width={mapW} height={mapH} fill="url(#mapHalftone)" opacity="0.55" />
+          </g>
+        ))}
+        {/* Continent outlines */}
+        {CONTINENTS.map((poly, i) => (
+          <path key={'o'+i} d={polyToEquirectPath(poly, mapW, mapH, 0, 0)}
+            fill="none" stroke={INK} strokeOpacity="0.55" strokeWidth="1" strokeLinejoin="round" />
+        ))}
+        {/* Register crosshairs at corners of the plate */}
+        {[[14, 14], [mapW - 14, 14], [14, mapH - 14], [mapW - 14, mapH - 14]].map(([cx, cy], i) => (
+          <g key={'crn'+i} transform={`translate(${cx} ${cy})`}>
+            <circle cx="0" cy="0" r="5" fill="none" stroke={INK} strokeOpacity="0.45" strokeWidth="0.8" />
+            <line x1="-9" y1="0" x2="9" y2="0" stroke={INK} strokeOpacity="0.45" strokeWidth="0.8" />
+            <line x1="0" y1="-9" x2="0" y2="9" stroke={INK} strokeOpacity="0.45" strokeWidth="0.8" />
+          </g>
+        ))}
+        {/* Plate banner */}
+        <text x="18" y={mapH - 10}
+          fontFamily="JetBrains Mono, monospace" fontSize="10" letterSpacing="3"
+          fill={INK} fillOpacity="0.55">
+          PUB.CAT · PLATE B · WORLD · EQUIRECTANGULAR
+        </text>
+        <text x={mapW - 18} y={mapH - 10} textAnchor="end"
+          fontFamily="JetBrains Mono, monospace" fontSize="10" letterSpacing="3"
+          fill={INK} fillOpacity="0.55">
+          2ND EDITION · LIVE
+        </text>
+      </svg>
+
+      {CITIES.map((c, i) => {
+        const p = equirect(c.lon, c.lat, mapW, mapH, mapX, mapY);
+        const age = localT - c.dropT;
+        const landed = age >= 0;
+        const landT = landed ? Math.max(0, Math.min(1, age / 0.5)) : 0;
+        const paperAlive = age > -0.4 && age < 0.4;
+        const paperT = paperAlive ? Math.max(0, Math.min(1, (age + 0.4) / 0.8)) : 0;
+        let paperX = 0, paperY = 0, paperOp = 0, paperRot = 0;
+        if (paperAlive) {
+          const planeAtDropT = c.dropT / 2.3;
+          const ePlaneAtDrop = Easing.easeInOutSine(Math.max(0, Math.min(1, planeAtDropT)));
+          const px0 = STAGE_W * 0.08 + ePlaneAtDrop * (STAGE_W * 0.84);
+          const py0 = mapY + mapH * 0.18 + Math.sin(planeAtDropT * Math.PI * 1.2) * 120 - ePlaneAtDrop * 30;
+          paperX = px0 + (p.x - px0) * paperT;
+          paperY = py0 + (p.y - py0) * paperT + Math.sin(paperT * Math.PI) * 10;
+          paperOp = paperT < 0.85 ? 1 : (1 - paperT) / 0.15;
+          paperRot = -10 + paperT * 40;
+        }
+        return (
+          <React.Fragment key={c.name}>
+            {paperAlive && (
+              <div style={{
+                position: 'absolute',
+                left: paperX - 12, top: paperY - 14,
+                width: 24, height: 28,
+                background: PAPER,
+                border: '1px solid rgba(30,29,27,0.25)',
+                transform: `rotate(${paperRot}deg)`,
+                opacity: paperOp,
+                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              }}>
+                <div style={{ height: 2, background: INK, opacity: 0.6, margin: '5px 3px 0' }} />
+                <div style={{ height: 1, background: INK, opacity: 0.3, margin: '3px 3px 0' }} />
+                <div style={{ height: 1, background: INK, opacity: 0.3, margin: '2px 3px 0' }} />
+                <div style={{ height: 1, background: INK, opacity: 0.3, margin: '2px 5px 0' }} />
+              </div>
+            )}
+            {landed && (
+              <>
+                <div style={{
+                  position: 'absolute',
+                  left: p.x - 30, top: p.y - 30,
+                  width: 60, height: 60,
+                  borderRadius: '50%',
+                  border: `1.5px solid ${RED}`,
+                  opacity: (1 - landT) * 0.5,
+                  transform: `scale(${0.3 + landT * 1.2})`,
+                  pointerEvents: 'none',
+                }} />
+                <div style={{
+                  position: 'absolute',
+                  left: p.x - 5, top: p.y - 5,
+                  width: 10, height: 10,
+                  borderRadius: '50%',
+                  background: RED,
+                  boxShadow: '0 0 0 3px rgba(200,16,46,0.15)',
+                  transform: `scale(${Easing.easeOutBack(landT)})`,
+                }} />
+                <div style={{
+                  position: 'absolute',
+                  left: p.x + 10, top: p.y - 9,
+                  fontFamily: MONO, fontSize: 11, letterSpacing: 2,
+                  color: INK, opacity: landT * 0.8,
+                  whiteSpace: 'nowrap',
+                }}>{c.name}</div>
+              </>
+            )}
+          </React.Fragment>
+        );
+      })}
+
+      {planeT < 1 && (
+        <div style={{
+          position: 'absolute',
+          left: planeX, top: planeY,
+          transform: `translate(-50%, -50%) rotate(${planeRot}deg)`,
+          filter: 'drop-shadow(0 8px 12px rgba(0,0,0,0.15))',
+        }}>
+          <svg width="200" height="120" viewBox="0 0 200 120" style={{ overflow: 'visible' }}>
+            <path d="M 5 55 L 195 15 L 115 70 Z" fill={PAPER_2} stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+            <path d="M 115 70 L 195 15 L 135 105 Z" fill={PAPER} stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+            <path d="M 5 55 L 115 70 L 135 105 Z" fill="rgba(30,29,27,0.08)" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+          </svg>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SceneEnd() { return null; }
+
+// ────────────────────────────────────────────────────────────────
+// PubGlobal — a single Pub that moves continuously across all scenes
+// so transitions feel like one flow rather than crossfading screens.
+// ────────────────────────────────────────────────────────────────
+function PubGlobal() {
+  const t = useTime();
+  // Hide during Wake (SceneWake has its own hero Pub) and during EndFrame.
+  if (t < 1.85 || t >= 12.8) return null;
+
+  // Keyframes: [time, x, y, size, squint, pawsOut]
+  // Matches the previous in-scene positions so existing layouts still work.
+  const KF = [
+    [2.0,  360,               STAGE_H / 2 + 60,  220, 0.0, 0.0],  // watching globe (lower-left)
+    [4.2,  360,               STAGE_H / 2 + 60,  220, 0.0, 0.0],  // still watching
+    [5.0,  STAGE_W / 2,       380,               180, 0.85, 0.6], // perched on article, typing
+    [7.3,  STAGE_W / 2,       380,               180, 0.85, 0.5], // still typing
+    [8.0,  STAGE_W / 2,       STAGE_H / 2 - 120, 160, 0.6,  0.0], // above source card
+    [9.8,  STAGE_W / 2,       STAGE_H / 2 - 120, 160, 0.6,  0.0], // still hovering
+    [10.5, STAGE_W * 0.08 + 55, STAGE_H / 2 + 36, 110, 0.85, 0.0], // diving toward plane pickup
+    [10.8, STAGE_W * 0.08 + 55, STAGE_H / 2 + 36, 90,  0.9,  0.0], // LANDED on plane
+    [12.8, STAGE_W * 0.92 + 55, STAGE_H / 2 + 6,  90,  0.9,  0.0], // riding plane to exit
+  ];
+
+  // Find bracketing keyframes
+  let a = KF[0], b = KF[KF.length - 1];
+  for (let i = 0; i < KF.length - 1; i++) {
+    if (t >= KF[i][0] && t <= KF[i+1][0]) { a = KF[i]; b = KF[i+1]; break; }
+  }
+  const span = b[0] - a[0];
+  const u = span > 0 ? (t - a[0]) / span : 0;
+  const ue = Easing.easeInOutCubic(Math.max(0, Math.min(1, u)));
+  const x = a[1] + (b[1] - a[1]) * ue;
+  const y = a[2] + (b[2] - a[2]) * ue;
+  const size = a[3] + (b[3] - a[3]) * ue;
+  const squint = a[4] + (b[4] - a[4]) * ue;
+  const paws = a[5] + (b[5] - a[5]) * ue;
+
+  // Idle mannerisms layered on top
+  const bob = Math.sin(t * 3.2) * 1.6;
+  const earWiggle = Math.sin(t * 4.5) * 0.22;
+  // Slight tilt in direction of travel
+  const dx = b[1] - a[1];
+  const travel = Math.abs(dx) > 50 ? Math.sign(dx) * 4 * (1 - Math.abs(ue - 0.5) * 2) : 0;
+
+  // Fade in briefly at entry (1.85→2.1)
+  const introOp = Math.max(0, Math.min(1, (t - 1.85) / 0.25));
+  // Fade out near end
+  const outroOp = 1 - Math.max(0, Math.min(1, (t - 12.5) / 0.3));
+
+  return (
+    <div style={{
+      position: 'absolute',
+      left: x, top: y,
+      transform: `translate(-50%, -50%)`,
+      opacity: introOp * outroOp,
+      pointerEvents: 'none',
+      zIndex: 10,
+    }}>
+      <PubCat
+        size={size}
+        squintState={squint}
+        pawsOut={paws}
+        bob={bob}
+        tilt={travel}
+        earWiggle={earWiggle}
+      />
+    </div>
+  );
+}
+
+Object.assign(window, { PubGlobal });
+
+Object.assign(window, {
+  SceneScan, SceneWrite, SceneTranslate, ScenePublish, SceneEnd,
+});
+
+
+Object.assign(window, {
+  SceneWake, SceneScan, SceneWrite, SceneTranslate, ScenePublish, SceneEnd,
+  Crosses, MetaHeader,
+  STAGE_W, STAGE_H, RED, INK, PAPER, PAPER_2, SERIF, SANS, MONO,
+});
+
+</script>
+
+<script type="text/babel">
+const DURATION = 14;
+
+// Expose a public API for the marketing site to drive the playhead from scroll.
+// Usage:   window.pubVideo.setProgress(scrollPct)   where scrollPct ∈ [0,1]
+function App() {
+  const [tweaks, setTweaks] = React.useState(window.__tweaks);
+  const [externalTime, setExternalTime] = React.useState(null);
+
+  const bg = tweaks.darkBackground ? INK : PAPER;
+
+  // Production build: tweaks panel + edit-mode handshake removed.
+
+  // Scroll-scrub integration. Reads progress from the #hero-stage section,
+  // not the full document — lets the page keep scrolling into real content.
+  // Also drives overlay chapter activation and the progress rail.
+  React.useEffect(() => {
+    if (!tweaks.scrollScrub) {
+      setExternalTime(null);
+      return;
+    }
+    const hero = document.getElementById('hero-stage');
+    if (!hero) return;
+
+    const bar = document.getElementById('progress-bar');
+
+    let rafId = 0;
+    let targetP = 0;
+    let currentP = -1;
+
+    const apply = (p) => {
+      setExternalTime(p * DURATION);
+      if (bar) bar.style.width = (p * 100).toFixed(2) + '%';
+    };
+
+    const tick = () => {
+      const delta = targetP - currentP;
+      if (Math.abs(delta) < 0.0003) {
+        currentP = targetP;
+        apply(currentP);
+        rafId = 0;
+        return;
+      }
+      currentP += delta * 0.45;
+      apply(currentP);
+      rafId = requestAnimationFrame(tick);
+    };
+
+    const readProgress = () => {
+      const rect = hero.getBoundingClientRect();
+      const max = hero.offsetHeight - window.innerHeight;
+      if (max <= 0) return 0;
+      const scrolled = Math.max(0, -rect.top);
+      return clamp(scrolled / max, 0, 1);
+    };
+
+    const onScroll = () => {
+      targetP = readProgress();
+      if (!rafId) rafId = requestAnimationFrame(tick);
+    };
+
+    currentP = readProgress();
+    targetP = currentP;
+    apply(currentP);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, [tweaks.scrollScrub]);
+
+  // Expose public API for embedding
+  React.useEffect(() => {
+    window.pubVideo = {
+      setProgress: (p) => setExternalTime(clamp(p, 0, 1) * DURATION),
+      duration: DURATION,
+      clear: () => setExternalTime(null),
+    };
+  }, []);
+
+  const scrollHint = document.getElementById('scrollHint');
+  if (scrollHint) scrollHint.style.opacity = tweaks.scrollScrub ? '1' : '0';
+
+  return (
+    <ExternalTimeStage
+      width={STAGE_W}
+      height={STAGE_H}
+      duration={DURATION}
+      background={bg}
+      externalTime={externalTime}
+      speed={tweaks.speed}
+      showCaptions={tweaks.showCaptions}
+      tagline={tweaks.tagline}
+      darkBg={tweaks.darkBackground}
+    />
+  );
+}
+
+// A thin wrapper around Stage that lets scroll drive the playhead.
+// Uses Stage underneath, but if externalTime is provided, we feed that in
+// through a controlled setState path.
+function ExternalTimeStage({ width, height, duration, background, externalTime, speed, showCaptions, tagline, darkBg }) {
+  // We can't monkey-patch Stage's internal useState, so we build a minimal
+  // timeline here: either a RAF-driven playhead, or the external one.
+  const [time, setTime] = React.useState(() => {
+    try { return clamp(parseFloat(localStorage.getItem('pubvid:t') || '0'), 0, duration); }
+    catch { return 0; }
+  });
+  const [playing, setPlaying] = React.useState(externalTime == null);
+  const [hoverTime, setHoverTime] = React.useState(null);
+  const [scale, setScale] = React.useState(1);
+  const stageRef = React.useRef(null);
+  const rafRef = React.useRef(null);
+  const lastTsRef = React.useRef(null);
+
+  // Use externalTime when provided
+  const effectiveTime = externalTime != null ? externalTime : time;
+  const displayTime = hoverTime != null ? hoverTime : effectiveTime;
+
+  React.useEffect(() => {
+    try { localStorage.setItem('pubvid:t', String(time)); } catch {}
+  }, [time]);
+
+  // Auto-scale to viewport
+  React.useEffect(() => {
+    if (!stageRef.current) return;
+    const el = stageRef.current;
+    const measure = () => {
+      const barH = externalTime != null ? 0 : 50;
+      const s = Math.min(el.clientWidth / width, (el.clientHeight - barH) / height);
+      setScale(Math.max(0.05, s));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    window.addEventListener('resize', measure);
+    return () => { ro.disconnect(); window.removeEventListener('resize', measure); };
+  }, [width, height, externalTime]);
+
+  // RAF loop — only runs when externalTime is null
+  React.useEffect(() => {
+    if (externalTime != null) { lastTsRef.current = null; return; }
+    if (!playing) { lastTsRef.current = null; return; }
+    const step = (ts) => {
+      if (lastTsRef.current == null) lastTsRef.current = ts;
+      const dt = ((ts - lastTsRef.current) / 1000) * speed;
+      lastTsRef.current = ts;
+      setTime(t => {
+        let n = t + dt;
+        if (n >= duration) n = 0;
+        return n;
+      });
+      rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); lastTsRef.current = null; };
+  }, [playing, duration, speed, externalTime]);
+
+  // Keyboard
+  React.useEffect(() => {
+    const onKey = (e) => {
+      if (externalTime != null) return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.code === 'Space') { e.preventDefault(); setPlaying(p => !p); }
+      else if (e.code === 'ArrowLeft')  setTime(t => clamp(t - (e.shiftKey ? 1 : 0.1), 0, duration));
+      else if (e.code === 'ArrowRight') setTime(t => clamp(t + (e.shiftKey ? 1 : 0.1), 0, duration));
+      else if (e.key === '0') setTime(0);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [duration, externalTime]);
+
+  const ctxValue = React.useMemo(() => ({
+    time: displayTime, duration, playing, setTime, setPlaying,
+  }), [displayTime, duration, playing]);
+
+  // Current-timestamp label for comment context
+  const screenLabel = `t=${displayTime.toFixed(1)}s`;
+
+  return (
+    <div
+      ref={stageRef}
+      style={{
+        position: 'absolute', inset: 0,
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        background: 'transparent',
+      }}
+      data-screen-label={screenLabel}
+    >
+      <div style={{
+        flex: 1, width: '100%',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        overflow: 'hidden', minHeight: 0,
+      }}>
+        <div
+          style={{
+            width, height, background,
+            position: 'relative',
+            transform: `scale(${scale})`,
+            transformOrigin: 'center',
+            flexShrink: 0,
+            overflow: 'hidden',
+            transition: 'background 320ms',
+          }}
+        >
+          <TimelineContext.Provider value={ctxValue}>
+            <VideoContent darkBg={darkBg} showCaptions={showCaptions} tagline={tagline} />
+          </TimelineContext.Provider>
+        </div>
+      </div>
+
+      {externalTime == null && (
+        <PlaybackBar
+          time={displayTime}
+          duration={duration}
+          playing={playing}
+          onPlayPause={() => setPlaying(p => !p)}
+          onReset={() => setTime(0)}
+          onSeek={setTime}
+          onHover={setHoverTime}
+        />
+      )}
+    </div>
+  );
+}
+
+function VideoContent({ darkBg, showCaptions, tagline }) {
+  // When dark bg, invert the Pub cat so it reads on ink.
+  // We achieve that by swapping the scene palette via a wrapper that overrides.
+  // Simpler: apply a CSS filter for the subtle bits. Real solution: thread an
+  // `inverted` prop down. For now we keep the Pub red-on-paper either way —
+  // the brand book actually specifies red-on-ink is a don't.  So we just
+  // soften the page tint when dark mode is on.
+  return (
+    <>
+      <SceneWake />
+      <SceneScan />
+      <SceneWrite />
+      <SceneTranslate />
+      <ScenePublish />
+      <PubGlobal />
+      <SceneEndWithTagline tagline={tagline} />
+
+    </>
+  );
+}
+
+// Small wrapper so the end-frame tagline can be live-tweaked
+function SceneEndWithTagline({ tagline }) {
+  return (
+    <Sprite start={12.6} end={14.0}>
+      {({ localTime }) => {
+        const t = localTime;
+        const intro = Easing.easeOutCubic(clamp(t / 0.5, 0, 1));
+        const slide = Easing.easeOutBack(clamp(t / 0.6, 0, 1));
+        const dotT = clamp((t - 0.4) / 0.5, 0, 1);
+        const dotEase = Easing.easeOutBack(dotT);
+        const taglineT = clamp((t - 0.85) / 0.4, 0, 1);
+        const blink = t > 1.2 ? Math.sin(((t - 1.2) / 0.25) * Math.PI) * 0.8 : 0;
+
+        // Tagline: split at first period or space after first period
+        // "Small. Mighty." → ["Small.", " ", "Mighty."]
+        const parts = tagline.split(/(\s+)/);
+        const accent = parts.length >= 3;
+
+        return (
+          <div style={{ position: 'absolute', inset: 0, opacity: intro }}>
+            <div style={{
+              position: 'absolute',
+              left: 0, right: 0,
+              top: STAGE_H / 2 - 120,
+              display: 'flex',
+              alignItems: 'baseline',
+              justifyContent: 'center',
+              fontFamily: SANS, fontWeight: 600,
+              fontSize: 280, letterSpacing: -10,
+              color: INK, lineHeight: 1,
+            }}>
+              <span style={{ transform: `translateX(${(1 - slide) * -140}px)`, opacity: slide }}>pub</span>
+              <span style={{
+                display: 'inline-block',
+                width: 172, height: 172,
+                margin: '0 4px',
+                transform: `translateY(14px) scale(${dotEase})`,
+                opacity: dotT,
+              }}>
+                <PubCat size={172} blinkState={blink} />
+              </span>
+              <span style={{ transform: `translateX(${(1 - slide) * 140}px)`, opacity: slide }}>cat</span>
+            </div>
+
+            <div style={{
+              position: 'absolute',
+              left: 0, right: 0,
+              top: STAGE_H / 2 + 120,
+              textAlign: 'center',
+              fontFamily: SERIF,
+              fontStyle: 'italic',
+              fontSize: 54,
+              letterSpacing: -1,
+              color: INK,
+              opacity: taglineT,
+              transform: `translateY(${(1 - taglineT) * 14}px)`,
+            }}>
+              {accent ? (
+                <>
+                  {parts[0]}{parts[1]}<span style={{ color: RED }}>{parts.slice(2).join('')}</span>
+                </>
+              ) : tagline}
+            </div>
+
+            <div style={{
+              position: 'absolute',
+              left: 0, right: 0, bottom: 110,
+              textAlign: 'center',
+              fontFamily: MONO, fontSize: 14, letterSpacing: 3,
+              textTransform: 'uppercase', color: 'rgba(30,29,27,0.5)',
+              opacity: taglineT,
+            }}>
+              objective · multilingual · built by one
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+Object.assign(window, { App, ExternalTimeStage, VideoContent, SceneEndWithTagline });
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+
+</body>
+</html>
