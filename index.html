@@ -436,6 +436,127 @@
     text-transform: uppercase; color: var(--red);
   }
 
+  /* Live ticker — below the nav, top 2 stories from each property */
+  .ticker {
+    position: fixed;
+    top: 56px; left: 0; right: 0;
+    height: 34px;
+    background: rgba(247, 245, 239, 0.92);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--rule);
+    overflow: hidden;
+    z-index: 45;
+    transform: translateY(-100%);
+    transition: transform 320ms var(--ease), opacity 240ms ease;
+    opacity: 0;
+  }
+  .ticker.is-visible { transform: translateY(0); opacity: 1; }
+  .ticker .ticker-label {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    display: flex; align-items: center; gap: 8px;
+    padding: 0 16px 0 20px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--mono); font-size: 10px; letter-spacing: 3px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  .ticker .ticker-label::after {
+    content: '';
+    position: absolute; right: -12px; top: 0; bottom: 0;
+    width: 12px;
+    background: linear-gradient(90deg, var(--ink), transparent);
+  }
+  .ticker .ticker-label .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--red);
+    animation: tickerPulse 1.6s ease-in-out infinite;
+  }
+  @keyframes tickerPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+  .ticker .ticker-track {
+    display: flex;
+    gap: 48px;
+    padding: 0 5vw 0 140px;
+    white-space: nowrap;
+    animation: tickerScroll 60s linear infinite;
+    animation-play-state: running;
+    height: 100%;
+    align-items: center;
+  }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+  @keyframes tickerScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .ticker .ticker-item {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--sans); font-size: 13px; color: var(--ink);
+    transition: color 120ms ease;
+  }
+  .ticker .ticker-item:hover { color: var(--red); }
+  .ticker .ticker-item .src {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--red);
+  }
+  .ticker .ticker-item .sep {
+    width: 3px; height: 3px; border-radius: 50%;
+    background: rgba(30,29,27,0.3);
+  }
+  /* Nav sits below ticker when ticker is visible */
+  .nav { transition: top 320ms var(--ease), background 240ms ease, border-color 240ms ease; }
+  body.ticker-visible .nav { top: 34px; }
+  /* Push hero down a touch so ticker doesn't cover the initial frame */
+  @media (max-width: 720px) {
+    .ticker { display: none; }
+  }
+
+  /* Cybertron pipeline diagram */
+  .pipeline-diagram {
+    margin: 48px 0 32px;
+    padding: 32px 16px 24px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+  }
+  .pipeline-diagram svg {
+    width: 100%; height: auto;
+    max-height: 140px;
+    display: block;
+  }
+  .pipeline-diagram .pipe-node {
+    fill: var(--paper);
+    stroke: rgba(30,29,27,0.35);
+    stroke-width: 1.5;
+    transition: fill 240ms ease, stroke 240ms ease, r 200ms var(--ease);
+  }
+  .pipeline-diagram.is-animated .pipe-node { fill: #C8102E; stroke: #C8102E; }
+  .pipeline-diagram.is-animated .pipe-node:hover { r: 9; }
+  .pipeline-diagram .pipe-progress {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 1800ms var(--ease);
+  }
+  .pipeline-diagram.is-animated .pipe-progress { stroke-dashoffset: 0; }
+  .pipeline-caption {
+    margin-top: 16px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--mute);
+    text-align: center;
+    line-height: 1.5;
+  }
+  @media (max-width: 780px) {
+    .pipeline-diagram { padding: 20px 8px 16px; }
+    .pipeline-caption { font-size: 10px; letter-spacing: 1px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pipeline-diagram .pipe-progress { transition: none; stroke-dashoffset: 0; }
+    .pipeline-diagram.is-animated .pipe-node { transition: none; }
+  }
+
   /* Section cats — static mark in each section, eyes track the cursor */
   .section-cat {
     position: absolute;
@@ -450,9 +571,9 @@
     transition: cy 80ms linear, cx 80ms linear, ry 140ms ease-out;
     transform-box: fill-box;
   }
-  /* Placements */
-  .section-cat-tr { top: clamp(48px, 8vh, 96px); right: clamp(24px, 5vw, 80px); }
-  .section-cat-tl { top: clamp(48px, 8vh, 96px); left: clamp(24px, 5vw, 80px); }
+  /* Placements: cats live at the top edge of the section, well above content */
+  .section-cat-tr { top: clamp(20px, 3vh, 40px); right: clamp(24px, 5vw, 80px); }
+  .section-cat-tl { top: clamp(20px, 3vh, 40px); left: clamp(24px, 5vw, 80px); }
   .section-cat-center {
     position: relative;
     left: 50%; top: 0;
@@ -462,6 +583,11 @@
   .founder .section-cat { filter: drop-shadow(0 4px 14px rgba(200,16,46,0.35)); }
   /* Sections need relative positioning to anchor the absolute cats */
   main section { position: relative; }
+  /* Sections with a corner cat get extra top padding so content never collides */
+  main section:has(.section-cat-tl),
+  main section:has(.section-cat-tr) {
+    padding-top: clamp(160px, 18vh, 220px);
+  }
 
   @media (max-width: 780px) {
     .section-cat-tr, .section-cat-tl { width: calc(var(--size, 80px) * 0.7); height: calc(var(--size, 80px) * 0.7); }
@@ -605,6 +731,12 @@
 <!-- Scroll progress rail -->
 <div class="progress-rail" aria-hidden="true"><span id="progress-bar"></span></div>
 
+<!-- Live ticker: top 2 stories from each Pub.cat property -->
+<aside id="ticker" class="ticker" aria-label="Latest stories from Pub.cat properties">
+  <div class="ticker-label"><span class="dot" aria-hidden="true"></span><span>Live</span></div>
+  <div class="ticker-track" id="ticker-track"></div>
+</aside>
+
 <!-- Fixed minimal nav -->
 <nav class="nav" aria-label="Primary">
   <a href="#main" class="brand">
@@ -672,6 +804,33 @@
     <div class="eyebrow">The product</div>
     <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Cybertron. <em>Soon as SaaS.</em></h2>
     <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
+
+    <!-- Cybertron module flow diagram -->
+    <figure class="pipeline-diagram" aria-label="Cybertron pipeline: 13 modules in sequence">
+      <svg viewBox="0 0 1300 140" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="pipeFill" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="#C8102E"/>
+            <stop offset="100%" stop-color="#C8102E"/>
+          </linearGradient>
+        </defs>
+        <!-- The spine -->
+        <line x1="50" y1="50" x2="1250" y2="50" stroke="rgba(30,29,27,0.18)" stroke-width="1.5" />
+        <!-- Progress spine (animates on scroll-into-view) -->
+        <line class="pipe-progress" x1="50" y1="50" x2="50" y2="50" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round" pathLength="1" />
+        <!-- 13 nodes evenly spaced between x=50 and x=1250 -->
+        <g class="pipe-nodes">
+          <!-- Generated below; y=50 for all -->
+        </g>
+        <g class="pipe-labels" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="rgba(30,29,27,0.7)" text-anchor="middle" letter-spacing="1.5">
+          <!-- Labels below each node -->
+        </g>
+        <g class="pipe-numbers" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="rgba(30,29,27,0.45)" text-anchor="middle">
+          <!-- 01..13 above nodes -->
+        </g>
+      </svg>
+      <figcaption class="pipeline-caption">Ingest → Cluster → Verify → Research → Draft → Translate → Edit → Image → SEO → Publish → Distribute → Monitor → Analytics.</figcaption>
+    </figure>
 
     <div class="dept-grid" style="margin-top:56px;">
       <div class="dept"><div class="role">Module 01 · Ingest</div><h3>200+ source feeds, one firehose.</h3><p>RSS, APIs, sitemaps, social signals, public filings. Normalised, timestamped, credited.</p></div>
@@ -912,6 +1071,110 @@
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+})();
+
+// ─────────────────────────────────────────────────────────────
+// Cybertron pipeline diagram — generates 13 nodes + labels into
+// the SVG, then triggers the red "flow" animation when the
+// diagram scrolls into view.
+// ─────────────────────────────────────────────────────────────
+(function () {
+  const figure = document.querySelector('.pipeline-diagram');
+  if (!figure) return;
+  const svg = figure.querySelector('svg');
+  const nodesGroup = svg.querySelector('.pipe-nodes');
+  const labelsGroup = svg.querySelector('.pipe-labels');
+  const numbersGroup = svg.querySelector('.pipe-numbers');
+
+  const LABELS = [
+    'Ingest','Cluster','Verify','Research','Draft','Translate','Edit',
+    'Image','SEO','Publish','Distribute','Monitor','Analytics'
+  ];
+  const START = 50, END = 1250, Y = 50;
+  const STEP = (END - START) / (LABELS.length - 1);
+
+  LABELS.forEach((label, i) => {
+    const x = START + i * STEP;
+    // Number above
+    const num = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    num.setAttribute('x', x);
+    num.setAttribute('y', 22);
+    num.textContent = String(i + 1).padStart(2, '0');
+    numbersGroup.appendChild(num);
+    // Node circle
+    const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.setAttribute('class', 'pipe-node');
+    c.setAttribute('cx', x);
+    c.setAttribute('cy', Y);
+    c.setAttribute('r', 7);
+    // Stagger the colour transition so they fill left-to-right with the progress line
+    c.style.transitionDelay = (i * 110) + 'ms';
+    nodesGroup.appendChild(c);
+    // Label below
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', x);
+    t.setAttribute('y', 90);
+    t.textContent = label.toUpperCase();
+    labelsGroup.appendChild(t);
+  });
+
+  // Trigger animation on scroll-into-view
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          figure.classList.add('is-animated');
+          io.unobserve(figure);
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(figure);
+  } else {
+    figure.classList.add('is-animated');
+  }
+})();
+
+// ─────────────────────────────────────────────────────────────
+// Live ticker — fetches /stories.json (top 2 per property,
+// refreshed hourly via GitHub Action) and renders a horizontal
+// scrolling ticker below the nav.
+// ─────────────────────────────────────────────────────────────
+(function () {
+  const ticker = document.getElementById('ticker');
+  const track = document.getElementById('ticker-track');
+  if (!ticker || !track) return;
+
+  fetch('/stories.json', { cache: 'no-cache' })
+    .then((r) => r.ok ? r.json() : Promise.reject())
+    .then((data) => {
+      const stories = Array.isArray(data.stories) ? data.stories : [];
+      if (!stories.length) return;
+
+      const makeItem = (s) => {
+        const a = document.createElement('a');
+        a.className = 'ticker-item';
+        a.href = s.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        const src = document.createElement('span');
+        src.className = 'src';
+        src.textContent = s.site;
+        const sep = document.createElement('span');
+        sep.className = 'sep';
+        const title = document.createElement('span');
+        title.textContent = s.title;
+        a.append(src, sep, title);
+        return a;
+      };
+
+      // Render the list twice so the CSS scroll loops seamlessly
+      [...stories, ...stories].forEach((s) => track.appendChild(makeItem(s)));
+
+      document.body.classList.add('ticker-visible');
+      // Slight delay so the nav 'is-scrolled' transition does not fight the ticker slide-in
+      requestAnimationFrame(() => ticker.classList.add('is-visible'));
+    })
+    .catch(() => { /* no ticker, no drama */ });
 })();
 
 // ─────────────────────────────────────────────────────────────
