@@ -847,8 +847,8 @@
     </div>
     <div class="eyebrow" data-i18n="what.eyebrow">What is Pub.cat</div>
     <h2 id="what-h" data-i18n-html="what.title">An <em>AI-native</em> media company, run by one.</h2>
-    <p>Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites, translates and publishes at the marginal cost of electricity.</p>
-    <p style="margin-top:18px;max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Fully bootstrapped. On a direct path to profitability. Built by one operator with twenty years of scale behind him. Cybertron opens to other publishers as SaaS in 2026.</p>
+    <p data-i18n-html="what.body1">Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites, translates and publishes at the marginal cost of electricity.</p>
+    <p style="margin-top:18px;max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;" data-i18n="what.body2">Fully bootstrapped. On a direct path to profitability. Built by one operator with twenty years of scale behind him. Cybertron opens to other publishers as SaaS in 2026.</p>
   </section>
 
   <!-- CYBERTRON · the product page, SaaS-framed -->
@@ -864,7 +864,7 @@
     </div>
     <div class="eyebrow" data-i18n="cyber.eyebrow">The product</div>
     <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n-html="cyber.title">Cybertron. <em>Soon as SaaS.</em></h2>
-    <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
+    <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;" data-i18n="cyber.body">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
 
     <!-- Cybertron module flow diagram -->
     <figure class="pipeline-diagram" aria-label="Cybertron pipeline: 13 modules in sequence">
@@ -890,26 +890,26 @@
           <!-- 01..13 above nodes -->
         </g>
       </svg>
-      <figcaption class="pipeline-caption">Ingest → Cluster → Verify → Research → Draft → Translate → Edit → Image → SEO → Publish → Distribute → Monitor → Analytics.</figcaption>
+      <figcaption class="pipeline-caption" data-i18n="cyber.caption">Ingest → Cluster → Verify → Research → Draft → Translate → Edit → Image → SEO → Publish → Distribute → Monitor → Analytics.</figcaption>
     </figure>
 
     <div class="dept-grid" style="margin-top:56px;">
-      <div class="dept"><div class="role">Module 01 · Ingest</div><h3>200+ source feeds, one firehose.</h3><p>RSS, APIs, sitemaps, social signals, public filings. Normalised, timestamped, credited.</p></div>
-      <div class="dept"><div class="role">Module 02 · Cluster</div><h3>Duplicates collapsed automatically.</h3><p>Semantic clustering groups related items into story candidates. Hotness scoring surfaces the signal.</p></div>
-      <div class="dept"><div class="role">Module 03 · Verify</div><h3>Primary sources, tiered.</h3><p>Source reliability tiers, named-source checks, and cross-reference against authoritative data before anything writes.</p></div>
-      <div class="dept"><div class="role">Module 04 · Research</div><h3>Evidence bundles built on demand.</h3><p>Related coverage, public records, prior context. Pulled and attributed before the draft is generated.</p></div>
-      <div class="dept"><div class="role">Module 05 · Draft</div><h3>House voice, model-agnostic.</h3><p>Routing across Claude, Gemini, Grok. Locale-tuned prompts. Brand voice enforced at prompt layer, not discretion.</p></div>
-      <div class="dept"><div class="role">Module 06 · Translate</div><h3>Multilingual by default.</h3><p>English, Catalan, Spanish today. Any market tomorrow. One pipeline, one configuration file per locale.</p></div>
-      <div class="dept"><div class="role">Module 07 · Edit</div><h3>A subs desk that never sleeps.</h3><p>Grammar, clarity, banned phrases, factual re-checks. Style guide enforced down to the Oxford comma.</p></div>
-      <div class="dept"><div class="role">Module 08 · Image</div><h3>Licensed images, correctly credited.</h3><p>Feature image selection, alt text, banner stripping, proper attribution. No copyright surprises.</p></div>
-      <div class="dept"><div class="role">Module 09 · SEO</div><h3>Structured data, built in.</h3><p>Schema.org, sitemap, OG, canonical. Google News compliance. Cross-property internal linking for compounding authority.</p></div>
-      <div class="dept"><div class="role">Module 10 · Publish</div><h3>Ghost and WordPress, natively.</h3><p>Push to any Ghost or WordPress instance via API. Scheduling, categories, authors, tags, all handled.</p></div>
-      <div class="dept"><div class="role">Module 11 · Distribute</div><h3>Channel-specific social packs.</h3><p>X, Reddit, Facebook, WhatsApp, LinkedIn. Each channel treated on its own terms, not copy-pasted.</p></div>
-      <div class="dept"><div class="role">Module 12 · Monitor</div><h3>Audit agent on a cron.</h3><p>Scheduled process and security audits. Critical findings halt publication until cleared. Not advisory.</p></div>
-      <div class="dept"><div class="role">Module 13 · Analytics</div><h3>What worked, what did not.</h3><p>Plausible plus Google Search Console, unified. Story-level attribution back to which source, which model, which channel.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m01.role">Module 01 · Ingest</div><h3 data-i18n="cyber.m01.title">200+ source feeds, one firehose.</h3><p data-i18n="cyber.m01.body">RSS, APIs, sitemaps, social signals, public filings. Normalised, timestamped, credited.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m02.role">Module 02 · Cluster</div><h3 data-i18n="cyber.m02.title">Duplicates collapsed automatically.</h3><p data-i18n="cyber.m02.body">Semantic clustering groups related items into story candidates. Hotness scoring surfaces the signal.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m03.role">Module 03 · Verify</div><h3 data-i18n="cyber.m03.title">Primary sources, tiered.</h3><p data-i18n="cyber.m03.body">Source reliability tiers, named-source checks, and cross-reference against authoritative data before anything writes.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m04.role">Module 04 · Research</div><h3 data-i18n="cyber.m04.title">Evidence bundles built on demand.</h3><p data-i18n="cyber.m04.body">Related coverage, public records, prior context. Pulled and attributed before the draft is generated.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m05.role">Module 05 · Draft</div><h3 data-i18n="cyber.m05.title">House voice, model-agnostic.</h3><p data-i18n="cyber.m05.body">Routing across Claude, Gemini, Grok. Locale-tuned prompts. Brand voice enforced at prompt layer, not discretion.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m06.role">Module 06 · Translate</div><h3 data-i18n="cyber.m06.title">Multilingual by default.</h3><p data-i18n="cyber.m06.body">English, Catalan, Spanish today. Any market tomorrow. One pipeline, one configuration file per locale.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m07.role">Module 07 · Edit</div><h3 data-i18n="cyber.m07.title">A subs desk that never sleeps.</h3><p data-i18n="cyber.m07.body">Grammar, clarity, banned phrases, factual re-checks. Style guide enforced down to the Oxford comma.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m08.role">Module 08 · Image</div><h3 data-i18n="cyber.m08.title">Licensed images, correctly credited.</h3><p data-i18n="cyber.m08.body">Feature image selection, alt text, banner stripping, proper attribution. No copyright surprises.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m09.role">Module 09 · SEO</div><h3 data-i18n="cyber.m09.title">Structured data, built in.</h3><p data-i18n="cyber.m09.body">Schema.org, sitemap, OG, canonical. Google News compliance. Cross-property internal linking for compounding authority.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m10.role">Module 10 · Publish</div><h3 data-i18n="cyber.m10.title">Ghost and WordPress, natively.</h3><p data-i18n="cyber.m10.body">Push to any Ghost or WordPress instance via API. Scheduling, categories, authors, tags, all handled.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m11.role">Module 11 · Distribute</div><h3 data-i18n="cyber.m11.title">Channel-specific social packs.</h3><p data-i18n="cyber.m11.body">X, Reddit, Facebook, WhatsApp, LinkedIn. Each channel treated on its own terms, not copy-pasted.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m12.role">Module 12 · Monitor</div><h3 data-i18n="cyber.m12.title">Audit agent on a cron.</h3><p data-i18n="cyber.m12.body">Scheduled process and security audits. Critical findings halt publication until cleared. Not advisory.</p></div>
+      <div class="dept"><div class="role" data-i18n="cyber.m13.role">Module 13 · Analytics</div><h3 data-i18n="cyber.m13.title">What worked, what did not.</h3><p data-i18n="cyber.m13.body">Plausible plus Google Search Console, unified. Story-level attribution back to which source, which model, which channel.</p></div>
     </div>
 
-    <p style="margin-top:48px;max-width:680px;font-size:15px;line-height:1.55;opacity:0.7;font-family:var(--mono);letter-spacing:0.5px;">Every module is swappable. Every stage is logged. Nothing is black-boxed. Built to run without us, engineered so another publisher can run it too.</p>
+    <p style="margin-top:48px;max-width:680px;font-size:15px;line-height:1.55;opacity:0.7;font-family:var(--mono);letter-spacing:0.5px;" data-i18n="cyber.footer">Every module is swappable. Every stage is logged. Nothing is black-boxed. Built to run without us, engineered so another publisher can run it too.</p>
   </section>
 
   <!-- PROPERTIES · live proof, with logos -->
@@ -925,48 +925,47 @@
     </div>
     <div class="eyebrow" data-i18n="props.eyebrow">Live properties</div>
     <h2 id="props-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n="props.title">Proof in production.</h2>
-    <p style="max-width:640px;font-size:18px;line-height:1.55;opacity:0.85;">Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.</p>
+    <p style="max-width:640px;font-size:18px;line-height:1.55;opacity:0.85;" data-i18n="props.body">Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.</p>
     <div class="properties">
       <article class="property">
         <div class="property-head">
           <img class="property-logo" src="/assets/properties/barna.png" alt="Barna.News logo" width="56" height="56" loading="lazy" />
-          <span class="kind">English · Barcelona</span>
+          <span class="kind" data-i18n="props.barna.kind">English · Barcelona</span>
         </div>
         <h3>Barna<em>.News</em></h3>
-        <p>The English-language news daily for Barcelona's international residents. Politics, culture, transport, community. Fifteen to twenty-five stories every day, written by software and read by humans.</p>
-        <a class="more" href="https://barna.news" rel="noopener">Visit Barna.News →</a>
+        <p data-i18n="props.barna.body">The English-language news daily for Barcelona's international residents. Politics, culture, transport, community. Fifteen to twenty-five stories every day, written by software and read by humans.</p>
+        <a class="more" href="https://barna.news" rel="noopener" data-i18n="props.barna.more">Visit Barna.News →</a>
       </article>
       <article class="property">
         <div class="property-head">
-          <!-- Catalan.News logo: typographic wordmark in their senyera red -->
           <svg class="property-logo" viewBox="0 0 56 56" width="56" height="56" aria-label="Catalan.News logo">
             <rect width="56" height="56" rx="10" fill="#EA1004"/>
             <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="500" font-size="34" fill="#F9DA1D">c</text>
             <circle cx="40" cy="15" r="2.4" fill="#F9DA1D"/>
           </svg>
-          <span class="kind">Catalan · Barcelona</span>
+          <span class="kind" data-i18n="props.catalan.kind">Catalan · Barcelona</span>
         </div>
         <h3>Catalan<em>.News</em></h3>
-        <p>The Catalan-language edition. Same pipeline, localised voice, indexed by Google News for catalanoparlants at home and abroad.</p>
-        <a class="more" href="https://catalan.news" rel="noopener">Visit Catalan.News →</a>
+        <p data-i18n="props.catalan.body">The Catalan-language edition. Same pipeline, localised voice, indexed by Google News for catalanoparlants at home and abroad.</p>
+        <a class="more" href="https://catalan.news" rel="noopener" data-i18n="props.catalan.more">Visit Catalan.News →</a>
       </article>
       <article class="property">
         <div class="property-head">
           <img class="property-logo" src="/assets/properties/retroshell.png" alt="RetroShell logo" width="56" height="56" loading="lazy" />
-          <span class="kind">English · Retro gaming</span>
+          <span class="kind" data-i18n="props.retro.kind">English · Retro gaming</span>
         </div>
         <h3>Retro<em>Shell</em></h3>
-        <p>A retro-gaming publication with e-commerce attached. News, collectibles, exclusive merchandise. Vertical test for the "publication plus shop" pattern.</p>
-        <a class="more" href="https://retroshell.com" rel="noopener">Visit RetroShell →</a>
+        <p data-i18n="props.retro.body">A retro-gaming publication with e-commerce attached. News, collectibles, exclusive merchandise. Vertical test for the "publication plus shop" pattern.</p>
+        <a class="more" href="https://retroshell.com" rel="noopener" data-i18n="props.retro.more">Visit RetroShell →</a>
       </article>
       <article class="property property-next">
         <div class="property-head">
           <div class="property-logo property-logo-placeholder" aria-hidden="true">+</div>
-          <span class="kind">Roadmap 2026</span>
+          <span class="kind" data-i18n="props.next.kind">Roadmap 2026</span>
         </div>
-        <h3>Next cities, next <em>verticals</em>.</h3>
-        <p>Madrid. Málaga. A London vertical. Multi-language expansion across European cities. Each is a configuration file in Cybertron, not a hire.</p>
-        <a class="more" href="#contact">Talk to us →</a>
+        <h3 data-i18n-html="props.next.title">Next cities, next <em>verticals</em>.</h3>
+        <p data-i18n="props.next.body">Madrid. Málaga. A London vertical. Multi-language expansion across European cities. Each is a configuration file in Cybertron, not a hire.</p>
+        <a class="more" href="#contact" data-i18n="props.next.more">Talk to us →</a>
       </article>
     </div>
   </section>
@@ -982,42 +981,42 @@
         <div class="eyebrow" data-i18n="founder.eyebrow">Founder</div>
         <h2 id="founder-h" data-i18n-html="founder.title">Owen Hughes. One operator, <em>twenty years of scale</em> behind him.</h2>
 
-        <p><strong>Head of EU Sales</strong> and <strong>Head of UK Key Accounts</strong> at eBay, B2B Merchant Development. Carried a <em>$1.3 billion GMV</em> target. Authored the <strong>Gold Standard Listings</strong> guide, adopted as a global best practice across the company. Built the <strong>Listing Optimiser</strong> tool in parallel.</p>
+        <p data-i18n-html="founder.p1"><strong>Head of EU Sales</strong> and <strong>Head of UK Key Accounts</strong> at eBay, B2B Merchant Development. Carried a <em>$1.3 billion GMV</em> target. Authored the <strong>Gold Standard Listings</strong> guide, adopted as a global best practice across the company. Built the <strong>Listing Optimiser</strong> tool in parallel.</p>
 
-        <p><strong>Global Digital Business lead at Puig</strong>. Owned online sales across every brand in the group, direct and indirect. Grew the business from <em>€30m to over €400m</em>. Stood up a global digital community of <strong>80+ people from zero</strong>.</p>
+        <p data-i18n-html="founder.p2"><strong>Global Digital Business lead at Puig</strong>. Owned online sales across every brand in the group, direct and indirect. Grew the business from <em>€30m to over €400m</em>. Stood up a global digital community of <strong>80+ people from zero</strong>.</p>
 
-        <p>Founded <strong>RetroShell</strong>. A passion product that started as the world's best collectable protectors and grew into the retro-gaming news site Cybertron now publishes. Founded <strong>Barcelona English Speakers</strong> and <strong>Bizcelona</strong> in 2021, now reaching over <strong>5,000 people</strong> across WhatsApp and Meetup.</p>
+        <p data-i18n-html="founder.p3">Founded <strong>RetroShell</strong>. A passion product that started as the world's best collectable protectors and grew into the retro-gaming news site Cybertron now publishes. Founded <strong>Barcelona English Speakers</strong> and <strong>Bizcelona</strong> in 2021, now reaching over <strong>5,000 people</strong> across WhatsApp and Meetup.</p>
 
-        <p>Enterprise revenue scars. Founder instincts. A community that ships. Exactly the operator profile AI-native media needs.</p>
+        <p data-i18n="founder.p4">Enterprise revenue scars. Founder instincts. A community that ships. Exactly the operator profile AI-native media needs.</p>
 
         <div class="credits">
           <div class="credit">
-            <div class="label">eBay</div>
+            <div class="label" data-i18n="founder.c1.label">eBay</div>
             <div class="num">$1.3B</div>
-            <div class="note">GMV target, Head of EU Sales &amp; UK Key Accounts</div>
+            <div class="note" data-i18n="founder.c1.note">GMV target, Head of EU Sales &amp; UK Key Accounts</div>
           </div>
           <div class="credit">
-            <div class="label">Puig</div>
+            <div class="label" data-i18n="founder.c2.label">Puig</div>
             <div class="num">€30m → €400m+</div>
-            <div class="note">Global Digital Business, grown 13× across all brands</div>
+            <div class="note" data-i18n="founder.c2.note">Global Digital Business, grown 13× across all brands</div>
           </div>
           <div class="credit">
-            <div class="label">Global team</div>
-            <div class="num">80+ people</div>
-            <div class="note">Built Puig's digital community from zero</div>
+            <div class="label" data-i18n="founder.c3.label">Global team</div>
+            <div class="num" data-i18n="founder.c3.num">80+ people</div>
+            <div class="note" data-i18n="founder.c3.note">Built Puig's digital community from zero</div>
           </div>
           <div class="credit">
-            <div class="label">Community</div>
+            <div class="label" data-i18n="founder.c4.label">Community</div>
             <div class="num">5,000+</div>
-            <div class="note">Reach across BES and Bizcelona, founded 2021</div>
+            <div class="note" data-i18n="founder.c4.note">Reach across BES and Bizcelona, founded 2021</div>
           </div>
         </div>
 
         <div class="links">
-          <a href="https://www.linkedin.com/company/pub-cat" rel="noopener">LinkedIn · Pub.cat</a>
+          <a href="https://www.linkedin.com/company/pub-cat" rel="noopener" data-i18n="founder.link.linkedin">LinkedIn · Pub.cat</a>
           <a href="https://retroshell.com" rel="noopener">RetroShell</a>
           <a href="https://barna.news" rel="noopener">Barna.News</a>
-          <a href="mailto:hi@pub.cat?subject=Consulting%20enquiry">Ask about consulting</a>
+          <a href="mailto:hi@pub.cat?subject=Consulting%20enquiry" data-i18n="founder.link.consulting">Ask about consulting</a>
         </div>
       </div>
     </div>
@@ -1037,28 +1036,28 @@
     <div class="eyebrow" data-i18n="faq.eyebrow">Frequently asked</div>
     <h2 id="faq-h" class="section-head" style="padding:0;margin:16px 0 40px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n="faq.title">Before you ask.</h2>
     <details open>
-      <summary>Who runs Pub.cat?</summary>
-      <p>Owen Hughes, founder and sole director of RetroShell Ltd (UK), trading as Pub.cat from Barcelona. One human makes every decision. Everything else is software.</p>
+      <summary data-i18n="faq.q1">Who runs Pub.cat?</summary>
+      <p data-i18n="faq.a1">Owen Hughes, founder and sole director of RetroShell Ltd (UK), trading as Pub.cat from Barcelona. One human makes every decision. Everything else is software.</p>
     </details>
     <details>
-      <summary>What is Cybertron?</summary>
-      <p>Cybertron is our proprietary content pipeline. Thirteen modules covering ingestion, de-duplication, verification, research, drafting, translation, editing, imagery, SEO, publishing, distribution, monitoring and analytics. Built for Pub.cat's own properties today, preparing for public beta as SaaS in 2026.</p>
+      <summary data-i18n="faq.q2">What is Cybertron?</summary>
+      <p data-i18n="faq.a2">Cybertron is our proprietary content pipeline. Thirteen modules covering ingestion, de-duplication, verification, research, drafting, translation, editing, imagery, SEO, publishing, distribution, monitoring and analytics. Built for Pub.cat's own properties today, preparing for public beta as SaaS in 2026.</p>
     </details>
     <details>
-      <summary>When does Cybertron open to other publishers?</summary>
-      <p>A small invite-only cohort in 2026, followed by broader beta access. If you are an independent publisher and want in, email us and we will get you on the list.</p>
+      <summary data-i18n="faq.q3">When does Cybertron open to other publishers?</summary>
+      <p data-i18n="faq.a3">A small invite-only cohort in 2026, followed by broader beta access. If you are an independent publisher and want in, email us and we will get you on the list.</p>
     </details>
     <details>
-      <summary>What makes Cybertron different from a bare LLM API?</summary>
-      <p>The orchestration, the source tiering, the editorial gates, the per-locale tuning, the publisher-side integrations, and years of compounding editorial calibration. Models are the commodity. The pipeline is the product.</p>
+      <summary data-i18n="faq.q4">What makes Cybertron different from a bare LLM API?</summary>
+      <p data-i18n="faq.a4">The orchestration, the source tiering, the editorial gates, the per-locale tuning, the publisher-side integrations, and years of compounding editorial calibration. Models are the commodity. The pipeline is the product.</p>
     </details>
     <details>
-      <summary>Is Pub.cat raising investment?</summary>
-      <p>Pub.cat is fully bootstrapped and on a path to profitability. We are not actively fundraising, but we listen to the right operators. Media-tech investors, CMS companies, and strategic partners who can accelerate Cybertron's SaaS rollout should reach out.</p>
+      <summary data-i18n="faq.q5">Is Pub.cat raising investment?</summary>
+      <p data-i18n="faq.a5">Pub.cat is fully bootstrapped and on a path to profitability. We are not actively fundraising, but we listen to the right operators. Media-tech investors, CMS companies, and strategic partners who can accelerate Cybertron's SaaS rollout should reach out.</p>
     </details>
     <details>
-      <summary>Does Owen take consulting engagements?</summary>
-      <p>Selectively, and only on AI-native operating and one-person-company design. If you are a founder building with agents, or an established business transitioning a function to autonomous software, Owen will consider it. Email below.</p>
+      <summary data-i18n="faq.q6">Does Owen take consulting engagements?</summary>
+      <p data-i18n="faq.a6">Selectively, and only on AI-native operating and one-person-company design. If you are a founder building with agents, or an established business transitioning a function to autonomous software, Owen will consider it. Email below.</p>
     </details>
   </section>
 
@@ -1103,18 +1102,18 @@
       </a>
     </div>
 
-    <p style="margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mute);">Barcelona · London · Replies within 48 hours · <a href="https://www.linkedin.com/company/pub-cat" rel="noopener" style="color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">LinkedIn</a></p>
+    <p style="margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mute);" data-i18n-html="contact.subfooter">Barcelona · London · Replies within 48 hours · <a href="https://www.linkedin.com/company/pub-cat" rel="noopener" style="color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">LinkedIn</a></p>
   </section>
 
 </main>
 
 <footer class="site-foot">
-  <span>© 2026 Pub.cat · RetroShell Ltd (UK)</span>
+  <span data-i18n="footer.copyright">© 2026 Pub.cat · RetroShell Ltd (UK)</span>
   <span>
     <a href="https://www.linkedin.com/company/pub-cat" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor;padding-bottom:1px;">LinkedIn</a>
     &nbsp;·&nbsp; <a href="mailto:hi@pub.cat" style="color:inherit;border-bottom:1px solid currentColor;padding-bottom:1px;">hi@pub.cat</a>
   </span>
-  <span>Barcelona · London · Small. Mighty.</span>
+  <span data-i18n="footer.tagline">Barcelona · London · Small. Mighty.</span>
 </footer>
 
 <!-- tweaks panel removed in production -->
@@ -1130,14 +1129,99 @@
     "hero.scroll": "Scroll",
     "what.eyebrow": "What is Pub.cat",
     "what.title": "An <em>AI-native</em> media company, run by one.",
+    "what.body1": "Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites, translates and publishes at the marginal cost of electricity.",
+    "what.body2": "Fully bootstrapped. On a direct path to profitability. Built by one operator with twenty years of scale behind him. Cybertron opens to other publishers as SaaS in 2026.",
     "cyber.eyebrow": "The product",
     "cyber.title": "Cybertron. <em>Soon as SaaS.</em>",
+    "cyber.body": "Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.",
+    "cyber.caption": "Ingest → Cluster → Verify → Research → Draft → Translate → Edit → Image → SEO → Publish → Distribute → Monitor → Analytics.",
+    "cyber.footer": "Every module is swappable. Every stage is logged. Nothing is black-boxed. Built to run without us, engineered so another publisher can run it too.",
+    "cyber.m01.role": "Module 01 · Ingest",
+    "cyber.m01.title": "200+ source feeds, one firehose.",
+    "cyber.m01.body": "RSS, APIs, sitemaps, social signals, public filings. Normalised, timestamped, credited.",
+    "cyber.m02.role": "Module 02 · Cluster",
+    "cyber.m02.title": "Duplicates collapsed automatically.",
+    "cyber.m02.body": "Semantic clustering groups related items into story candidates. Hotness scoring surfaces the signal.",
+    "cyber.m03.role": "Module 03 · Verify",
+    "cyber.m03.title": "Primary sources, tiered.",
+    "cyber.m03.body": "Source reliability tiers, named-source checks, and cross-reference against authoritative data before anything writes.",
+    "cyber.m04.role": "Module 04 · Research",
+    "cyber.m04.title": "Evidence bundles built on demand.",
+    "cyber.m04.body": "Related coverage, public records, prior context. Pulled and attributed before the draft is generated.",
+    "cyber.m05.role": "Module 05 · Draft",
+    "cyber.m05.title": "House voice, model-agnostic.",
+    "cyber.m05.body": "Routing across Claude, Gemini, Grok. Locale-tuned prompts. Brand voice enforced at prompt layer, not discretion.",
+    "cyber.m06.role": "Module 06 · Translate",
+    "cyber.m06.title": "Multilingual by default.",
+    "cyber.m06.body": "English, Catalan, Spanish today. Any market tomorrow. One pipeline, one configuration file per locale.",
+    "cyber.m07.role": "Module 07 · Edit",
+    "cyber.m07.title": "A subs desk that never sleeps.",
+    "cyber.m07.body": "Grammar, clarity, banned phrases, factual re-checks. Style guide enforced down to the Oxford comma.",
+    "cyber.m08.role": "Module 08 · Image",
+    "cyber.m08.title": "Licensed images, correctly credited.",
+    "cyber.m08.body": "Feature image selection, alt text, banner stripping, proper attribution. No copyright surprises.",
+    "cyber.m09.role": "Module 09 · SEO",
+    "cyber.m09.title": "Structured data, built in.",
+    "cyber.m09.body": "Schema.org, sitemap, OG, canonical. Google News compliance. Cross-property internal linking for compounding authority.",
+    "cyber.m10.role": "Module 10 · Publish",
+    "cyber.m10.title": "Ghost and WordPress, natively.",
+    "cyber.m10.body": "Push to any Ghost or WordPress instance via API. Scheduling, categories, authors, tags, all handled.",
+    "cyber.m11.role": "Module 11 · Distribute",
+    "cyber.m11.title": "Channel-specific social packs.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Each channel treated on its own terms, not copy-pasted.",
+    "cyber.m12.role": "Module 12 · Monitor",
+    "cyber.m12.title": "Audit agent on a cron.",
+    "cyber.m12.body": "Scheduled process and security audits. Critical findings halt publication until cleared. Not advisory.",
+    "cyber.m13.role": "Module 13 · Analytics",
+    "cyber.m13.title": "What worked, what did not.",
+    "cyber.m13.body": "Plausible plus Google Search Console, unified. Story-level attribution back to which source, which model, which channel.",
     "props.eyebrow": "Live properties",
     "props.title": "Proof in production.",
+    "props.body": "Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.",
+    "props.barna.kind": "English · Barcelona",
+    "props.barna.body": "The English-language news daily for Barcelona's international residents. Politics, culture, transport, community. Fifteen to twenty-five stories every day, written by software and read by humans.",
+    "props.barna.more": "Visit Barna.News →",
+    "props.catalan.kind": "Catalan · Barcelona",
+    "props.catalan.body": "The Catalan-language edition. Same pipeline, localised voice, indexed by Google News for catalanoparlants at home and abroad.",
+    "props.catalan.more": "Visit Catalan.News →",
+    "props.retro.kind": "English · Retro gaming",
+    "props.retro.body": "A retro-gaming publication with e-commerce attached. News, collectibles, exclusive merchandise. Vertical test for the \"publication plus shop\" pattern.",
+    "props.retro.more": "Visit RetroShell →",
+    "props.next.kind": "Roadmap 2026",
+    "props.next.title": "Next cities, next <em>verticals</em>.",
+    "props.next.body": "Madrid. Málaga. A London vertical. Multi-language expansion across European cities. Each is a configuration file in Cybertron, not a hire.",
+    "props.next.more": "Talk to us →",
     "founder.eyebrow": "Founder",
     "founder.title": "Owen Hughes. One operator, <em>twenty years of scale</em> behind him.",
+    "founder.p1": "<strong>Head of EU Sales</strong> and <strong>Head of UK Key Accounts</strong> at eBay, B2B Merchant Development. Carried a <em>$1.3 billion GMV</em> target. Authored the <strong>Gold Standard Listings</strong> guide, adopted as a global best practice across the company. Built the <strong>Listing Optimiser</strong> tool in parallel.",
+    "founder.p2": "<strong>Global Digital Business lead at Puig</strong>. Owned online sales across every brand in the group, direct and indirect. Grew the business from <em>€30m to over €400m</em>. Stood up a global digital community of <strong>80+ people from zero</strong>.",
+    "founder.p3": "Founded <strong>RetroShell</strong>. A passion product that started as the world's best collectable protectors and grew into the retro-gaming news site Cybertron now publishes. Founded <strong>Barcelona English Speakers</strong> and <strong>Bizcelona</strong> in 2021, now reaching over <strong>5,000 people</strong> across WhatsApp and Meetup.",
+    "founder.p4": "Enterprise revenue scars. Founder instincts. A community that ships. Exactly the operator profile AI-native media needs.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "GMV target, Head of EU Sales & UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Global Digital Business, grown 13× across all brands",
+    "founder.c3.label": "Global team",
+    "founder.c3.num": "80+ people",
+    "founder.c3.note": "Built Puig's digital community from zero",
+    "founder.c4.label": "Community",
+    "founder.c4.note": "Reach across BES and Bizcelona, founded 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Ask about consulting",
     "faq.eyebrow": "Frequently asked",
     "faq.title": "Before you ask.",
+    "faq.q1": "Who runs Pub.cat?",
+    "faq.a1": "Owen Hughes, founder and sole director of RetroShell Ltd (UK), trading as Pub.cat from Barcelona. One human makes every decision. Everything else is software.",
+    "faq.q2": "What is Cybertron?",
+    "faq.a2": "Cybertron is our proprietary content pipeline. Thirteen modules covering ingestion, de-duplication, verification, research, drafting, translation, editing, imagery, SEO, publishing, distribution, monitoring and analytics. Built for Pub.cat's own properties today, preparing for public beta as SaaS in 2026.",
+    "faq.q3": "When does Cybertron open to other publishers?",
+    "faq.a3": "A small invite-only cohort in 2026, followed by broader beta access. If you are an independent publisher and want in, email us and we will get you on the list.",
+    "faq.q4": "What makes Cybertron different from a bare LLM API?",
+    "faq.a4": "The orchestration, the source tiering, the editorial gates, the per-locale tuning, the publisher-side integrations, and years of compounding editorial calibration. Models are the commodity. The pipeline is the product.",
+    "faq.q5": "Is Pub.cat raising investment?",
+    "faq.a5": "Pub.cat is fully bootstrapped and on a path to profitability. We are not actively fundraising, but we listen to the right operators. Media-tech investors, CMS companies, and strategic partners who can accelerate Cybertron's SaaS rollout should reach out.",
+    "faq.q6": "Does Owen take consulting engagements?",
+    "faq.a6": "Selectively, and only on AI-native operating and one-person-company design. If you are a founder building with agents, or an established business transitioning a function to autonomous software, Owen will consider it. Email below.",
     "contact.title": "Talk to us.",
     "contact.intro": "One inbox reaches one human. Pick the door you came through and we will reply within 48 hours.",
     "contact.cta1.eyebrow": "01 · Publishers",
@@ -1151,7 +1235,10 @@
     "contact.cta3.body": "Media-tech, CMS, or portfolio acquirers looking at the next generation of autonomous publishing should talk to us early.",
     "contact.cta4.eyebrow": "04 · Consulting",
     "contact.cta4.title": "AI-native consulting.",
-    "contact.cta4.body": "Founders building with agents, or established businesses moving a function to autonomous software. Owen takes a handful a year."
+    "contact.cta4.body": "Founders building with agents, or established businesses moving a function to autonomous software. Owen takes a handful a year.",
+    "contact.subfooter": "Barcelona · London · Replies within 48 hours · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcelona · London · Small. Mighty."
   },
   "es": {
     "nav.cybertron": "Cybertron",
@@ -1161,28 +1248,116 @@
     "hero.scroll": "Desliza",
     "what.eyebrow": "Qué es Pub.cat",
     "what.title": "Una empresa de medios <em>nativa de IA</em>, dirigida por una sola persona.",
+    "what.body1": "Pub.cat es un grupo editorial de marcas de noticias en inglés: Barna.News, Catalan.News, RetroShell. Detrás hay <strong>Cybertron</strong>, nuestra tubería de contenidos. Ingesta, desduplicación, verificación, reescritura, traducción y publicación al coste marginal de la electricidad.",
+    "what.body2": "Totalmente autofinanciado. En el camino directo a la rentabilidad. Construido por un operador con veinte años de escala a sus espaldas. Cybertron se abrirá a otros editores como SaaS en 2026.",
     "cyber.eyebrow": "El producto",
     "cyber.title": "Cybertron. <em>Pronto como SaaS.</em>",
+    "cyber.body": "Trece módulos. Una API. Cada capacidad que una redacción moderna necesita, cosidos en una sola tubería autónoma que cualquier editor independiente puede encender. La beta pública abre a una pequeña cohorte seleccionada en 2026. Lista de espera a petición.",
+    "cyber.caption": "Ingesta → Agrupar → Verificar → Investigar → Redactar → Traducir → Editar → Imagen → SEO → Publicar → Distribuir → Monitorizar → Analítica.",
+    "cyber.footer": "Cada módulo es intercambiable. Cada fase queda registrada. Nada es una caja negra. Pensado para funcionar sin nosotros, ingeniado para que otro editor pueda manejarlo también.",
+    "cyber.m01.role": "Módulo 01 · Ingesta",
+    "cyber.m01.title": "200+ fuentes, una única manguera.",
+    "cyber.m01.body": "RSS, APIs, sitemaps, señales sociales, registros públicos. Normalizados, con marca de tiempo, atribuidos.",
+    "cyber.m02.role": "Módulo 02 · Agrupar",
+    "cyber.m02.title": "Duplicados colapsados automáticamente.",
+    "cyber.m02.body": "El clustering semántico agrupa elementos relacionados en historias candidatas. La puntuación de hotness hace aflorar la señal.",
+    "cyber.m03.role": "Módulo 03 · Verificar",
+    "cyber.m03.title": "Fuentes primarias, escalonadas.",
+    "cyber.m03.body": "Niveles de fiabilidad de fuente, chequeos de fuente nombrada y referencias cruzadas contra datos autorizados antes de que nada se escriba.",
+    "cyber.m04.role": "Módulo 04 · Investigar",
+    "cyber.m04.title": "Dosieres de evidencia a demanda.",
+    "cyber.m04.body": "Cobertura relacionada, registros públicos, contexto previo. Recopilados y atribuidos antes de generar el borrador.",
+    "cyber.m05.role": "Módulo 05 · Redactar",
+    "cyber.m05.title": "Voz propia, agnóstica al modelo.",
+    "cyber.m05.body": "Enrutado entre Claude, Gemini y Grok. Prompts adaptados por idioma. Voz de marca impuesta por prompt, no por criterio.",
+    "cyber.m06.role": "Módulo 06 · Traducir",
+    "cyber.m06.title": "Multilingüe por defecto.",
+    "cyber.m06.body": "Hoy inglés, catalán y español. Mañana cualquier mercado. Una tubería, un archivo de configuración por idioma.",
+    "cyber.m07.role": "Módulo 07 · Editar",
+    "cyber.m07.title": "Una mesa de corrección que nunca duerme.",
+    "cyber.m07.body": "Gramática, claridad, frases vetadas, revisión factual. Guía de estilo aplicada hasta la última coma.",
+    "cyber.m08.role": "Módulo 08 · Imagen",
+    "cyber.m08.title": "Imágenes con licencia, bien atribuidas.",
+    "cyber.m08.body": "Selección de imagen destacada, texto alt, recorte de banners, atribución correcta. Sin sorpresas de copyright.",
+    "cyber.m09.role": "Módulo 09 · SEO",
+    "cyber.m09.title": "Datos estructurados, de serie.",
+    "cyber.m09.body": "Schema.org, sitemap, OG, canonical. Cumplimiento de Google News. Enlazado interno entre propiedades para autoridad compuesta.",
+    "cyber.m10.role": "Módulo 10 · Publicar",
+    "cyber.m10.title": "Ghost y WordPress, de forma nativa.",
+    "cyber.m10.body": "Envío a cualquier instancia de Ghost o WordPress vía API. Programación, categorías, autores y etiquetas incluidos.",
+    "cyber.m11.role": "Módulo 11 · Distribuir",
+    "cyber.m11.title": "Paquetes sociales por canal.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Cada canal tratado en sus propios términos, no copiado y pegado.",
+    "cyber.m12.role": "Módulo 12 · Monitorizar",
+    "cyber.m12.title": "Agente de auditoría en cron.",
+    "cyber.m12.body": "Auditorías de proceso y seguridad programadas. Los hallazgos críticos detienen la publicación hasta resolverse. No es asesor, es bloqueante.",
+    "cyber.m13.role": "Módulo 13 · Analítica",
+    "cyber.m13.title": "Qué funcionó y qué no.",
+    "cyber.m13.body": "Plausible más Google Search Console, unificados. Atribución a nivel de historia a qué fuente, qué modelo y qué canal funcionaron.",
     "props.eyebrow": "Publicaciones en activo",
     "props.title": "Prueba en producción.",
+    "props.body": "Cada publicación corre sobre la misma tubería Cybertron. Lanzar la siguiente se mide en horas de configuración, no en meses de contratación.",
+    "props.barna.kind": "Inglés · Barcelona",
+    "props.barna.body": "El diario en inglés para los residentes internacionales de Barcelona. Política, cultura, transporte, comunidad. De 15 a 25 historias al día, escritas por software y leídas por humanos.",
+    "props.barna.more": "Visitar Barna.News →",
+    "props.catalan.kind": "Catalán · Barcelona",
+    "props.catalan.body": "La edición en catalán. Misma tubería, voz localizada, indexada en Google News para catalanoparlantes en casa y fuera.",
+    "props.catalan.more": "Visitar Catalan.News →",
+    "props.retro.kind": "Inglés · Retro gaming",
+    "props.retro.body": "Una publicación de retro gaming con e-commerce integrado. Noticias, coleccionables, merchandising exclusivo. Prueba vertical del patrón \"publicación más tienda\".",
+    "props.retro.more": "Visitar RetroShell →",
+    "props.next.kind": "Hoja de ruta 2026",
+    "props.next.title": "Próximas ciudades, próximos <em>verticales</em>.",
+    "props.next.body": "Madrid. Málaga. Un vertical londinense. Expansión multilingüe por ciudades europeas. Cada una es un archivo de configuración en Cybertron, no una contratación.",
+    "props.next.more": "Hablemos →",
     "founder.eyebrow": "Fundador",
     "founder.title": "Owen Hughes. Un operador con <em>veinte años de escala</em> a sus espaldas.",
+    "founder.p1": "<strong>Head of EU Sales</strong> y <strong>Head of UK Key Accounts</strong> en eBay, Merchant Development B2B. Objetivo de <em>1.300 millones de dólares en GMV</em>. Autor de la guía <strong>Gold Standard Listings</strong>, adoptada como best practice global. Construyó en paralelo la herramienta <strong>Listing Optimiser</strong>.",
+    "founder.p2": "<strong>Responsable global del negocio digital en Puig</strong>. A cargo de las ventas online de todas las marcas del grupo, directas e indirectas. Crecimiento del negocio de <em>30 millones a más de 400 millones de euros</em>. Puso en pie una comunidad digital global de <strong>más de 80 personas desde cero</strong>.",
+    "founder.p3": "Fundó <strong>RetroShell</strong>. Un producto de pasión que empezó como los mejores protectores de coleccionista del mundo y creció hasta ser el medio de retro gaming que Cybertron publica hoy. Fundó <strong>Barcelona English Speakers</strong> y <strong>Bizcelona</strong> en 2021, con un alcance actual de más de <strong>5.000 personas</strong> entre WhatsApp y Meetup.",
+    "founder.p4": "Cicatrices de ingresos a escala. Instinto de fundador. Una comunidad que entrega. Exactamente el perfil que necesita un medio nativo de IA.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "Objetivo GMV, Head of EU Sales y UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Negocio digital global, crecido 13× en todas las marcas",
+    "founder.c3.label": "Equipo global",
+    "founder.c3.num": "80+ personas",
+    "founder.c3.note": "Construyó la comunidad digital de Puig desde cero",
+    "founder.c4.label": "Comunidad",
+    "founder.c4.note": "Alcance entre BES y Bizcelona, fundadas en 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Consultar sobre consultoría",
     "faq.eyebrow": "Preguntas frecuentes",
     "faq.title": "Antes de preguntar.",
+    "faq.q1": "¿Quién dirige Pub.cat?",
+    "faq.a1": "Owen Hughes, fundador y único director de RetroShell Ltd (Reino Unido), que opera como Pub.cat desde Barcelona. Un humano toma cada decisión. Todo lo demás es software.",
+    "faq.q2": "¿Qué es Cybertron?",
+    "faq.a2": "Cybertron es nuestra tubería de contenidos propietaria. Trece módulos que cubren ingesta, desduplicación, verificación, investigación, redacción, traducción, edición, imagen, SEO, publicación, distribución, monitorización y analítica. Hoy funciona para las propiedades de Pub.cat; en 2026 abre como SaaS en beta pública.",
+    "faq.q3": "¿Cuándo se abre Cybertron a otros editores?",
+    "faq.a3": "Una pequeña cohorte por invitación en 2026, seguida de un acceso beta más amplio. Si eres un editor independiente y quieres entrar, escríbenos y te ponemos en la lista.",
+    "faq.q4": "¿Qué hace diferente a Cybertron de una simple API de LLM?",
+    "faq.a4": "La orquestación, el tiering de fuentes, las puertas editoriales, el afinado por idioma, las integraciones del lado editor y años de calibración editorial compuesta. Los modelos son la commodity. La tubería es el producto.",
+    "faq.q5": "¿Pub.cat está levantando inversión?",
+    "faq.a5": "Pub.cat está totalmente autofinanciado y en camino a ser rentable. No estamos captando activamente, pero escuchamos a los operadores adecuados. Inversores de media-tech, empresas de CMS y socios estratégicos que puedan acelerar el rollout SaaS de Cybertron deberían escribirnos.",
+    "faq.q6": "¿Owen acepta trabajos de consultoría?",
+    "faq.a6": "De forma selectiva, y solo sobre operación nativa de IA y diseño de empresas de una sola persona. Si eres fundador construyendo con agentes, o un negocio establecido migrando una función a software autónomo, Owen lo estudiará. Email abajo.",
     "contact.title": "Hablemos.",
-    "contact.intro": "Un solo buzón, una sola persona. Elige tu vía y te responderemos en 48 horas.",
+    "contact.intro": "Un solo buzón, una sola persona. Elige la puerta por la que vienes y te respondemos en 48 horas.",
     "contact.cta1.eyebrow": "01 · Editores",
     "contact.cta1.title": "Únete a la lista de espera de Cybertron.",
     "contact.cta1.body": "Diriges una publicación independiente y quieres la tubería que mueve la nuestra. Cohorte por invitación en 2026.",
     "contact.cta2.eyebrow": "02 · Inversores",
     "contact.cta2.title": "Consultas de inversión.",
-    "contact.cta2.body": "Estamos bootstrapped y cerca de ser rentables. Hablamos con operadores que entienden el media-tech. Roll-ups y estratégicos bienvenidos.",
+    "contact.cta2.body": "Estamos autofinanciados y cerca de ser rentables. Hablamos con operadores que entienden el media-tech. Roll-ups y estratégicos bienvenidos.",
     "contact.cta3.eyebrow": "03 · Adquisiciones",
     "contact.cta3.title": "Interés en adquisición.",
     "contact.cta3.body": "Compradores de media-tech, CMS o portfolio que miren la próxima generación de publicación autónoma deberían hablar con nosotros pronto.",
     "contact.cta4.eyebrow": "04 · Consultoría",
     "contact.cta4.title": "Consultoría AI-native.",
-    "contact.cta4.body": "Fundadores construyendo con agentes, o empresas consolidadas migrando una función a software autónomo. Owen acepta unas pocas al año."
+    "contact.cta4.body": "Fundadores construyendo con agentes, o empresas consolidadas migrando una función a software autónomo. Owen acepta unas pocas al año.",
+    "contact.subfooter": "Barcelona · Londres · Respondemos en 48 horas · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcelona · Londres · Small. Mighty."
   },
   "ca": {
     "nav.cybertron": "Cybertron",
@@ -1192,28 +1367,116 @@
     "hero.scroll": "Lliscar",
     "what.eyebrow": "Què és Pub.cat",
     "what.title": "Una empresa de mitjans <em>nativa d'IA</em>, gestionada per una sola persona.",
+    "what.body1": "Pub.cat és un grup editorial de marques de notícies en anglès: Barna.News, Catalan.News, RetroShell. Darrere hi ha <strong>Cybertron</strong>, el nostre pipeline de continguts propi. Ingesta, desduplica, verifica, reescriu, tradueix i publica al cost marginal de l'electricitat.",
+    "what.body2": "Totalment autofinançat. En camí directe a la rendibilitat. Construït per un operador amb vint anys d'escala a l'esquena. Cybertron s'obrirà a altres editors com a SaaS el 2026.",
     "cyber.eyebrow": "El producte",
     "cyber.title": "Cybertron. <em>Aviat com a SaaS.</em>",
-    "props.eyebrow": "Publicacions en actiu",
+    "cyber.body": "Tretze mòduls. Una API. Cada capacitat que una redacció moderna necessita, cosits en un sol pipeline autònom que qualsevol editor independent pot engegar. La beta pública obre a una petita cohort escollida el 2026. Llista d'espera sota petició.",
+    "cyber.caption": "Ingesta → Agrupar → Verificar → Investigar → Redactar → Traduir → Editar → Imatge → SEO → Publicar → Distribuir → Monitorar → Analítica.",
+    "cyber.footer": "Cada mòdul és intercanviable. Cada etapa queda registrada. Res és una caixa negra. Fet per funcionar sense nosaltres, enginyat perquè un altre editor el pugui portar també.",
+    "cyber.m01.role": "Mòdul 01 · Ingesta",
+    "cyber.m01.title": "200+ fonts, una sola mànega.",
+    "cyber.m01.body": "RSS, APIs, sitemaps, senyals socials, registres públics. Normalitzats, amb marca de temps, atribuïts.",
+    "cyber.m02.role": "Mòdul 02 · Agrupar",
+    "cyber.m02.title": "Duplicats col·lapsats automàticament.",
+    "cyber.m02.body": "El clustering semàntic agrupa elements relacionats en històries candidates. La puntuació de hotness fa emergir el senyal.",
+    "cyber.m03.role": "Mòdul 03 · Verificar",
+    "cyber.m03.title": "Fonts primàries, per nivells.",
+    "cyber.m03.body": "Nivells de fiabilitat de font, comprovacions de font anomenada i referències creuades contra dades autoritzades abans que res s'escrigui.",
+    "cyber.m04.role": "Mòdul 04 · Investigar",
+    "cyber.m04.title": "Dossiers d'evidència a demanda.",
+    "cyber.m04.body": "Cobertura relacionada, registres públics, context previ. Recopilats i atribuïts abans de generar l'esborrany.",
+    "cyber.m05.role": "Mòdul 05 · Redactar",
+    "cyber.m05.title": "Veu pròpia, agnòstica al model.",
+    "cyber.m05.body": "Enrutament entre Claude, Gemini i Grok. Prompts adaptats per idioma. Veu de marca imposada al prompt, no al criteri.",
+    "cyber.m06.role": "Mòdul 06 · Traduir",
+    "cyber.m06.title": "Multilingüe per defecte.",
+    "cyber.m06.body": "Avui anglès, català i castellà. Demà qualsevol mercat. Un pipeline, un arxiu de configuració per idioma.",
+    "cyber.m07.role": "Mòdul 07 · Editar",
+    "cyber.m07.title": "Una taula de correcció que no dorm mai.",
+    "cyber.m07.body": "Gramàtica, claredat, frases vetades, revisió factual. Guia d'estil aplicada fins a l'última coma.",
+    "cyber.m08.role": "Mòdul 08 · Imatge",
+    "cyber.m08.title": "Imatges amb llicència, ben atribuïdes.",
+    "cyber.m08.body": "Selecció d'imatge destacada, text alt, retall de banners, atribució correcta. Sense sorpreses de copyright.",
+    "cyber.m09.role": "Mòdul 09 · SEO",
+    "cyber.m09.title": "Dades estructurades, integrades.",
+    "cyber.m09.body": "Schema.org, sitemap, OG, canonical. Compliment de Google News. Enllaçat intern entre propietats per a autoritat composta.",
+    "cyber.m10.role": "Mòdul 10 · Publicar",
+    "cyber.m10.title": "Ghost i WordPress, nativament.",
+    "cyber.m10.body": "Enviament a qualsevol instància de Ghost o WordPress via API. Programació, categories, autors i etiquetes incloses.",
+    "cyber.m11.role": "Mòdul 11 · Distribuir",
+    "cyber.m11.title": "Paquets socials per canal.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Cada canal tractat en els seus propis termes, no copiat i enganxat.",
+    "cyber.m12.role": "Mòdul 12 · Monitorar",
+    "cyber.m12.title": "Agent d'auditoria en cron.",
+    "cyber.m12.body": "Auditories de procés i seguretat programades. Les troballes crítiques aturen la publicació fins a resoldre's. No és consultiu, és bloquejant.",
+    "cyber.m13.role": "Mòdul 13 · Analítica",
+    "cyber.m13.title": "Què va funcionar, què no.",
+    "cyber.m13.body": "Plausible més Google Search Console, unificats. Atribució a nivell d'història a quina font, quin model i quin canal van funcionar.",
+    "props.eyebrow": "Publicacions actives",
     "props.title": "Prova en producció.",
+    "props.body": "Cada publicació corre sobre el mateix pipeline Cybertron. Llançar la següent es mesura en hores de configuració, no en mesos de contractació.",
+    "props.barna.kind": "Anglès · Barcelona",
+    "props.barna.body": "El diari en anglès per als residents internacionals de Barcelona. Política, cultura, transport, comunitat. De 15 a 25 històries diàries, escrites per programari i llegides per humans.",
+    "props.barna.more": "Visitar Barna.News →",
+    "props.catalan.kind": "Català · Barcelona",
+    "props.catalan.body": "L'edició en català. Mateix pipeline, veu localitzada, indexada a Google News per a catalanoparlants a casa i a fora.",
+    "props.catalan.more": "Visitar Catalan.News →",
+    "props.retro.kind": "Anglès · Retro gaming",
+    "props.retro.body": "Una publicació de retro gaming amb e-commerce integrat. Notícies, col·leccionables, marxandatge exclusiu. Prova vertical del patró \"publicació més botiga\".",
+    "props.retro.more": "Visitar RetroShell →",
+    "props.next.kind": "Full de ruta 2026",
+    "props.next.title": "Properes ciutats, propers <em>verticals</em>.",
+    "props.next.body": "Madrid. Màlaga. Un vertical londinenc. Expansió multilingüe per ciutats europees. Cada una és un arxiu de configuració a Cybertron, no una contractació.",
+    "props.next.more": "Parlem →",
     "founder.eyebrow": "Fundador",
     "founder.title": "Owen Hughes. Un operador amb <em>vint anys d'escala</em> a l'esquena.",
+    "founder.p1": "<strong>Head of EU Sales</strong> i <strong>Head of UK Key Accounts</strong> a eBay, Merchant Development B2B. Amb un objectiu de <em>1.300 milions de dòlars de GMV</em>. Autor de la guia <strong>Gold Standard Listings</strong>, adoptada com a best practice global. Va construir en paral·lel l'eina <strong>Listing Optimiser</strong>.",
+    "founder.p2": "<strong>Responsable global del negoci digital a Puig</strong>. Al càrrec de les vendes online de totes les marques del grup, directes i indirectes. Va fer créixer el negoci de <em>30 milions a més de 400 milions d'euros</em>. Va aixecar una comunitat digital global de <strong>més de 80 persones des de zero</strong>.",
+    "founder.p3": "Va fundar <strong>RetroShell</strong>. Un producte de passió que va començar com els millors protectors col·leccionables del món i va créixer fins a ser el mitjà de retro gaming que Cybertron publica avui. Va fundar <strong>Barcelona English Speakers</strong> i <strong>Bizcelona</strong> el 2021, amb un abast actual de més de <strong>5.000 persones</strong> entre WhatsApp i Meetup.",
+    "founder.p4": "Cicatrius d'ingressos a escala. Instint de fundador. Una comunitat que lliura. Exactament el perfil que necessita un mitjà natiu d'IA.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "Objectiu GMV, Head of EU Sales i UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Negoci digital global, crescut 13× en totes les marques",
+    "founder.c3.label": "Equip global",
+    "founder.c3.num": "80+ persones",
+    "founder.c3.note": "Va construir la comunitat digital de Puig des de zero",
+    "founder.c4.label": "Comunitat",
+    "founder.c4.note": "Abast entre BES i Bizcelona, fundades el 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Demanar per consultoria",
     "faq.eyebrow": "Preguntes freqüents",
     "faq.title": "Abans de preguntar.",
+    "faq.q1": "Qui dirigeix Pub.cat?",
+    "faq.a1": "Owen Hughes, fundador i únic director de RetroShell Ltd (Regne Unit), que opera com a Pub.cat des de Barcelona. Un humà pren cada decisió. Tota la resta és programari.",
+    "faq.q2": "Què és Cybertron?",
+    "faq.a2": "Cybertron és el nostre pipeline de continguts propi. Tretze mòduls que cobreixen ingesta, desduplicació, verificació, investigació, redacció, traducció, edició, imatge, SEO, publicació, distribució, monitoratge i analítica. Avui funciona per a les propietats de Pub.cat; el 2026 obre com a SaaS en beta pública.",
+    "faq.q3": "Quan s'obre Cybertron a altres editors?",
+    "faq.a3": "Una petita cohort per invitació el 2026, seguida d'un accés beta més ampli. Si ets editor independent i hi vols entrar, escriu-nos i et posem a la llista.",
+    "faq.q4": "Què fa diferent Cybertron d'una simple API de LLM?",
+    "faq.a4": "L'orquestració, el tiering de fonts, les portes editorials, l'afinament per idioma, les integracions al costat de l'editor i anys de calibració editorial composta. Els models són la commodity. El pipeline és el producte.",
+    "faq.q5": "Pub.cat està aixecant inversió?",
+    "faq.a5": "Pub.cat està totalment autofinançat i en camí a ser rendible. No estem captant activament, però escoltem els operadors adequats. Inversors de media-tech, empreses de CMS i socis estratègics que puguin accelerar el rollout SaaS de Cybertron poden escriure'ns.",
+    "faq.q6": "Owen fa encàrrecs de consultoria?",
+    "faq.a6": "De manera selectiva, i només sobre operació nativa d'IA i disseny d'empreses d'una sola persona. Si ets fundador construint amb agents, o un negoci establert migrant una funció a programari autònom, Owen ho estudiarà. Correu a sota.",
     "contact.title": "Parlem.",
-    "contact.intro": "Una bústia, una persona. Tria per on entres i et respondrem en 48 hores.",
+    "contact.intro": "Una bústia, una persona. Tria la porta per la qual véns i et respondrem en 48 hores.",
     "contact.cta1.eyebrow": "01 · Editors",
     "contact.cta1.title": "Uneix-te a la llista d'espera de Cybertron.",
     "contact.cta1.body": "Portes una publicació independent i vols el pipeline que mou el nostre. Cohort per invitació el 2026.",
     "contact.cta2.eyebrow": "02 · Inversors",
     "contact.cta2.title": "Consultes d'inversió.",
-    "contact.cta2.body": "Som bootstrapped i a prop de ser rendibles. Parlem amb operadors que entenen el media-tech. Roll-ups i estratègics benvinguts.",
+    "contact.cta2.body": "Som autofinançats i a prop de ser rendibles. Parlem amb operadors que entenen el media-tech. Roll-ups i estratègics benvinguts.",
     "contact.cta3.eyebrow": "03 · Adquisicions",
     "contact.cta3.title": "Interès en adquisició.",
     "contact.cta3.body": "Compradors de media-tech, CMS o portfolio que mirin la pròxima generació de publicació autònoma haurien de parlar amb nosaltres aviat.",
     "contact.cta4.eyebrow": "04 · Consultoria",
     "contact.cta4.title": "Consultoria AI-native.",
-    "contact.cta4.body": "Fundadors construint amb agents, o empreses consolidades migrant una funció a programari autònom. L'Owen n'accepta unes poques l'any."
+    "contact.cta4.body": "Fundadors construint amb agents, o empreses consolidades migrant una funció a programari autònom. L'Owen n'accepta unes poques l'any.",
+    "contact.subfooter": "Barcelona · Londres · Responem en 48 hores · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcelona · Londres · Small. Mighty."
   },
   "fr": {
     "nav.cybertron": "Cybertron",
@@ -1223,16 +1486,101 @@
     "hero.scroll": "Défiler",
     "what.eyebrow": "Qu'est-ce que Pub.cat",
     "what.title": "Une société média <em>native de l'IA</em>, pilotée par une seule personne.",
+    "what.body1": "Pub.cat est un groupe éditorial de marques d'actualité en anglais : Barna.News, Catalan.News, RetroShell. Sous le capot, <strong>Cybertron</strong>, notre pipeline de contenus propriétaire. Il ingère, dédoublonne, vérifie, réécrit, traduit et publie au coût marginal de l'électricité.",
+    "what.body2": "Entièrement bootstrapped. Sur la voie directe de la rentabilité. Construit par un opérateur avec vingt ans d'échelle derrière lui. Cybertron s'ouvrira à d'autres éditeurs en SaaS en 2026.",
     "cyber.eyebrow": "Le produit",
     "cyber.title": "Cybertron. <em>Bientôt en SaaS.</em>",
+    "cyber.body": "Treize modules. Une API. Toutes les capacités qu'une rédaction moderne exige, cousues dans un seul pipeline autonome que n'importe quel éditeur indépendant peut allumer. La bêta publique s'ouvre à une petite cohorte triée en 2026. Liste d'attente sur demande.",
+    "cyber.caption": "Ingérer → Regrouper → Vérifier → Rechercher → Rédiger → Traduire → Éditer → Image → SEO → Publier → Distribuer → Surveiller → Analyser.",
+    "cyber.footer": "Chaque module est interchangeable. Chaque étape est loggée. Rien n'est une boîte noire. Fait pour tourner sans nous, conçu pour qu'un autre éditeur puisse le faire tourner aussi.",
+    "cyber.m01.role": "Module 01 · Ingérer",
+    "cyber.m01.title": "200+ flux sources, un seul tuyau.",
+    "cyber.m01.body": "RSS, APIs, sitemaps, signaux sociaux, registres publics. Normalisés, horodatés, attribués.",
+    "cyber.m02.role": "Module 02 · Regrouper",
+    "cyber.m02.title": "Doublons effondrés automatiquement.",
+    "cyber.m02.body": "Le clustering sémantique regroupe les éléments liés en candidats-sujets. Le scoring de hotness fait émerger le signal.",
+    "cyber.m03.role": "Module 03 · Vérifier",
+    "cyber.m03.title": "Sources primaires, par niveaux.",
+    "cyber.m03.body": "Niveaux de fiabilité des sources, contrôles de source nommée et recoupements avec des données faisant autorité avant toute écriture.",
+    "cyber.m04.role": "Module 04 · Rechercher",
+    "cyber.m04.title": "Dossiers de preuves à la demande.",
+    "cyber.m04.body": "Couverture connexe, archives publiques, contexte antérieur. Rassemblés et attribués avant que le brouillon ne soit généré.",
+    "cyber.m05.role": "Module 05 · Rédiger",
+    "cyber.m05.title": "Voix maison, agnostique au modèle.",
+    "cyber.m05.body": "Routage entre Claude, Gemini et Grok. Prompts réglés par locale. Voix de marque imposée au niveau prompt, pas à la discrétion.",
+    "cyber.m06.role": "Module 06 · Traduire",
+    "cyber.m06.title": "Multilingue par défaut.",
+    "cyber.m06.body": "Anglais, catalan, espagnol aujourd'hui. N'importe quel marché demain. Un pipeline, un fichier de configuration par locale.",
+    "cyber.m07.role": "Module 07 · Éditer",
+    "cyber.m07.title": "Un bureau de correction qui ne dort jamais.",
+    "cyber.m07.body": "Grammaire, clarté, formules proscrites, revérifications factuelles. Guide de style appliqué jusqu'à la dernière virgule.",
+    "cyber.m08.role": "Module 08 · Image",
+    "cyber.m08.title": "Images sous licence, correctement créditées.",
+    "cyber.m08.body": "Sélection d'image à la une, texte alt, retrait des bandeaux, attribution correcte. Aucune surprise côté copyright.",
+    "cyber.m09.role": "Module 09 · SEO",
+    "cyber.m09.title": "Données structurées, intégrées.",
+    "cyber.m09.body": "Schema.org, sitemap, OG, canonical. Conformité Google News. Maillage interne entre propriétés pour une autorité qui compose.",
+    "cyber.m10.role": "Module 10 · Publier",
+    "cyber.m10.title": "Ghost et WordPress, nativement.",
+    "cyber.m10.body": "Envoi vers n'importe quelle instance Ghost ou WordPress via API. Planification, catégories, auteurs, tags : tout est géré.",
+    "cyber.m11.role": "Module 11 · Distribuer",
+    "cyber.m11.title": "Packs sociaux par canal.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Chaque canal traité dans ses propres termes, pas copié-collé.",
+    "cyber.m12.role": "Module 12 · Surveiller",
+    "cyber.m12.title": "Agent d'audit en cron.",
+    "cyber.m12.body": "Audits de processus et de sécurité planifiés. Les constats critiques arrêtent la publication jusqu'à résolution. Pas consultatif, bloquant.",
+    "cyber.m13.role": "Module 13 · Analytique",
+    "cyber.m13.title": "Ce qui a marché, ce qui n'a pas.",
+    "cyber.m13.body": "Plausible plus Google Search Console, unifiés. Attribution au niveau de l'histoire : quelle source, quel modèle, quel canal.",
     "props.eyebrow": "Publications en ligne",
     "props.title": "La preuve en production.",
+    "props.body": "Chaque publication tourne sur le même pipeline Cybertron. Lancer la suivante se mesure en heures de configuration, pas en mois de recrutement.",
+    "props.barna.kind": "Anglais · Barcelone",
+    "props.barna.body": "Le quotidien en anglais pour les résidents internationaux de Barcelone. Politique, culture, transport, communauté. 15 à 25 sujets par jour, écrits par du logiciel et lus par des humains.",
+    "props.barna.more": "Visiter Barna.News →",
+    "props.catalan.kind": "Catalan · Barcelone",
+    "props.catalan.body": "L'édition en catalan. Même pipeline, voix localisée, indexée sur Google News pour les catalanophones chez eux et à l'étranger.",
+    "props.catalan.more": "Visiter Catalan.News →",
+    "props.retro.kind": "Anglais · Retro gaming",
+    "props.retro.body": "Une publication retro-gaming avec e-commerce intégré. Actualité, objets de collection, merchandising exclusif. Test vertical du schéma « publication plus boutique ».",
+    "props.retro.more": "Visiter RetroShell →",
+    "props.next.kind": "Feuille de route 2026",
+    "props.next.title": "Prochaines villes, prochains <em>verticaux</em>.",
+    "props.next.body": "Madrid. Malaga. Un vertical londonien. Expansion multilingue dans les villes européennes. Chaque ville est un fichier de configuration dans Cybertron, pas une embauche.",
+    "props.next.more": "Parlons-en →",
     "founder.eyebrow": "Fondateur",
-    "founder.title": "Owen Hughes. Un opérateur avec <em>vingt ans d'échelle</em> derrière lui.",
+    "founder.title": "Owen Hughes. Un opérateur, <em>vingt ans d'échelle</em> derrière lui.",
+    "founder.p1": "<strong>Head of EU Sales</strong> et <strong>Head of UK Key Accounts</strong> chez eBay, Merchant Development B2B. Avec un objectif de <em>1,3 milliard de dollars de GMV</em>. Auteur du guide <strong>Gold Standard Listings</strong>, adopté comme best practice globale. A construit en parallèle l'outil <strong>Listing Optimiser</strong>.",
+    "founder.p2": "<strong>Responsable global du digital chez Puig</strong>. A géré les ventes en ligne sur toutes les marques du groupe, directes et indirectes. A fait passer le business de <em>30 M€ à plus de 400 M€</em>. A bâti une communauté digitale globale de <strong>80+ personnes depuis zéro</strong>.",
+    "founder.p3": "A fondé <strong>RetroShell</strong>. Un produit de passion, parti des meilleurs protecteurs de collection au monde, devenu le média retro-gaming que Cybertron publie aujourd'hui. A fondé <strong>Barcelona English Speakers</strong> et <strong>Bizcelona</strong> en 2021, avec une portée actuelle de plus de <strong>5 000 personnes</strong> sur WhatsApp et Meetup.",
+    "founder.p4": "Des cicatrices de revenus à grande échelle. Un instinct de fondateur. Une communauté qui livre. Exactement le profil qu'exige un média natif de l'IA.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "Objectif GMV, Head of EU Sales et UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Business digital global, multiplié par 13 sur toutes les marques",
+    "founder.c3.label": "Équipe globale",
+    "founder.c3.num": "80+ personnes",
+    "founder.c3.note": "A bâti la communauté digitale de Puig depuis zéro",
+    "founder.c4.label": "Communauté",
+    "founder.c4.note": "Portée entre BES et Bizcelona, fondés en 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Demander un conseil",
     "faq.eyebrow": "Questions fréquentes",
     "faq.title": "Avant de poser la question.",
+    "faq.q1": "Qui dirige Pub.cat ?",
+    "faq.a1": "Owen Hughes, fondateur et unique directeur de RetroShell Ltd (Royaume-Uni), opérant sous le nom de Pub.cat depuis Barcelone. Un humain prend chaque décision. Tout le reste est du logiciel.",
+    "faq.q2": "Qu'est-ce que Cybertron ?",
+    "faq.a2": "Cybertron est notre pipeline de contenus propriétaire. Treize modules couvrant l'ingestion, la déduplication, la vérification, la recherche, la rédaction, la traduction, l'édition, l'imagerie, le SEO, la publication, la distribution, la surveillance et l'analytique. Utilisé aujourd'hui pour les propriétés de Pub.cat, bêta publique SaaS en 2026.",
+    "faq.q3": "Quand Cybertron s'ouvre-t-il aux autres éditeurs ?",
+    "faq.a3": "Une petite cohorte sur invitation en 2026, suivie d'un accès bêta plus large. Si vous êtes éditeur indépendant et que vous voulez entrer, écrivez-nous et nous vous mettons sur la liste.",
+    "faq.q4": "Qu'est-ce qui différencie Cybertron d'une simple API LLM ?",
+    "faq.a4": "L'orchestration, le tiering des sources, les portes éditoriales, le réglage par locale, les intégrations côté éditeur et des années de calibration éditoriale composée. Les modèles sont la commodité. Le pipeline est le produit.",
+    "faq.q5": "Pub.cat lève-t-il des fonds ?",
+    "faq.a5": "Pub.cat est entièrement bootstrapped et sur la voie de la rentabilité. Nous ne levons pas activement, mais nous écoutons les bons opérateurs. Investisseurs media-tech, sociétés de CMS et partenaires stratégiques pouvant accélérer le rollout SaaS de Cybertron sont invités à nous écrire.",
+    "faq.q6": "Owen accepte-t-il des missions de conseil ?",
+    "faq.a6": "Sélectivement, et uniquement sur l'opération native de l'IA et le design d'entreprises d'une seule personne. Si vous êtes fondateur construisant avec des agents, ou une entreprise établie migrant une fonction vers du logiciel autonome, Owen étudiera. Email ci-dessous.",
     "contact.title": "Parlons-en.",
-    "contact.intro": "Une boîte de réception, une personne. Choisissez votre porte, nous répondons sous 48 heures.",
+    "contact.intro": "Une boîte de réception, une personne. Choisissez la porte par laquelle vous êtes venu, nous répondons sous 48 heures.",
     "contact.cta1.eyebrow": "01 · Éditeurs",
     "contact.cta1.title": "Rejoignez la liste d'attente Cybertron.",
     "contact.cta1.body": "Vous dirigez une publication indépendante et voulez le pipeline qui fait tourner la nôtre. Cohorte sur invitation en 2026.",
@@ -1244,7 +1592,10 @@
     "contact.cta3.body": "Acquéreurs media-tech, CMS ou portefeuille regardant la prochaine génération de publication autonome devraient nous contacter tôt.",
     "contact.cta4.eyebrow": "04 · Conseil",
     "contact.cta4.title": "Conseil AI-native.",
-    "contact.cta4.body": "Fondateurs construisant avec des agents, ou entreprises établies migrant une fonction vers un logiciel autonome. Owen en prend quelques-uns par an."
+    "contact.cta4.body": "Fondateurs construisant avec des agents, ou entreprises établies migrant une fonction vers un logiciel autonome. Owen en prend quelques-uns par an.",
+    "contact.subfooter": "Barcelone · Londres · Réponse sous 48 heures · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcelone · Londres · Small. Mighty."
   },
   "de": {
     "nav.cybertron": "Cybertron",
@@ -1254,16 +1605,101 @@
     "hero.scroll": "Scrollen",
     "what.eyebrow": "Was ist Pub.cat",
     "what.title": "Ein <em>KI-natives</em> Medienunternehmen, geführt von einer Person.",
+    "what.body1": "Pub.cat ist eine Holding für englischsprachige Nachrichtenmarken: Barna.News, Catalan.News, RetroShell. Darunter liegt <strong>Cybertron</strong>, unsere proprietäre Content-Pipeline. Sie erfasst, dedupliziert, verifiziert, schreibt um, übersetzt und veröffentlicht zu den Grenzkosten von Strom.",
+    "what.body2": "Vollständig bootstrapped. Auf direktem Weg zur Profitabilität. Gebaut von einem Operator mit zwanzig Jahren Skalierungserfahrung. Cybertron öffnet sich 2026 für andere Verlage als SaaS.",
     "cyber.eyebrow": "Das Produkt",
     "cyber.title": "Cybertron. <em>Bald als SaaS.</em>",
+    "cyber.body": "Dreizehn Module. Eine API. Jede Fähigkeit, die eine moderne Redaktion braucht, in einer einzigen autonomen Pipeline, die jeder unabhängige Verlag anschalten kann. Öffentliche Beta für eine kleine, handverlesene Gruppe 2026. Warteliste auf Anfrage.",
+    "cyber.caption": "Erfassen → Gruppieren → Verifizieren → Recherchieren → Entwurf → Übersetzen → Redigieren → Bild → SEO → Publizieren → Verteilen → Überwachen → Analyse.",
+    "cyber.footer": "Jedes Modul ist austauschbar. Jede Stufe wird geloggt. Nichts ist eine Blackbox. Gebaut, um ohne uns zu laufen, engineered so, dass auch ein anderer Verlag es betreiben kann.",
+    "cyber.m01.role": "Modul 01 · Erfassen",
+    "cyber.m01.title": "200+ Quellen, ein Schlauch.",
+    "cyber.m01.body": "RSS, APIs, Sitemaps, soziale Signale, öffentliche Register. Normalisiert, mit Zeitstempel, attribuiert.",
+    "cyber.m02.role": "Modul 02 · Gruppieren",
+    "cyber.m02.title": "Duplikate automatisch zusammengeführt.",
+    "cyber.m02.body": "Semantisches Clustering fasst verwandte Items zu Story-Kandidaten zusammen. Hotness-Scoring bringt das Signal nach oben.",
+    "cyber.m03.role": "Modul 03 · Verifizieren",
+    "cyber.m03.title": "Primärquellen, gestaffelt.",
+    "cyber.m03.body": "Quellen-Zuverlässigkeitsstufen, Named-Source-Checks und Abgleich mit autoritativen Daten, bevor irgendetwas geschrieben wird.",
+    "cyber.m04.role": "Modul 04 · Recherchieren",
+    "cyber.m04.title": "Evidenzpakete auf Abruf.",
+    "cyber.m04.body": "Verwandte Berichterstattung, öffentliche Register, früherer Kontext. Zusammengezogen und attribuiert, bevor der Entwurf entsteht.",
+    "cyber.m05.role": "Modul 05 · Entwurf",
+    "cyber.m05.title": "Hausstimme, modellunabhängig.",
+    "cyber.m05.body": "Routing zwischen Claude, Gemini und Grok. Locale-getunte Prompts. Markenstimme am Prompt erzwungen, nicht in der Ermessensentscheidung.",
+    "cyber.m06.role": "Modul 06 · Übersetzen",
+    "cyber.m06.title": "Mehrsprachig ab Werk.",
+    "cyber.m06.body": "Heute Englisch, Katalanisch, Spanisch. Morgen jeder Markt. Eine Pipeline, eine Konfigurationsdatei pro Locale.",
+    "cyber.m07.role": "Modul 07 · Redigieren",
+    "cyber.m07.title": "Ein Schlussredaktionstisch, der nie schläft.",
+    "cyber.m07.body": "Grammatik, Klarheit, verbotene Phrasen, Faktenprüfung. Styleguide bis zum letzten Komma durchgesetzt.",
+    "cyber.m08.role": "Modul 08 · Bild",
+    "cyber.m08.title": "Lizenzierte Bilder, korrekt gutgeschrieben.",
+    "cyber.m08.body": "Auswahl des Aufmacherbilds, Alt-Text, Banner-Strip, richtige Attribution. Keine Copyright-Überraschungen.",
+    "cyber.m09.role": "Modul 09 · SEO",
+    "cyber.m09.title": "Strukturierte Daten, eingebaut.",
+    "cyber.m09.body": "Schema.org, Sitemap, OG, Canonical. Google-News-konform. Property-übergreifende interne Verlinkung für kumulative Autorität.",
+    "cyber.m10.role": "Modul 10 · Publizieren",
+    "cyber.m10.title": "Ghost und WordPress, nativ.",
+    "cyber.m10.body": "Push an jede Ghost- oder WordPress-Instanz per API. Planung, Kategorien, Autor:innen und Tags inklusive.",
+    "cyber.m11.role": "Modul 11 · Verteilen",
+    "cyber.m11.title": "Kanalspezifische Social-Pakete.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Jeder Kanal in seinen eigenen Begriffen behandelt, nicht kopiert.",
+    "cyber.m12.role": "Modul 12 · Überwachen",
+    "cyber.m12.title": "Audit-Agent im Cron.",
+    "cyber.m12.body": "Geplante Prozess- und Sicherheits-Audits. Kritische Funde stoppen die Publikation, bis geklärt. Nicht beratend, blockierend.",
+    "cyber.m13.role": "Modul 13 · Analyse",
+    "cyber.m13.title": "Was funktioniert hat, was nicht.",
+    "cyber.m13.body": "Plausible plus Google Search Console, vereinheitlicht. Attribution auf Story-Ebene: welche Quelle, welches Modell, welcher Kanal.",
     "props.eyebrow": "Laufende Publikationen",
     "props.title": "Bewährt im Betrieb.",
+    "props.body": "Jede Publikation läuft auf derselben Cybertron-Pipeline. Die nächste zu starten misst sich in Stunden Konfiguration, nicht in Monaten Recruiting.",
+    "props.barna.kind": "Englisch · Barcelona",
+    "props.barna.body": "Die englischsprachige Nachrichten-Tageszeitung für Barcelonas internationale Bewohner:innen. Politik, Kultur, Verkehr, Community. 15 bis 25 Stories pro Tag, geschrieben von Software und gelesen von Menschen.",
+    "props.barna.more": "Barna.News besuchen →",
+    "props.catalan.kind": "Katalanisch · Barcelona",
+    "props.catalan.body": "Die katalanische Ausgabe. Gleiche Pipeline, lokalisierte Stimme, in Google News für Catalanoparlants zu Hause und im Ausland indiziert.",
+    "props.catalan.more": "Catalan.News besuchen →",
+    "props.retro.kind": "Englisch · Retro Gaming",
+    "props.retro.body": "Eine Retro-Gaming-Publikation mit angeschlossenem E-Commerce. Nachrichten, Sammlerstücke, exklusives Merchandise. Vertikaler Test für das „Publikation-plus-Shop“-Muster.",
+    "props.retro.more": "RetroShell besuchen →",
+    "props.next.kind": "Roadmap 2026",
+    "props.next.title": "Nächste Städte, nächste <em>Vertikalen</em>.",
+    "props.next.body": "Madrid. Málaga. Ein London-Vertikal. Mehrsprachige Expansion in europäischen Städten. Jede ist eine Konfigurationsdatei in Cybertron, keine Einstellung.",
+    "props.next.more": "Sprechen Sie uns an →",
     "founder.eyebrow": "Gründer",
     "founder.title": "Owen Hughes. Ein Operator mit <em>zwanzig Jahren Skalierung</em> im Rücken.",
+    "founder.p1": "<strong>Head of EU Sales</strong> und <strong>Head of UK Key Accounts</strong> bei eBay, B2B Merchant Development. Mit einem Ziel von <em>1,3 Milliarden US-Dollar GMV</em>. Verfasser des <strong>Gold Standard Listings</strong>-Leitfadens, als globale Best Practice im Unternehmen übernommen. Hat parallel das Werkzeug <strong>Listing Optimiser</strong> aufgebaut.",
+    "founder.p2": "<strong>Global Digital Business Lead bei Puig</strong>. Verantwortlich für Online-Verkäufe über alle Marken der Gruppe, direkt und indirekt. Das Geschäft von <em>30 Mio. € auf über 400 Mio. €</em> gesteigert. Eine globale Digital-Community von <strong>80+ Personen aus dem Nichts</strong> aufgebaut.",
+    "founder.p3": "Gründer von <strong>RetroShell</strong>. Ein Passionsprodukt, das als die weltbesten Sammler-Protector begann und zu der Retro-Gaming-News-Seite wurde, die Cybertron heute publiziert. Gründer von <strong>Barcelona English Speakers</strong> und <strong>Bizcelona</strong> 2021, heute mit einer Reichweite von mehr als <strong>5.000 Personen</strong> über WhatsApp und Meetup.",
+    "founder.p4": "Enterprise-Umsatznarben. Gründer-Instinkt. Eine Community, die liefert. Genau das Operator-Profil, das KI-native Medien brauchen.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "GMV-Ziel, Head of EU Sales & UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Global Digital Business, über alle Marken 13× gewachsen",
+    "founder.c3.label": "Globales Team",
+    "founder.c3.num": "80+ Personen",
+    "founder.c3.note": "Puigs Digital-Community aus dem Nichts aufgebaut",
+    "founder.c4.label": "Community",
+    "founder.c4.note": "Reichweite über BES und Bizcelona, 2021 gegründet",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Beratung anfragen",
     "faq.eyebrow": "Häufige Fragen",
     "faq.title": "Bevor Sie fragen.",
+    "faq.q1": "Wer führt Pub.cat?",
+    "faq.a1": "Owen Hughes, Gründer und alleiniger Director der RetroShell Ltd (UK), die als Pub.cat aus Barcelona operiert. Ein Mensch trifft jede Entscheidung. Alles andere ist Software.",
+    "faq.q2": "Was ist Cybertron?",
+    "faq.a2": "Cybertron ist unsere proprietäre Content-Pipeline. Dreizehn Module: Erfassung, Deduplikation, Verifizierung, Recherche, Entwurf, Übersetzung, Redaktion, Bild, SEO, Publikation, Distribution, Monitoring und Analyse. Heute für Pub.cats eigene Properties, 2026 als öffentliche SaaS-Beta.",
+    "faq.q3": "Wann öffnet sich Cybertron für andere Verlage?",
+    "faq.a3": "Eine kleine Einladungs-Kohorte 2026, gefolgt von breiterem Beta-Zugang. Wenn Sie ein unabhängiger Verlag sind und rein wollen, schreiben Sie uns, wir setzen Sie auf die Liste.",
+    "faq.q4": "Was unterscheidet Cybertron von einer bloßen LLM-API?",
+    "faq.a4": "Die Orchestrierung, das Quellen-Tiering, die redaktionellen Tore, das lokale Feintuning, die verlagsseitigen Integrationen und Jahre zusammengesetzter redaktioneller Kalibrierung. Modelle sind die Commodity. Die Pipeline ist das Produkt.",
+    "faq.q5": "Nimmt Pub.cat Kapital auf?",
+    "faq.a5": "Pub.cat ist vollständig bootstrapped und auf dem Weg zur Profitabilität. Wir akquirieren aktiv keine Investoren, hören aber den richtigen Operatoren zu. Media-Tech-Investoren, CMS-Unternehmen und strategische Partner, die Cybertrons SaaS-Rollout beschleunigen können, sollten sich melden.",
+    "faq.q6": "Nimmt Owen Beratungsmandate an?",
+    "faq.a6": "Selektiv, und nur zu KI-nativem Betrieb und Ein-Personen-Unternehmen. Gründer, die mit Agenten bauen, oder etablierte Unternehmen, die eine Funktion auf autonome Software umstellen, Owen schaut sich das an. E-Mail unten.",
     "contact.title": "Sprechen Sie uns an.",
-    "contact.intro": "Ein Posteingang, ein Mensch. Wählen Sie den Weg, wir antworten innerhalb von 48 Stunden.",
+    "contact.intro": "Ein Posteingang, ein Mensch. Wählen Sie die Tür, durch die Sie kommen, wir antworten innerhalb von 48 Stunden.",
     "contact.cta1.eyebrow": "01 · Verlage",
     "contact.cta1.title": "Auf die Cybertron-Warteliste.",
     "contact.cta1.body": "Sie führen eine unabhängige Publikation und wollen die Pipeline, die unsere betreibt. Einladungs-Kohorte 2026.",
@@ -1275,7 +1711,10 @@
     "contact.cta3.body": "Media-Tech-, CMS- oder Portfolio-Käufer, die auf die nächste Generation autonomer Publikation schauen, sollten früh mit uns sprechen.",
     "contact.cta4.eyebrow": "04 · Beratung",
     "contact.cta4.title": "KI-native Beratung.",
-    "contact.cta4.body": "Gründer, die mit Agenten bauen, oder etablierte Unternehmen, die eine Funktion auf autonome Software umstellen. Owen nimmt einige pro Jahr an."
+    "contact.cta4.body": "Gründer, die mit Agenten bauen, oder etablierte Unternehmen, die eine Funktion auf autonome Software umstellen. Owen nimmt einige pro Jahr an.",
+    "contact.subfooter": "Barcelona · London · Antwort innerhalb von 48 Stunden · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcelona · London · Small. Mighty."
   },
   "it": {
     "nav.cybertron": "Cybertron",
@@ -1285,16 +1724,101 @@
     "hero.scroll": "Scorri",
     "what.eyebrow": "Cos'è Pub.cat",
     "what.title": "Un'azienda media <em>nativa di IA</em>, gestita da una sola persona.",
+    "what.body1": "Pub.cat è una holding di testate di notizie in inglese: Barna.News, Catalan.News, RetroShell. Sotto il cofano c'è <strong>Cybertron</strong>, la nostra pipeline di contenuti proprietaria. Acquisisce, deduplica, verifica, riscrive, traduce e pubblica al costo marginale dell'elettricità.",
+    "what.body2": "Interamente bootstrapped. In rotta diretta verso la redditività. Costruita da un operatore con venti anni di scala alle spalle. Cybertron si aprirà ad altri editori come SaaS nel 2026.",
     "cyber.eyebrow": "Il prodotto",
     "cyber.title": "Cybertron. <em>Presto come SaaS.</em>",
+    "cyber.body": "Tredici moduli. Una API. Ogni capacità che una redazione moderna richiede, cucita in un'unica pipeline autonoma che qualsiasi editore indipendente può accendere. Beta pubblica per una piccola coorte selezionata nel 2026. Lista d'attesa su richiesta.",
+    "cyber.caption": "Acquisire → Raggruppare → Verificare → Ricercare → Redigere → Tradurre → Editare → Immagine → SEO → Pubblicare → Distribuire → Monitorare → Analizzare.",
+    "cyber.footer": "Ogni modulo è intercambiabile. Ogni fase è loggata. Niente è una scatola nera. Fatta per girare senza di noi, ingegnerizzata perché un altro editore possa farla girare anche lui.",
+    "cyber.m01.role": "Modulo 01 · Acquisire",
+    "cyber.m01.title": "200+ feed sorgente, un unico getto.",
+    "cyber.m01.body": "RSS, API, sitemap, segnali social, registri pubblici. Normalizzati, con timestamp, attribuiti.",
+    "cyber.m02.role": "Modulo 02 · Raggruppare",
+    "cyber.m02.title": "Duplicati compressi automaticamente.",
+    "cyber.m02.body": "Il clustering semantico raggruppa elementi correlati in storie candidate. Lo scoring di hotness fa emergere il segnale.",
+    "cyber.m03.role": "Modulo 03 · Verificare",
+    "cyber.m03.title": "Fonti primarie, a livelli.",
+    "cyber.m03.body": "Livelli di affidabilità della fonte, controlli di fonte nominata e riferimenti incrociati con dati autorevoli prima di qualsiasi scrittura.",
+    "cyber.m04.role": "Modulo 04 · Ricercare",
+    "cyber.m04.title": "Dossier di prove a richiesta.",
+    "cyber.m04.body": "Copertura correlata, archivi pubblici, contesto pregresso. Raccolti e attribuiti prima che la bozza sia generata.",
+    "cyber.m05.role": "Modulo 05 · Redigere",
+    "cyber.m05.title": "Voce di casa, model-agnostica.",
+    "cyber.m05.body": "Routing tra Claude, Gemini e Grok. Prompt calibrati per locale. Voce del brand imposta a livello di prompt, non di discrezionalità.",
+    "cyber.m06.role": "Modulo 06 · Tradurre",
+    "cyber.m06.title": "Multilingue di default.",
+    "cyber.m06.body": "Oggi inglese, catalano e spagnolo. Domani qualsiasi mercato. Una pipeline, un file di configurazione per locale.",
+    "cyber.m07.role": "Modulo 07 · Editare",
+    "cyber.m07.title": "Un banco di correzione che non dorme mai.",
+    "cyber.m07.body": "Grammatica, chiarezza, frasi vietate, riverifiche fattuali. Stile imposto fino all'ultima virgola.",
+    "cyber.m08.role": "Modulo 08 · Immagine",
+    "cyber.m08.title": "Immagini licenziate, attribuite correttamente.",
+    "cyber.m08.body": "Selezione dell'immagine di copertina, alt text, rimozione di banner, attribuzione corretta. Nessuna sorpresa sul copyright.",
+    "cyber.m09.role": "Modulo 09 · SEO",
+    "cyber.m09.title": "Dati strutturati, integrati.",
+    "cyber.m09.body": "Schema.org, sitemap, OG, canonical. Conformità Google News. Linking interno tra property per un'autorità che si compone.",
+    "cyber.m10.role": "Modulo 10 · Pubblicare",
+    "cyber.m10.title": "Ghost e WordPress, nativamente.",
+    "cyber.m10.body": "Push verso qualsiasi istanza Ghost o WordPress via API. Programmazione, categorie, autori e tag gestiti.",
+    "cyber.m11.role": "Modulo 11 · Distribuire",
+    "cyber.m11.title": "Pacchetti social per canale.",
+    "cyber.m11.body": "X, Reddit, Facebook, WhatsApp, LinkedIn. Ogni canale trattato sui suoi termini, non copiato-e-incollato.",
+    "cyber.m12.role": "Modulo 12 · Monitorare",
+    "cyber.m12.title": "Agente di audit in cron.",
+    "cyber.m12.body": "Audit di processo e sicurezza programmati. Le scoperte critiche fermano la pubblicazione finché non risolte. Non consultivo, bloccante.",
+    "cyber.m13.role": "Modulo 13 · Analisi",
+    "cyber.m13.title": "Cosa ha funzionato, cosa no.",
+    "cyber.m13.body": "Plausible più Google Search Console, unificati. Attribuzione a livello di storia: quale fonte, quale modello, quale canale.",
     "props.eyebrow": "Pubblicazioni attive",
     "props.title": "Prova in produzione.",
+    "props.body": "Ogni pubblicazione gira sulla stessa pipeline Cybertron. Lanciare la prossima si misura in ore di configurazione, non in mesi di assunzioni.",
+    "props.barna.kind": "Inglese · Barcellona",
+    "props.barna.body": "Il quotidiano in inglese per i residenti internazionali di Barcellona. Politica, cultura, trasporti, comunità. Da 15 a 25 storie al giorno, scritte da software e lette da umani.",
+    "props.barna.more": "Visita Barna.News →",
+    "props.catalan.kind": "Catalano · Barcellona",
+    "props.catalan.body": "L'edizione in catalano. Stessa pipeline, voce localizzata, indicizzata su Google News per i catalanoparlanti in patria e all'estero.",
+    "props.catalan.more": "Visita Catalan.News →",
+    "props.retro.kind": "Inglese · Retro gaming",
+    "props.retro.body": "Una testata di retro gaming con e-commerce integrato. News, oggetti da collezione, merchandising esclusivo. Test verticale del pattern \"pubblicazione più negozio\".",
+    "props.retro.more": "Visita RetroShell →",
+    "props.next.kind": "Roadmap 2026",
+    "props.next.title": "Prossime città, prossime <em>verticali</em>.",
+    "props.next.body": "Madrid. Málaga. Una verticale londinese. Espansione multilingue nelle città europee. Ognuna è un file di configurazione in Cybertron, non un'assunzione.",
+    "props.next.more": "Parliamone →",
     "founder.eyebrow": "Fondatore",
     "founder.title": "Owen Hughes. Un operatore con <em>vent'anni di scala</em> alle spalle.",
+    "founder.p1": "<strong>Head of EU Sales</strong> e <strong>Head of UK Key Accounts</strong> in eBay, Merchant Development B2B. Obiettivo di <em>1,3 miliardi di dollari di GMV</em>. Autore della guida <strong>Gold Standard Listings</strong>, adottata come best practice globale. Ha costruito in parallelo lo strumento <strong>Listing Optimiser</strong>.",
+    "founder.p2": "<strong>Global Digital Business lead in Puig</strong>. Responsabile delle vendite online su tutti i marchi del gruppo, dirette e indirette. Ha portato il business da <em>30 milioni a oltre 400 milioni di euro</em>. Ha messo in piedi una community digitale globale di <strong>oltre 80 persone dal nulla</strong>.",
+    "founder.p3": "Ha fondato <strong>RetroShell</strong>. Un prodotto di passione partito come i migliori protettori da collezione al mondo, cresciuto nel sito di retro gaming che Cybertron pubblica oggi. Ha fondato <strong>Barcelona English Speakers</strong> e <strong>Bizcelona</strong> nel 2021, oggi con una portata di oltre <strong>5.000 persone</strong> tra WhatsApp e Meetup.",
+    "founder.p4": "Cicatrici di fatturato enterprise. Istinto da fondatore. Una community che consegna. Esattamente il profilo operativo che un media nativo di IA richiede.",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "Obiettivo GMV, Head of EU Sales e UK Key Accounts",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "Global Digital Business, cresciuto 13× su tutti i marchi",
+    "founder.c3.label": "Team globale",
+    "founder.c3.num": "80+ persone",
+    "founder.c3.note": "Ha costruito la community digitale di Puig da zero",
+    "founder.c4.label": "Community",
+    "founder.c4.note": "Portata tra BES e Bizcelona, fondate nel 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "Chiedere di consulenza",
     "faq.eyebrow": "Domande frequenti",
     "faq.title": "Prima di chiedere.",
+    "faq.q1": "Chi gestisce Pub.cat?",
+    "faq.a1": "Owen Hughes, fondatore e unico direttore di RetroShell Ltd (Regno Unito), operante come Pub.cat da Barcellona. Un umano prende ogni decisione. Tutto il resto è software.",
+    "faq.q2": "Cos'è Cybertron?",
+    "faq.a2": "Cybertron è la nostra pipeline di contenuti proprietaria. Tredici moduli che coprono acquisizione, deduplicazione, verifica, ricerca, redazione, traduzione, editing, immagine, SEO, pubblicazione, distribuzione, monitoraggio e analisi. Oggi per le property di Pub.cat; nel 2026 apre come SaaS in beta pubblica.",
+    "faq.q3": "Quando Cybertron si apre agli altri editori?",
+    "faq.a3": "Una piccola coorte su invito nel 2026, seguita da un accesso beta più ampio. Se sei un editore indipendente e vuoi entrare, scrivici e ti mettiamo in lista.",
+    "faq.q4": "Cosa rende Cybertron diverso da una semplice API LLM?",
+    "faq.a4": "L'orchestrazione, il tiering delle fonti, i cancelli editoriali, il tuning per locale, le integrazioni sul lato editore e anni di calibrazione editoriale composta. I modelli sono commodity. La pipeline è il prodotto.",
+    "faq.q5": "Pub.cat sta raccogliendo investimenti?",
+    "faq.a5": "Pub.cat è interamente bootstrapped e in rotta verso la redditività. Non stiamo attivamente raccogliendo, ma ascoltiamo gli operatori giusti. Investitori media-tech, aziende di CMS e partner strategici che possono accelerare il rollout SaaS di Cybertron dovrebbero contattarci.",
+    "faq.q6": "Owen accetta incarichi di consulenza?",
+    "faq.a6": "Selettivamente, e solo su operatività IA-nativa e design di aziende da una persona. Se sei un fondatore che costruisce con agenti, o un'azienda consolidata che migra una funzione a software autonomo, Owen lo valuterà. Email sotto.",
     "contact.title": "Parliamone.",
-    "contact.intro": "Una casella, una persona. Scegli la porta, rispondiamo entro 48 ore.",
+    "contact.intro": "Una casella, una persona. Scegli la porta da cui sei entrato, rispondiamo entro 48 ore.",
     "contact.cta1.eyebrow": "01 · Editori",
     "contact.cta1.title": "Iscriviti alla lista d'attesa Cybertron.",
     "contact.cta1.body": "Gestisci una pubblicazione indipendente e vuoi la pipeline che alimenta la nostra. Coorte a invito nel 2026.",
@@ -1306,7 +1830,10 @@
     "contact.cta3.body": "Acquirenti media-tech, CMS o di portafoglio che guardano alla prossima generazione di pubblicazione autonoma dovrebbero parlarci presto.",
     "contact.cta4.eyebrow": "04 · Consulenza",
     "contact.cta4.title": "Consulenza AI-native.",
-    "contact.cta4.body": "Fondatori che costruiscono con agenti, o aziende consolidate che migrano una funzione a software autonomo. Owen ne accetta alcune all'anno."
+    "contact.cta4.body": "Fondatori che costruiscono con agenti, o aziende consolidate che migrano una funzione a software autonomo. Owen ne accetta alcune all'anno.",
+    "contact.subfooter": "Barcellona · Londra · Risposta entro 48 ore · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "Barcellona · Londra · Small. Mighty."
   },
   "zh": {
     "nav.cybertron": "Cybertron",
@@ -1316,14 +1843,99 @@
     "hero.scroll": "滚动",
     "what.eyebrow": "关于 Pub.cat",
     "what.title": "一家由一人经营的<em>AI 原生</em>媒体公司。",
+    "what.body1": "Pub.cat 是一家英语新闻品牌的控股公司，旗下包括 Barna.News、Catalan.News 和 RetroShell。底层运行的是我们自主研发的内容管道 <strong>Cybertron</strong>：以近乎电费的边际成本完成采集、去重、核实、重写、翻译和发布。",
+    "what.body2": "完全自筹资金，正直奔盈利。由一位拥有二十年规模化经验的运营者独自打造。Cybertron 将于 2026 年以 SaaS 形式向其他出版商开放。",
     "cyber.eyebrow": "产品",
     "cyber.title": "Cybertron。<em>即将推出 SaaS。</em>",
+    "cyber.body": "十三个模块，一套 API。现代编辑部所需的每项能力，缝合成一条任何独立出版商都可以直接启用的自主管道。2026 年向一小批精选出版物开放公测。索取邀请请加入等候名单。",
+    "cyber.caption": "采集 → 聚类 → 核实 → 调研 → 撰写 → 翻译 → 编辑 → 配图 → SEO → 发布 → 分发 → 监控 → 分析。",
+    "cyber.footer": "每个模块都可替换。每个阶段都有日志。没有黑箱。本就为脱离我们而设计——也经过工程化，让另一家出版商同样能跑起来。",
+    "cyber.m01.role": "模块 01 · 采集",
+    "cyber.m01.title": "200+ 信源，一根出水管。",
+    "cyber.m01.body": "RSS、API、站点地图、社交信号、公共档案。统一归一化、带时间戳、保留出处。",
+    "cyber.m02.role": "模块 02 · 聚类",
+    "cyber.m02.title": "重复内容自动合并。",
+    "cyber.m02.body": "语义聚类将相关条目分组为候选报道。热度评分让真正重要的信号浮上来。",
+    "cyber.m03.role": "模块 03 · 核实",
+    "cyber.m03.title": "一手信源，分级处理。",
+    "cyber.m03.body": "信源可靠度分级、具名信源核查，并在落笔之前与权威数据交叉验证。",
+    "cyber.m04.role": "模块 04 · 调研",
+    "cyber.m04.title": "按需构建的证据包。",
+    "cyber.m04.body": "相关报道、公共档案、既往背景；在草稿生成之前就收集并注明出处。",
+    "cyber.m05.role": "模块 05 · 撰写",
+    "cyber.m05.title": "统一语气，不绑定模型。",
+    "cyber.m05.body": "在 Claude、Gemini、Grok 之间按任务路由。提示词按地域调校。品牌语气由提示词层强制执行，而非主观判断。",
+    "cyber.m06.role": "模块 06 · 翻译",
+    "cyber.m06.title": "默认多语言。",
+    "cyber.m06.body": "现在是英语、加泰罗尼亚语和西班牙语。明天可以是任何市场。一套管道，每个语言一个配置文件。",
+    "cyber.m07.role": "模块 07 · 编辑",
+    "cyber.m07.title": "永不下班的校对台。",
+    "cyber.m07.body": "语法、清晰度、禁用语、事实复核。风格指南逐条落实到每一个标点。",
+    "cyber.m08.role": "模块 08 · 图像",
+    "cyber.m08.title": "正版图片，正确署名。",
+    "cyber.m08.body": "封面图挑选、替代文字、横幅剥离、正确署名。没有版权意外。",
+    "cyber.m09.role": "模块 09 · SEO",
+    "cyber.m09.title": "结构化数据，内建。",
+    "cyber.m09.body": "Schema.org、站点地图、OG、canonical。符合 Google News 要求。各站点互链，权重复利累积。",
+    "cyber.m10.role": "模块 10 · 发布",
+    "cyber.m10.title": "原生支持 Ghost 与 WordPress。",
+    "cyber.m10.body": "通过 API 推送到任意 Ghost 或 WordPress 实例：排程、分类、作者、标签一并处理。",
+    "cyber.m11.role": "模块 11 · 分发",
+    "cyber.m11.title": "分渠道定制的社交包。",
+    "cyber.m11.body": "X、Reddit、Facebook、WhatsApp、LinkedIn。每个渠道按其自身规则处理，绝不一稿多投。",
+    "cyber.m12.role": "模块 12 · 监控",
+    "cyber.m12.title": "按计划运行的审计代理。",
+    "cyber.m12.body": "定期流程与安全审计。关键发现直接停发，直到问题解决。不是咨询建议，是硬拦截。",
+    "cyber.m13.role": "模块 13 · 分析",
+    "cyber.m13.title": "有效与无效，一目了然。",
+    "cyber.m13.body": "Plausible 与 Google Search Console 统一。稿件级别的归因：哪条信源、哪个模型、哪个渠道。",
     "props.eyebrow": "在线媒体",
     "props.title": "实战验证。",
+    "props.body": "每一个媒体都跑在同一条 Cybertron 管道上。启动下一个，只需按小时计的配置时间，而不是按月计的招聘。",
+    "props.barna.kind": "英语 · 巴塞罗那",
+    "props.barna.body": "面向巴塞罗那国际居民的英语日报。政治、文化、交通、社区。每天 15 到 25 篇稿件，由软件撰写、由人类阅读。",
+    "props.barna.more": "访问 Barna.News →",
+    "props.catalan.kind": "加泰罗尼亚语 · 巴塞罗那",
+    "props.catalan.body": "加泰罗尼亚语版本。同一条管道，本地化语气，面向全球加泰罗尼亚语读者在 Google News 中被索引。",
+    "props.catalan.more": "访问 Catalan.News →",
+    "props.retro.kind": "英语 · 复古游戏",
+    "props.retro.body": "一家带电商的复古游戏出版物。新闻、收藏品、独家周边。对「出版物 + 店铺」模式的垂直测试。",
+    "props.retro.more": "访问 RetroShell →",
+    "props.next.kind": "2026 路线图",
+    "props.next.title": "下一批城市，下一批<em>垂直领域</em>。",
+    "props.next.body": "马德里。马拉加。伦敦垂直。多语言扩张至欧洲其他城市。每一个都是 Cybertron 中的一个配置文件，而不是一次招聘。",
+    "props.next.more": "与我们谈谈 →",
     "founder.eyebrow": "创始人",
-    "founder.title": "Owen Hughes，拥有<em>二十年的规模化</em>经验。",
+    "founder.title": "Owen Hughes。一位拥有<em>二十年规模化经验</em>的运营者。",
+    "founder.p1": "在 eBay B2B 商户发展团队担任<strong>欧洲销售负责人</strong>与<strong>英国大客户负责人</strong>，承担 <em>13 亿美元 GMV</em> 目标。编写《<strong>Gold Standard Listings</strong>》指南，并在公司内被采纳为全球最佳实践。同期打造了 <strong>Listing Optimiser</strong> 工具。",
+    "founder.p2": "Puig 集团<strong>全球数字业务负责人</strong>。负责集团旗下所有品牌的线上销售，含直营与分销。将该业务从 <em>3000 万欧元增长至超过 4 亿欧元</em>。从零搭建了一支 <strong>80 多人的全球数字团队</strong>。",
+    "founder.p3": "创立 <strong>RetroShell</strong>。最初是「全世界最好的收藏保护壳」的情怀产品，后来成长为如今由 Cybertron 发布的复古游戏媒体。2021 年创立 <strong>Barcelona English Speakers</strong> 与 <strong>Bizcelona</strong>，如今在 WhatsApp 与 Meetup 上覆盖超过 <strong>5000 人</strong>。",
+    "founder.p4": "企业级营收上的硬仗经验。创始人的直觉。一个能落地的社群。这正是 AI 原生媒体所需要的运营者画像。",
+    "founder.c1.label": "eBay",
+    "founder.c1.note": "GMV 目标，欧洲销售 & 英国大客户负责人",
+    "founder.c2.label": "Puig",
+    "founder.c2.note": "全球数字业务，跨全部品牌增长 13 倍",
+    "founder.c3.label": "全球团队",
+    "founder.c3.num": "80+ 人",
+    "founder.c3.note": "从零搭建 Puig 的数字团队",
+    "founder.c4.label": "社群",
+    "founder.c4.note": "BES 与 Bizcelona 的总覆盖，创立于 2021",
+    "founder.link.linkedin": "LinkedIn · Pub.cat",
+    "founder.link.consulting": "咨询顾问服务",
     "faq.eyebrow": "常见问题",
     "faq.title": "在您询问之前。",
+    "faq.q1": "Pub.cat 由谁经营？",
+    "faq.a1": "Owen Hughes，RetroShell Ltd（英国）的创始人兼唯一董事，以 Pub.cat 的名义在巴塞罗那运营。每一个决定都由一个真人做出，其他一切都是软件。",
+    "faq.q2": "Cybertron 是什么？",
+    "faq.a2": "Cybertron 是我们自主研发的内容管道：采集、去重、核实、调研、撰写、翻译、编辑、配图、SEO、发布、分发、监控、分析，共十三个模块。目前服务于 Pub.cat 旗下媒体，2026 年将以 SaaS 形式公测。",
+    "faq.q3": "Cybertron 何时向其他出版商开放？",
+    "faq.a3": "2026 年向一小批邀请用户开放，随后扩大 Beta 范围。如果您是独立出版商并希望加入，发邮件给我们即可进入名单。",
+    "faq.q4": "Cybertron 与直接调用 LLM API 有何不同？",
+    "faq.a4": "编排、信源分级、编辑守门、地域调校、出版商侧集成，加上多年复利式的编辑校准。模型是大宗商品，管道才是产品。",
+    "faq.q5": "Pub.cat 在融资吗？",
+    "faq.a5": "Pub.cat 完全自筹资金，接近盈利。目前没有主动融资，但会倾听合适的运营者。媒体科技投资者、CMS 公司，以及能加速 Cybertron SaaS 落地的战略合作方，欢迎联系。",
+    "faq.q6": "Owen 接受咨询项目吗？",
+    "faq.a6": "有选择地接，仅限 AI 原生运营与一人公司设计。无论是正在用代理构建的创始人，还是希望将某项职能迁移到自主软件的成熟企业，Owen 都会认真考虑。邮箱见下。",
     "contact.title": "联系我们。",
     "contact.intro": "一个收件箱，一个真人。选择入口，我们将在 48 小时内回复。",
     "contact.cta1.eyebrow": "01 · 出版商",
@@ -1337,7 +1949,10 @@
     "contact.cta3.body": "关注下一代自主出版的媒体科技、CMS 或投资组合买家，欢迎尽早联系。",
     "contact.cta4.eyebrow": "04 · 咨询",
     "contact.cta4.title": "AI 原生咨询。",
-    "contact.cta4.body": "正在用代理构建的创始人，或将某项职能迁移到自主软件的成熟企业。Owen 每年仅接受少量。"
+    "contact.cta4.body": "正在用代理构建的创始人，或将某项职能迁移到自主软件的成熟企业。Owen 每年仅接受少量。",
+    "contact.subfooter": "巴塞罗那 · 伦敦 · 48 小时内回复 · <a href=\"https://www.linkedin.com/company/pub-cat\" rel=\"noopener\" style=\"color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;\">LinkedIn</a>",
+    "footer.copyright": "© 2026 Pub.cat · RetroShell Ltd (UK)",
+    "footer.tagline": "巴塞罗那 · 伦敦 · Small. Mighty."
   }
 }
 </script>
