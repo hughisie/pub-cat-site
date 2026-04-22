@@ -436,17 +436,62 @@
     text-transform: uppercase; color: var(--red);
   }
 
+  /* Language switcher in nav */
+  .lang { position: relative; margin-left: 8px; }
+  .lang-toggle {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--ink);
+    background: transparent; border: 1px solid var(--rule);
+    border-radius: 100px; padding: 8px 12px;
+    display: inline-flex; align-items: center; gap: 6px;
+    cursor: pointer;
+    transition: background 120ms ease, border-color 120ms ease;
+  }
+  .lang-toggle:hover { background: var(--paper-2); border-color: rgba(30,29,27,0.25); }
+  .nav:not(.is-scrolled) .lang-toggle {
+    background: rgba(247, 245, 239, 0.72);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .lang-menu {
+    position: absolute; top: calc(100% + 6px); right: 0;
+    list-style: none; padding: 6px; margin: 0;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12), 0 10px 40px rgba(0,0,0,0.08);
+    min-width: 160px;
+    opacity: 0; visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 140ms ease, transform 140ms ease, visibility 140ms;
+    z-index: 70;
+  }
+  .lang.is-open .lang-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .lang-menu button {
+    width: 100%; text-align: left;
+    padding: 8px 12px;
+    background: transparent; border: none;
+    font-family: var(--sans); font-size: 13px; color: var(--ink);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .lang-menu button:hover { background: var(--paper-2); color: var(--red); }
+  .lang-menu button.is-active { color: var(--red); font-weight: 600; }
+  @media (max-width: 720px) {
+    .lang { margin-left: 4px; }
+    .lang-toggle { padding: 6px 10px; font-size: 10px; }
+  }
+
   /* Live ticker — below the nav, top 2 stories from each property */
   .ticker {
     position: fixed;
-    top: 56px; left: 0; right: 0;
+    top: 0; left: 0; right: 0;
     height: 34px;
-    background: rgba(247, 245, 239, 0.92);
+    background: rgba(247, 245, 239, 0.94);
     -webkit-backdrop-filter: saturate(160%) blur(10px);
     backdrop-filter: saturate(160%) blur(10px);
     border-bottom: 1px solid var(--rule);
     overflow: hidden;
-    z-index: 45;
+    z-index: 60;   /* above nav so the black LIVE pip is visible */
     transform: translateY(-100%);
     transition: transform 320ms var(--ease), opacity 240ms ease;
     opacity: 0;
@@ -744,10 +789,26 @@
     <span>pub.cat</span>
   </a>
   <div class="links">
-    <a href="#cybertron">Cybertron</a>
-    <a href="#properties">Properties</a>
-    <a href="#founder">Founder</a>
-    <a href="#contact" class="primary">Get in touch</a>
+    <a href="#cybertron" data-i18n="nav.cybertron">Cybertron</a>
+    <a href="#properties" data-i18n="nav.properties">Properties</a>
+    <a href="#founder" data-i18n="nav.founder">Founder</a>
+    <a href="#contact" class="primary" data-i18n="nav.cta">Get in touch</a>
+    <!-- Language switcher -->
+    <div class="lang" role="group" aria-label="Language">
+      <button class="lang-toggle" aria-haspopup="listbox" aria-expanded="false" id="lang-toggle">
+        <span id="lang-current">EN</span>
+        <svg width="8" height="5" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0L4 5L8 0Z" fill="currentColor"/></svg>
+      </button>
+      <ul class="lang-menu" role="listbox" id="lang-menu">
+        <li><button role="option" data-lang="en">English</button></li>
+        <li><button role="option" data-lang="es">Español</button></li>
+        <li><button role="option" data-lang="ca">Català</button></li>
+        <li><button role="option" data-lang="fr">Français</button></li>
+        <li><button role="option" data-lang="de">Deutsch</button></li>
+        <li><button role="option" data-lang="it">Italiano</button></li>
+        <li><button role="option" data-lang="zh">中文</button></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -767,7 +828,7 @@
 
     <!-- Overlay chapters removed: the scene-baked captions carry the narrative. -->
     <!-- Scroll hint only: a subtle prompt to keep scrolling. -->
-    <div class="scroll-prompt" aria-hidden="true">Scroll</div>
+    <div class="scroll-prompt" aria-hidden="true" data-i18n="hero.scroll">Scroll</div>
   </div>
 </section>
 
@@ -784,8 +845,8 @@
         <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
       </svg>
     </div>
-    <div class="eyebrow">What is Pub.cat</div>
-    <h2 id="what-h">An <em>AI-native</em> media company, run by one.</h2>
+    <div class="eyebrow" data-i18n="what.eyebrow">What is Pub.cat</div>
+    <h2 id="what-h" data-i18n-html="what.title">An <em>AI-native</em> media company, run by one.</h2>
     <p>Pub.cat is a holding company for English-language news brands: Barna.News, Catalan.News, RetroShell. Under the hood sits <strong>Cybertron</strong>, our proprietary content pipeline. It ingests, de-duplicates, verifies, rewrites, translates and publishes at the marginal cost of electricity.</p>
     <p style="margin-top:18px;max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Fully bootstrapped. On a direct path to profitability. Built by one operator with twenty years of scale behind him. Cybertron opens to other publishers as SaaS in 2026.</p>
   </section>
@@ -801,8 +862,8 @@
         <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
       </svg>
     </div>
-    <div class="eyebrow">The product</div>
-    <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Cybertron. <em>Soon as SaaS.</em></h2>
+    <div class="eyebrow" data-i18n="cyber.eyebrow">The product</div>
+    <h2 id="cyber-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n-html="cyber.title">Cybertron. <em>Soon as SaaS.</em></h2>
     <p style="max-width:680px;font-size:18px;line-height:1.55;opacity:0.85;">Thirteen modules. One API. Every capability a modern newsroom needs, stitched into a single autonomous pipeline that any independent publisher can switch on. Public beta opens to a small cohort of hand-picked titles in 2026. Waitlist on request.</p>
 
     <!-- Cybertron module flow diagram -->
@@ -862,8 +923,8 @@
         <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
       </svg>
     </div>
-    <div class="eyebrow">Live properties</div>
-    <h2 id="props-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Proof in production.</h2>
+    <div class="eyebrow" data-i18n="props.eyebrow">Live properties</div>
+    <h2 id="props-h" class="section-head" style="padding:0;margin:16px 0 24px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n="props.title">Proof in production.</h2>
     <p style="max-width:640px;font-size:18px;line-height:1.55;opacity:0.85;">Every property runs on the same Cybertron pipeline. Launching the next one is measured in hours of configuration, not months of hiring.</p>
     <div class="properties">
       <article class="property">
@@ -918,8 +979,8 @@
         <div class="placeholder" style="display:none;">Headshot<br>coming soon</div>
       </div>
       <div class="bio">
-        <div class="eyebrow">Founder</div>
-        <h2 id="founder-h">Owen Hughes. One operator, <em>twenty years of scale</em> behind him.</h2>
+        <div class="eyebrow" data-i18n="founder.eyebrow">Founder</div>
+        <h2 id="founder-h" data-i18n-html="founder.title">Owen Hughes. One operator, <em>twenty years of scale</em> behind him.</h2>
 
         <p><strong>Head of EU Sales</strong> and <strong>Head of UK Key Accounts</strong> at eBay, B2B Merchant Development. Carried a <em>$1.3 billion GMV</em> target. Authored the <strong>Gold Standard Listings</strong> guide, adopted as a global best practice across the company. Built the <strong>Listing Optimiser</strong> tool in parallel.</p>
 
@@ -973,8 +1034,8 @@
         <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
       </svg>
     </div>
-    <div class="eyebrow">Frequently asked</div>
-    <h2 id="faq-h" class="section-head" style="padding:0;margin:16px 0 40px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;">Before you ask.</h2>
+    <div class="eyebrow" data-i18n="faq.eyebrow">Frequently asked</div>
+    <h2 id="faq-h" class="section-head" style="padding:0;margin:16px 0 40px;font-family:var(--serif);font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;" data-i18n="faq.title">Before you ask.</h2>
     <details open>
       <summary>Who runs Pub.cat?</summary>
       <p>Owen Hughes, founder and sole director of RetroShell Ltd (UK), trading as Pub.cat from Barcelona. One human makes every decision. Everything else is software.</p>
@@ -1002,7 +1063,7 @@
   </section>
 
   <!-- CONTACT · four CTAs, one inbox -->
-  <section id="contact" class="contact" aria-labelledby="contact-h">
+  <section id="contact" class="contact" aria-labelledby="contact-h" data-i18n-section="contact">
     <div class="section-cat section-cat-center" data-cat style="--size:120px;" aria-hidden="true">
       <svg viewBox="0 0 100 100" width="120" height="120">
         <path d="M20 38 L28 18 L38 34 Z" fill="#C8102E"/>
@@ -1012,32 +1073,32 @@
         <ellipse class="cat-eye cat-eye-r" cx="62" cy="52" rx="3.2" ry="5.4" fill="#F7F5EF"/>
       </svg>
     </div>
-    <h2 id="contact-h">Talk to us.</h2>
-    <p style="font-size:18px;line-height:1.55;opacity:0.85;max-width:560px;margin-left:auto;margin-right:auto;">One inbox reaches one human. Pick the door you came through and we will reply within 48 hours.</p>
+    <h2 id="contact-h" data-i18n="contact.title">Talk to us.</h2>
+    <p style="font-size:18px;line-height:1.55;opacity:0.85;max-width:560px;margin-left:auto;margin-right:auto;" data-i18n="contact.intro">One inbox reaches one human. Pick the door you came through and we will reply within 48 hours.</p>
 
     <div class="contact-grid">
       <a class="cta" href="mailto:hi@pub.cat?subject=Cybertron%20SaaS%20waitlist">
-        <span class="icon">01 · Publishers</span>
-        <h3>Join the Cybertron waitlist.</h3>
-        <p>You run an independent publication and want the pipeline that runs ours. Invite-only cohort in 2026.</p>
+        <span class="icon" data-i18n="contact.cta1.eyebrow">01 · Publishers</span>
+        <h3 data-i18n="contact.cta1.title">Join the Cybertron waitlist.</h3>
+        <p data-i18n="contact.cta1.body">You run an independent publication and want the pipeline that runs ours. Invite-only cohort in 2026.</p>
         <span class="arrow">hi@pub.cat →</span>
       </a>
       <a class="cta" href="mailto:hi@pub.cat?subject=Investor%20enquiry">
-        <span class="icon">02 · Investors</span>
-        <h3>Investor enquiries.</h3>
-        <p>We are bootstrapped and close to profitable. We talk to operators who understand media-tech. Roll-ups and strategics welcome.</p>
+        <span class="icon" data-i18n="contact.cta2.eyebrow">02 · Investors</span>
+        <h3 data-i18n="contact.cta2.title">Investor enquiries.</h3>
+        <p data-i18n="contact.cta2.body">We are bootstrapped and close to profitable. We talk to operators who understand media-tech. Roll-ups and strategics welcome.</p>
         <span class="arrow">hi@pub.cat →</span>
       </a>
       <a class="cta" href="mailto:hi@pub.cat?subject=Acquisition%20enquiry">
-        <span class="icon">03 · Acquisition</span>
-        <h3>Acquisition interest.</h3>
-        <p>Media-tech, CMS, or portfolio acquirers looking at the next generation of autonomous publishing should talk to us early.</p>
+        <span class="icon" data-i18n="contact.cta3.eyebrow">03 · Acquisition</span>
+        <h3 data-i18n="contact.cta3.title">Acquisition interest.</h3>
+        <p data-i18n="contact.cta3.body">Media-tech, CMS, or portfolio acquirers looking at the next generation of autonomous publishing should talk to us early.</p>
         <span class="arrow">hi@pub.cat →</span>
       </a>
       <a class="cta" href="mailto:hi@pub.cat?subject=Consulting%20enquiry">
-        <span class="icon">04 · Consulting</span>
-        <h3>AI-native consulting.</h3>
-        <p>Founders building with agents, or established businesses moving a function to autonomous software. Owen takes a handful a year.</p>
+        <span class="icon" data-i18n="contact.cta4.eyebrow">04 · Consulting</span>
+        <h3 data-i18n="contact.cta4.title">AI-native consulting.</h3>
+        <p data-i18n="contact.cta4.body">Founders building with agents, or established businesses moving a function to autonomous software. Owen takes a handful a year.</p>
         <span class="arrow">hi@pub.cat →</span>
       </a>
     </div>
@@ -1057,6 +1118,311 @@
 </footer>
 
 <!-- tweaks panel removed in production -->
+
+<!-- Inline translations dictionary: no network fetch, no build step -->
+<script id="i18n-data" type="application/json">
+{
+  "en": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Properties",
+    "nav.founder": "Founder",
+    "nav.cta": "Get in touch",
+    "hero.scroll": "Scroll",
+    "what.eyebrow": "What is Pub.cat",
+    "what.title": "An <em>AI-native</em> media company, run by one.",
+    "cyber.eyebrow": "The product",
+    "cyber.title": "Cybertron. <em>Soon as SaaS.</em>",
+    "props.eyebrow": "Live properties",
+    "props.title": "Proof in production.",
+    "founder.eyebrow": "Founder",
+    "founder.title": "Owen Hughes. One operator, <em>twenty years of scale</em> behind him.",
+    "faq.eyebrow": "Frequently asked",
+    "faq.title": "Before you ask.",
+    "contact.title": "Talk to us.",
+    "contact.intro": "One inbox reaches one human. Pick the door you came through and we will reply within 48 hours.",
+    "contact.cta1.eyebrow": "01 · Publishers",
+    "contact.cta1.title": "Join the Cybertron waitlist.",
+    "contact.cta1.body": "You run an independent publication and want the pipeline that runs ours. Invite-only cohort in 2026.",
+    "contact.cta2.eyebrow": "02 · Investors",
+    "contact.cta2.title": "Investor enquiries.",
+    "contact.cta2.body": "We are bootstrapped and close to profitable. We talk to operators who understand media-tech. Roll-ups and strategics welcome.",
+    "contact.cta3.eyebrow": "03 · Acquisition",
+    "contact.cta3.title": "Acquisition interest.",
+    "contact.cta3.body": "Media-tech, CMS, or portfolio acquirers looking at the next generation of autonomous publishing should talk to us early.",
+    "contact.cta4.eyebrow": "04 · Consulting",
+    "contact.cta4.title": "AI-native consulting.",
+    "contact.cta4.body": "Founders building with agents, or established businesses moving a function to autonomous software. Owen takes a handful a year."
+  },
+  "es": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Publicaciones",
+    "nav.founder": "Fundador",
+    "nav.cta": "Contacto",
+    "hero.scroll": "Desliza",
+    "what.eyebrow": "Qué es Pub.cat",
+    "what.title": "Una empresa de medios <em>nativa de IA</em>, dirigida por una sola persona.",
+    "cyber.eyebrow": "El producto",
+    "cyber.title": "Cybertron. <em>Pronto como SaaS.</em>",
+    "props.eyebrow": "Publicaciones en activo",
+    "props.title": "Prueba en producción.",
+    "founder.eyebrow": "Fundador",
+    "founder.title": "Owen Hughes. Un operador con <em>veinte años de escala</em> a sus espaldas.",
+    "faq.eyebrow": "Preguntas frecuentes",
+    "faq.title": "Antes de preguntar.",
+    "contact.title": "Hablemos.",
+    "contact.intro": "Un solo buzón, una sola persona. Elige tu vía y te responderemos en 48 horas.",
+    "contact.cta1.eyebrow": "01 · Editores",
+    "contact.cta1.title": "Únete a la lista de espera de Cybertron.",
+    "contact.cta1.body": "Diriges una publicación independiente y quieres la tubería que mueve la nuestra. Cohorte por invitación en 2026.",
+    "contact.cta2.eyebrow": "02 · Inversores",
+    "contact.cta2.title": "Consultas de inversión.",
+    "contact.cta2.body": "Estamos bootstrapped y cerca de ser rentables. Hablamos con operadores que entienden el media-tech. Roll-ups y estratégicos bienvenidos.",
+    "contact.cta3.eyebrow": "03 · Adquisiciones",
+    "contact.cta3.title": "Interés en adquisición.",
+    "contact.cta3.body": "Compradores de media-tech, CMS o portfolio que miren la próxima generación de publicación autónoma deberían hablar con nosotros pronto.",
+    "contact.cta4.eyebrow": "04 · Consultoría",
+    "contact.cta4.title": "Consultoría AI-native.",
+    "contact.cta4.body": "Fundadores construyendo con agentes, o empresas consolidadas migrando una función a software autónomo. Owen acepta unas pocas al año."
+  },
+  "ca": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Publicacions",
+    "nav.founder": "Fundador",
+    "nav.cta": "Contacte",
+    "hero.scroll": "Lliscar",
+    "what.eyebrow": "Què és Pub.cat",
+    "what.title": "Una empresa de mitjans <em>nativa d'IA</em>, gestionada per una sola persona.",
+    "cyber.eyebrow": "El producte",
+    "cyber.title": "Cybertron. <em>Aviat com a SaaS.</em>",
+    "props.eyebrow": "Publicacions en actiu",
+    "props.title": "Prova en producció.",
+    "founder.eyebrow": "Fundador",
+    "founder.title": "Owen Hughes. Un operador amb <em>vint anys d'escala</em> a l'esquena.",
+    "faq.eyebrow": "Preguntes freqüents",
+    "faq.title": "Abans de preguntar.",
+    "contact.title": "Parlem.",
+    "contact.intro": "Una bústia, una persona. Tria per on entres i et respondrem en 48 hores.",
+    "contact.cta1.eyebrow": "01 · Editors",
+    "contact.cta1.title": "Uneix-te a la llista d'espera de Cybertron.",
+    "contact.cta1.body": "Portes una publicació independent i vols el pipeline que mou el nostre. Cohort per invitació el 2026.",
+    "contact.cta2.eyebrow": "02 · Inversors",
+    "contact.cta2.title": "Consultes d'inversió.",
+    "contact.cta2.body": "Som bootstrapped i a prop de ser rendibles. Parlem amb operadors que entenen el media-tech. Roll-ups i estratègics benvinguts.",
+    "contact.cta3.eyebrow": "03 · Adquisicions",
+    "contact.cta3.title": "Interès en adquisició.",
+    "contact.cta3.body": "Compradors de media-tech, CMS o portfolio que mirin la pròxima generació de publicació autònoma haurien de parlar amb nosaltres aviat.",
+    "contact.cta4.eyebrow": "04 · Consultoria",
+    "contact.cta4.title": "Consultoria AI-native.",
+    "contact.cta4.body": "Fundadors construint amb agents, o empreses consolidades migrant una funció a programari autònom. L'Owen n'accepta unes poques l'any."
+  },
+  "fr": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Publications",
+    "nav.founder": "Fondateur",
+    "nav.cta": "Contact",
+    "hero.scroll": "Défiler",
+    "what.eyebrow": "Qu'est-ce que Pub.cat",
+    "what.title": "Une société média <em>native de l'IA</em>, pilotée par une seule personne.",
+    "cyber.eyebrow": "Le produit",
+    "cyber.title": "Cybertron. <em>Bientôt en SaaS.</em>",
+    "props.eyebrow": "Publications en ligne",
+    "props.title": "La preuve en production.",
+    "founder.eyebrow": "Fondateur",
+    "founder.title": "Owen Hughes. Un opérateur avec <em>vingt ans d'échelle</em> derrière lui.",
+    "faq.eyebrow": "Questions fréquentes",
+    "faq.title": "Avant de poser la question.",
+    "contact.title": "Parlons-en.",
+    "contact.intro": "Une boîte de réception, une personne. Choisissez votre porte, nous répondons sous 48 heures.",
+    "contact.cta1.eyebrow": "01 · Éditeurs",
+    "contact.cta1.title": "Rejoignez la liste d'attente Cybertron.",
+    "contact.cta1.body": "Vous dirigez une publication indépendante et voulez le pipeline qui fait tourner la nôtre. Cohorte sur invitation en 2026.",
+    "contact.cta2.eyebrow": "02 · Investisseurs",
+    "contact.cta2.title": "Demandes d'investisseurs.",
+    "contact.cta2.body": "Nous sommes bootstrapped et proches de la rentabilité. Nous parlons aux opérateurs qui comprennent la media-tech. Roll-ups et stratégiques bienvenus.",
+    "contact.cta3.eyebrow": "03 · Acquisition",
+    "contact.cta3.title": "Intérêt d'acquisition.",
+    "contact.cta3.body": "Acquéreurs media-tech, CMS ou portefeuille regardant la prochaine génération de publication autonome devraient nous contacter tôt.",
+    "contact.cta4.eyebrow": "04 · Conseil",
+    "contact.cta4.title": "Conseil AI-native.",
+    "contact.cta4.body": "Fondateurs construisant avec des agents, ou entreprises établies migrant une fonction vers un logiciel autonome. Owen en prend quelques-uns par an."
+  },
+  "de": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Publikationen",
+    "nav.founder": "Gründer",
+    "nav.cta": "Kontakt",
+    "hero.scroll": "Scrollen",
+    "what.eyebrow": "Was ist Pub.cat",
+    "what.title": "Ein <em>KI-natives</em> Medienunternehmen, geführt von einer Person.",
+    "cyber.eyebrow": "Das Produkt",
+    "cyber.title": "Cybertron. <em>Bald als SaaS.</em>",
+    "props.eyebrow": "Laufende Publikationen",
+    "props.title": "Bewährt im Betrieb.",
+    "founder.eyebrow": "Gründer",
+    "founder.title": "Owen Hughes. Ein Operator mit <em>zwanzig Jahren Skalierung</em> im Rücken.",
+    "faq.eyebrow": "Häufige Fragen",
+    "faq.title": "Bevor Sie fragen.",
+    "contact.title": "Sprechen Sie uns an.",
+    "contact.intro": "Ein Posteingang, ein Mensch. Wählen Sie den Weg, wir antworten innerhalb von 48 Stunden.",
+    "contact.cta1.eyebrow": "01 · Verlage",
+    "contact.cta1.title": "Auf die Cybertron-Warteliste.",
+    "contact.cta1.body": "Sie führen eine unabhängige Publikation und wollen die Pipeline, die unsere betreibt. Einladungs-Kohorte 2026.",
+    "contact.cta2.eyebrow": "02 · Investoren",
+    "contact.cta2.title": "Investoren-Anfragen.",
+    "contact.cta2.body": "Bootstrapped und kurz vor der Profitabilität. Wir sprechen mit Operatoren, die Media-Tech verstehen. Roll-Ups und Strategen willkommen.",
+    "contact.cta3.eyebrow": "03 · Übernahme",
+    "contact.cta3.title": "Übernahmeinteresse.",
+    "contact.cta3.body": "Media-Tech-, CMS- oder Portfolio-Käufer, die auf die nächste Generation autonomer Publikation schauen, sollten früh mit uns sprechen.",
+    "contact.cta4.eyebrow": "04 · Beratung",
+    "contact.cta4.title": "KI-native Beratung.",
+    "contact.cta4.body": "Gründer, die mit Agenten bauen, oder etablierte Unternehmen, die eine Funktion auf autonome Software umstellen. Owen nimmt einige pro Jahr an."
+  },
+  "it": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "Pubblicazioni",
+    "nav.founder": "Fondatore",
+    "nav.cta": "Contatti",
+    "hero.scroll": "Scorri",
+    "what.eyebrow": "Cos'è Pub.cat",
+    "what.title": "Un'azienda media <em>nativa di IA</em>, gestita da una sola persona.",
+    "cyber.eyebrow": "Il prodotto",
+    "cyber.title": "Cybertron. <em>Presto come SaaS.</em>",
+    "props.eyebrow": "Pubblicazioni attive",
+    "props.title": "Prova in produzione.",
+    "founder.eyebrow": "Fondatore",
+    "founder.title": "Owen Hughes. Un operatore con <em>vent'anni di scala</em> alle spalle.",
+    "faq.eyebrow": "Domande frequenti",
+    "faq.title": "Prima di chiedere.",
+    "contact.title": "Parliamone.",
+    "contact.intro": "Una casella, una persona. Scegli la porta, rispondiamo entro 48 ore.",
+    "contact.cta1.eyebrow": "01 · Editori",
+    "contact.cta1.title": "Iscriviti alla lista d'attesa Cybertron.",
+    "contact.cta1.body": "Gestisci una pubblicazione indipendente e vuoi la pipeline che alimenta la nostra. Coorte a invito nel 2026.",
+    "contact.cta2.eyebrow": "02 · Investitori",
+    "contact.cta2.title": "Richieste di investitori.",
+    "contact.cta2.body": "Siamo bootstrapped e vicini alla redditività. Parliamo con operatori che capiscono il media-tech. Roll-up e strategici benvenuti.",
+    "contact.cta3.eyebrow": "03 · Acquisizione",
+    "contact.cta3.title": "Interesse all'acquisizione.",
+    "contact.cta3.body": "Acquirenti media-tech, CMS o di portafoglio che guardano alla prossima generazione di pubblicazione autonoma dovrebbero parlarci presto.",
+    "contact.cta4.eyebrow": "04 · Consulenza",
+    "contact.cta4.title": "Consulenza AI-native.",
+    "contact.cta4.body": "Fondatori che costruiscono con agenti, o aziende consolidate che migrano una funzione a software autonomo. Owen ne accetta alcune all'anno."
+  },
+  "zh": {
+    "nav.cybertron": "Cybertron",
+    "nav.properties": "媒体",
+    "nav.founder": "创始人",
+    "nav.cta": "联系",
+    "hero.scroll": "滚动",
+    "what.eyebrow": "关于 Pub.cat",
+    "what.title": "一家由一人经营的<em>AI 原生</em>媒体公司。",
+    "cyber.eyebrow": "产品",
+    "cyber.title": "Cybertron。<em>即将推出 SaaS。</em>",
+    "props.eyebrow": "在线媒体",
+    "props.title": "实战验证。",
+    "founder.eyebrow": "创始人",
+    "founder.title": "Owen Hughes，拥有<em>二十年的规模化</em>经验。",
+    "faq.eyebrow": "常见问题",
+    "faq.title": "在您询问之前。",
+    "contact.title": "联系我们。",
+    "contact.intro": "一个收件箱，一个真人。选择入口，我们将在 48 小时内回复。",
+    "contact.cta1.eyebrow": "01 · 出版商",
+    "contact.cta1.title": "加入 Cybertron 等候名单。",
+    "contact.cta1.body": "您经营独立出版物，希望使用我们自己在用的管道。2026 年仅限邀请。",
+    "contact.cta2.eyebrow": "02 · 投资者",
+    "contact.cta2.title": "投资者咨询。",
+    "contact.cta2.body": "我们自筹资金，接近盈利。我们与了解媒体技术的运营者交流。Roll-up 和战略投资者同样欢迎。",
+    "contact.cta3.eyebrow": "03 · 收购",
+    "contact.cta3.title": "收购意向。",
+    "contact.cta3.body": "关注下一代自主出版的媒体科技、CMS 或投资组合买家，欢迎尽早联系。",
+    "contact.cta4.eyebrow": "04 · 咨询",
+    "contact.cta4.title": "AI 原生咨询。",
+    "contact.cta4.body": "正在用代理构建的创始人，或将某项职能迁移到自主软件的成熟企业。Owen 每年仅接受少量。"
+  }
+}
+</script>
+
+<script>
+// ─────────────────────────────────────────────────────────────
+// i18n: detects the visitor's browser language, translates the
+// key copy via data-i18n attributes, persists the manual choice
+// in localStorage. English is the default. Video captions and
+// structured data stay in English (SEO canonical). Translations
+// are inlined in #i18n-data; no network fetch.
+// ─────────────────────────────────────────────────────────────
+(function () {
+  const dataEl = document.getElementById('i18n-data');
+  if (!dataEl) return;
+  let T;
+  try { T = JSON.parse(dataEl.textContent); } catch { return; }
+  const SUPPORTED = Object.keys(T);
+
+  const detect = () => {
+    try {
+      const stored = localStorage.getItem('pubcat.lang');
+      if (stored && SUPPORTED.includes(stored)) return stored;
+    } catch {}
+    const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
+    for (const p of prefs) {
+      const base = (p || '').toLowerCase().split('-')[0];
+      if (SUPPORTED.includes(base)) return base;
+    }
+    return 'en';
+  };
+
+  const apply = (lang) => {
+    const dict = T[lang] || T.en;
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      const val = dict[key];
+      if (typeof val === 'string') el.textContent = val;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-html');
+      const val = dict[key];
+      if (typeof val === 'string') el.innerHTML = val;
+    });
+    document.documentElement.setAttribute('lang', lang === 'en' ? 'en-GB' : lang);
+    const cur = document.getElementById('lang-current');
+    if (cur) cur.textContent = lang.toUpperCase();
+    document.querySelectorAll('.lang-menu button[data-lang]').forEach((b) => {
+      b.classList.toggle('is-active', b.getAttribute('data-lang') === lang);
+    });
+  };
+
+  const set = (lang) => {
+    try { localStorage.setItem('pubcat.lang', lang); } catch {}
+    apply(lang);
+  };
+
+  // Wire the dropdown
+  const wrap = document.querySelector('.lang');
+  const toggle = document.getElementById('lang-toggle');
+  const menu = document.getElementById('lang-menu');
+  if (wrap && toggle && menu) {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      wrap.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', wrap.classList.contains('is-open') ? 'true' : 'false');
+    });
+    menu.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-lang]');
+      if (!btn) return;
+      set(btn.getAttribute('data-lang'));
+      wrap.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+    document.addEventListener('click', (e) => {
+      if (!wrap.contains(e.target)) {
+        wrap.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  apply(detect());
+})();
+</script>
 
 <script>
 // ─────────────────────────────────────────────────────────────
@@ -3120,10 +3486,10 @@ function App() {
 
     const bar = document.getElementById('progress-bar');
 
-    // Skip the first ~0.6s of the timeline (cat fade-in) so the page is
-    // not blank when the user lands. At scroll=0 the cat is already
-    // fully present and blinking; scroll=1 still lands on the end frame.
-    const TIME_OFFSET = 0.6;
+    // Skip to t=1.05s on the timeline so the "meet pub" caption is already
+    // at full opacity when the user lands. Cat is fully present and blinking;
+    // scroll=1 still lands on the "Small. Mighty." end frame.
+    const TIME_OFFSET = 1.05;
     const SCRUBBABLE = DURATION - TIME_OFFSET;
 
     let rafId = 0;
