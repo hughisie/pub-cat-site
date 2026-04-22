@@ -1,0 +1,67 @@
+name: Refresh ticker stories
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:          # also run on demand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch top 2 stories per property
+        run: |
+          python3 <<'PY'
+          import urllib.request, re, json, html, datetime
+
+          HEADERS = {'User-Agent': 'Mozilla/5.0 (Pub.cat Ticker Bot)'}
+
+          def fetch_top_two(feed_url, site):
+              req = urllib.request.Request(feed_url, headers=HEADERS)
+              try:
+                  with urllib.request.urlopen(req, timeout=15) as r:
+                      xml = r.read().decode('utf-8', errors='ignore')
+              except Exception as e:
+                  print(f"[warn] {site} fetch failed: {e}")
+                  return []
+              items = re.findall(r'<item>(.*?)</item>', xml, re.DOTALL)
+              out = []
+              for it in items[:2]:
+                  m_t = re.search(r'<title>\s*(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?\s*</title>', it, re.DOTALL)
+                  m_l = re.search(r'<link>(.*?)</link>', it, re.DOTALL)
+                  title = html.unescape(m_t.group(1)).strip() if m_t else ''
+                  link  = m_l.group(1).strip() if m_l else ''
+                  if title and link:
+                      out.append({'site': site, 'title': title, 'url': link})
+              return out
+
+          stories = []
+          stories += fetch_top_two('https://barna.news/rss/',     'Barna.News')
+          stories += fetch_top_two('https://catalan.news/rss/',   'Catalan.News')
+          stories += fetch_top_two('https://retroshell.com/rss/', 'RetroShell')
+
+          data = {
+              'updated': datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
+              'stories': stories,
+          }
+          with open('stories.json', 'w') as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+          print(f"Wrote {len(stories)} stories to stories.json")
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "pub-cat-bot"
+          git config user.email "bot@pub.cat"
+          if git diff --quiet stories.json; then
+            echo "No story changes."
+            exit 0
+          fi
+          git add stories.json
+          git commit -m "Refresh ticker stories"
+          git push
