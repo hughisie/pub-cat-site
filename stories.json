@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-27T08:31:34Z",
+  "updated": "2026-04-27T11:05:19Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -13,23 +13,23 @@
     },
     {
       "site": "Catalan.News",
-      "title": "Catalan Councils Announce New Grant Deadlines for Residents",
-      "url": "https://catalan.news/catalonia-grant-deadlines-announced-2026/"
+      "title": "Centenary Plane Trees Relocated in Montjuïc, Barcelona",
+      "url": "https://catalan.news/centenary-plane-trees-relocated-montjuic-barcelona/"
     },
     {
       "site": "Catalan.News",
-      "title": "Sant Cugat boosts health innovation strategy with Utrecht study visit",
-      "url": "https://catalan.news/sant-cugat-health-innovation-utrecht-visit/"
+      "title": "Doctors' Strike to Affect Catalan Health Services This Week",
+      "url": "https://catalan.news/doctors-strike-catalan-health-services-march-2026/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "👾 Retro Gaming Weekly News #0198",
+      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0198/"
     },
     {
       "site": "RetroShell",
       "title": "ATA Express Unlocks PSX Hard Drives, Hints at Dreamcast ODE Future",
       "url": "https://www.retroshell.com/ata-express-psx-hdd-dreamcast-ode/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Sega Console Architect Hideki Sato Passes Away",
-      "url": "https://www.retroshell.com/hideki-sato-sega-console-designer-passes-away/"
     }
   ]
 }
