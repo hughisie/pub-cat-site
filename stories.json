@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-02T16:50:29Z",
+  "updated": "2026-05-02T17:43:36Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "Cyberbots Limited Edition: Saturn Collector's View",
-      "url": "https://www.retroshell.com/cyberbots-saturn-limited-edition-collector-view/"
+      "title": "A $1 Handheld Console Built with RISC-V and Rust",
+      "url": "https://www.retroshell.com/1-dollar-handheld-console-risc-v-rust/"
     },
     {
       "site": "RetroShell",
-      "title": "Pokémon Stadium's Enduring Sales Record 26 Years On",
-      "url": "https://www.retroshell.com/pokemon-stadium-enduring-sales-record/"
+      "title": "Tomb Raider N64 Port Emerges from Fan Efforts",
+      "url": "https://www.retroshell.com/tomb-raider-n64-port-emerges-from-fan-efforts/"
     }
   ]
 }
