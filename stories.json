@@ -1,35 +1,35 @@
 {
-  "updated": "2026-05-11T12:39:38Z",
+  "updated": "2026-05-11T15:56:09Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Fines Six Convenience Stores Over Food Safety Breaches",
-      "url": "https://barna.news/barcelona-fines-convenience-stores-food-safety/"
+      "title": "Catalonia Ranks Fourth in Europe for Clinical Trials",
+      "url": "https://barna.news/catalonia-ranks-fourth-europe-clinical-trials/"
     },
     {
       "site": "Barna.News",
-      "title": "Santa Coloma Transforms Historic Estate into Civic Centre",
-      "url": "https://barna.news/santa-coloma-can-collblanch-civic-centre/"
+      "title": "Barcelona Driver Flees After Ripping Taxi Door in Eixample",
+      "url": "https://barna.news/barcelona-driver-flees-after-ripping-taxi-door-eixample/"
     },
     {
       "site": "Catalan.News",
-      "title": "Solsona Honours Elderly with Week of Activities",
-      "url": "https://catalan.news/solsona-elderly-week-activities-may-2026/"
+      "title": "InnoFAB semiconductor centre board formed in Barcelona",
+      "url": "https://catalan.news/innofab-semiconductor-centre-board-formed-barcelona/"
     },
     {
       "site": "Catalan.News",
-      "title": "Eduard Gener Presents 'Cardener' Album in Solsona",
-      "url": "https://catalan.news/eduard-gener-cardener-solsona-concert/"
+      "title": "Search for Francoist mass grave in Llavorsí ends without discovery",
+      "url": "https://catalan.news/llavorsi-francoist-mass-grave-search-fails/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Yaba Sanshiro Emulator Sees Significant Saturn Emulation Progress",
+      "url": "https://www.retroshell.com/yaba-sanshiro-emulator-sees-significant-saturn-emulation-progress/"
     },
     {
       "site": "RetroShell",
       "title": "👾 Retro Gaming Weekly News #200",
       "url": "https://www.retroshell.com/retro-gaming-weekly-news-200/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Cardboard PC Case Shows Ingenuity",
-      "url": "https://www.retroshell.com/cardboard-pc-case-shows-ingenuity/"
     }
   ]
 }
