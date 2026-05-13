@@ -1,35 +1,35 @@
 {
-  "updated": "2026-05-13T06:48:46Z",
+  "updated": "2026-05-13T09:45:20Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Welcomes Actual Ultim 4, World's Fastest Trimaran",
-      "url": "https://barna.news/barcelona-actual-ultim-4-trimaran-business-expansion/"
+      "title": "New Book Explores Liceu Founder Joaquín de Gispert's Legacy",
+      "url": "https://barna.news/new-book-explores-liceu-founder-joaquin-de-gisperts-legacy/"
     },
     {
       "site": "Barna.News",
-      "title": "Boqueria Chef's Fricandó Wows Top Chefs at Damm Anniversary",
-      "url": "https://barna.news/boqueria-chef-fricando-damm-anniversary/"
+      "title": "Barcelona's Best Cod Dishes: Top Restaurants Revealed",
+      "url": "https://barna.news/barcelona-best-cod-dishes-restaurants/"
     },
     {
       "site": "Catalan.News",
-      "title": "Barcelona launches city-wide pact to combat unwanted loneliness",
-      "url": "https://catalan.news/barcelona-city-pact-unwanted-loneliness/"
+      "title": "Lloret Vila Esportiva Eyes OK Liga Promotion in Decisive Match",
+      "url": "https://catalan.news/lloret-vila-esportiva-ok-liga-promotion-match/"
     },
     {
       "site": "Catalan.News",
-      "title": "Lleida unveils first affordable housing project in Torre Salses",
-      "url": "https://catalan.news/lleida-first-affordable-housing-torre-salses/"
+      "title": "Catalan language plan needs 'shock measures' one year on",
+      "url": "https://catalan.news/catalan-language-pact-shock-measures-needed/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Game Boy Color AI Demo Pushes Hardware Limits",
+      "url": "https://www.retroshell.com/game-boy-color-ai-demo-small-models/"
     },
     {
       "site": "RetroShell",
       "title": "Forza Horizon Leak Leads to Unprecedented 9999 Ban",
       "url": "https://www.retroshell.com/forza-horizon-leak-leads-to-unprecedented-9999-ban/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "HipoFruta: A New C64 Platformer Emerges",
-      "url": "https://www.retroshell.com/hipofruta-new-c64-platformer-bonnette2020/"
     }
   ]
 }
