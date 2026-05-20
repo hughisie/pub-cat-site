@@ -1,15 +1,20 @@
 {
-  "updated": "2026-05-20T12:33:04Z",
+  "updated": "2026-05-20T16:26:18Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Gràcia perd una icona: la Pastisseria Ideal tanca després de més d'un segle",
-      "url": "https://barna.news/tanca-pastisseria-ideal-gracia-centenaria-ca/"
+      "title": "Barcelona Misses Time Out Culture Ranking",
+      "url": "https://barna.news/barcelona-fuera-ranking-cultural-timeout-es-2/"
     },
     {
       "site": "Barna.News",
-      "title": "El pacte PSC-Junts a Barcelona desencalla l'urbanisme i accelera grans projectes",
-      "url": "https://barna.news/pacte-psc-junts-desbloqueja-urbanisme-barcelona-ca/"
+      "title": "Barcelona police drones help arrest car thief in Montmeló",
+      "url": "https://barna.news/drones-clave-arresto-montmelo-es/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Sant Pau del Camp, Romanesque Landmark in Barcelona",
+      "url": "https://catalan.news/sant-pau-del-camp-monasterio-romanico-barcelona-es/"
     },
     {
       "site": "Catalan.News",
@@ -17,19 +22,14 @@
       "url": "https://catalan.news/apunalamiento-raval-detenido-barcelona-es/"
     },
     {
-      "site": "Catalan.News",
-      "title": "Costa Daurada and Terres de l'Ebre Host Family Weekend",
-      "url": "https://catalan.news/fin-semana-genial-costa-daurada-terres-ebre-es-2/"
+      "site": "RetroShell",
+      "title": "Max Stone Two llega al ZX Spectrum",
+      "url": "https://www.retroshell.com/max-stone-two-revive-zx-spectrum-es/"
     },
     {
       "site": "RetroShell",
-      "title": "Vuelve la Neo Geo Pocket Color a las Portátiles Modernas",
-      "url": "https://www.retroshell.com/neo-geo-pocket-color-regresa-portatiles-actuales-es-2/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Krikzz contempla un EverDrive para la Neo Geo AES: ¿El regreso de un clásico?",
-      "url": "https://www.retroshell.com/krikzz-evalua-flash-cart-neo-geo-aes-es/"
+      "title": "Frodo Lleva El Commodore 64 Al Móvil Gratis",
+      "url": "https://www.retroshell.com/frodo-emulador-c64-gratis-es/"
     }
   ]
 }
