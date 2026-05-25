@@ -1,35 +1,35 @@
 {
-  "updated": "2026-05-25T08:57:05Z",
+  "updated": "2026-05-25T12:36:56Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Puts €1.9m Into Ciutadella Umbracle",
-      "url": "https://barna.news/barcelona-ciutadella-umbracle-restoration-scientific-hub/"
+      "title": "Barcelona Province Pushes for More Local Funding",
+      "url": "https://barna.news/barcelona-province-moret-local-funding-tourism-decentralisation/"
     },
     {
       "site": "Barna.News",
-      "title": "Athletic Club Kit Map Sparks Political Row",
-      "url": "https://barna.news/athletic-club-kit-map-spanish-nationalist-fury/"
+      "title": "Barcelona Migrant Minors Left in Legal Limbo",
+      "url": "https://barna.news/barcelona-migrant-minors-legal-limbo-homelessness/"
     },
     {
       "site": "Catalan.News",
-      "title": "PP rules out no-confidence bid against Sánchez",
-      "url": "https://catalan.news/pp-rules-out-no-confidence-motion-sanchez/"
+      "title": "Terra Alta DO backs Garnatxa Blanca push",
+      "url": "https://catalan.news/terra-alta-do-garnatxa-blanca-international-promotion/"
     },
     {
       "site": "Catalan.News",
-      "title": "Girona FC Relegated After €174M Spend",
-      "url": "https://catalan.news/girona-fc-relegated-second-division-174m-spending/"
+      "title": "Catalonia Braces for May Heat Above 30C",
+      "url": "https://catalan.news/catalonia-heatwave-august-temperatures-may-forecast/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Retro Gaming Weekly News #0202",
+      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0202/"
     },
     {
       "site": "RetroShell",
       "title": "Fatal Fury History Book Lands from Bitmap Books",
       "url": "https://www.retroshell.com/fatal-fury-garou-densetsu-history-book-released/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Combo Breaker Brings Tekken 8, Fatal Fury News",
-      "url": "https://www.retroshell.com/tekken-8-fatal-fury-combo-breaker-fighters/"
     }
   ]
 }
