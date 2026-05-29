@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29T10:29:37Z",
+  "updated": "2026-05-29T13:45:23Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -13,23 +13,23 @@
     },
     {
       "site": "Catalan.News",
-      "title": "La Seu d'Urgell Buys Noise Meter",
-      "url": "https://catalan.news/la-seu-durgell-buys-professional-sound-level-meter/"
+      "title": "Montcada i Reixac Council Backs School Demands",
+      "url": "https://catalan.news/montcada-reixac-council-backs-education-demands/"
     },
     {
       "site": "Catalan.News",
-      "title": "Cadaqués Cycle Path Plan Draws Local Concern",
-      "url": "https://catalan.news/cadaques-cycle-path-environmental-concerns-girona/"
+      "title": "Tortosa Group Keeps Legal Fight Over Monument",
+      "url": "https://catalan.news/corembe-legal-fight-tortosa-francoist-monument-reinterpretation/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Final Fantasy Remakes, Preservation, and Profit",
+      "url": "https://www.retroshell.com/final-fantasy-remakes-preservation-profit/"
     },
     {
       "site": "RetroShell",
       "title": "Super Bomberman Collection Brings SNES Games Back",
       "url": "https://www.retroshell.com/super-bomberman-collection-snes-japan-exclusives/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "ArcStation Brings Solder-Less PS1 ODE",
-      "url": "https://www.retroshell.com/arcstation-solderless-playstation-1-ode/"
     }
   ]
 }
