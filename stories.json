@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-31T18:44:02Z",
+  "updated": "2026-05-31T20:08:56Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -13,23 +13,23 @@
     },
     {
       "site": "Catalan.News",
-      "title": "Barcelona Hosts Sustainable Cycling Festival Ahead of Tour de France",
+      "title": "Barcelona Cycling Festival Marks Tour de France Start",
       "url": "https://catalan.news/barcelona-sustainable-cycling-festival-tour-de-france/"
     },
     {
       "site": "Catalan.News",
-      "title": "Arbúcies Celebrates 80th Flower Carpet Festival",
+      "title": "Arbúcies Marks 80th Flower Carpet Festival",
       "url": "https://catalan.news/arbucies-celebrates-80th-flower-carpet-festival/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Retro Gaming Weekly News #0203",
+      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0203/"
     },
     {
       "site": "RetroShell",
       "title": "Sonic CD Remake Claimed by Former Sega Exec",
       "url": "https://www.retroshell.com/former-sega-exec-claims-sonic-cd-remake/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Hyperkin Mega95 Delay Hits Portable Genesis Fans",
-      "url": "https://www.retroshell.com/hyperkin-mega95-portable-genesis-delayed/"
     }
   ]
 }
