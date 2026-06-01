@@ -1,35 +1,35 @@
 {
-  "updated": "2026-06-01T06:57:30Z",
+  "updated": "2026-06-01T12:43:18Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Weather: Week of 1 June",
-      "url": "https://barna.news/barcelona-weather-week-of-1-june/"
+      "title": "Can Baró Streets Get Accessibility Upgrade",
+      "url": "https://barna.news/barcelona-can-baro-street-renovations-accessibility/"
     },
     {
       "site": "Barna.News",
-      "title": "Barcelona Beer and Vermut, Neighbourhood by Neighbourhood",
-      "url": "https://barna.news/beyond-estrella-craft-beer-vermut-barcelona/"
+      "title": "Barcelona Man Arrested After Nou Barris Stabbing",
+      "url": "https://barna.news/barcelona-stabbing-football-match-arrest/"
     },
     {
       "site": "Catalan.News",
-      "title": "Catalan Firefighters Join Arén Wildfire Response",
-      "url": "https://catalan.news/catalan-firefighters-aid-huesca-wildfire-aren/"
+      "title": "Catalonia VAT on Electricity and Gas Returns to 21%",
+      "url": "https://catalan.news/electricity-gas-vat-returns-21-catalonia-june/"
     },
     {
       "site": "Catalan.News",
-      "title": "Catalan Teachers Plan Strike From 8 June",
-      "url": "https://catalan.news/catalan-teachers-indefinite-strike-june-pay-resources/"
+      "title": "Celrà shooting after alleged Tordera drug raid",
+      "url": "https://catalan.news/celra-shooting-two-arrested-drug-raid-tordera/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Retro Gaming Weekly News #0203",
+      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0203-2/"
     },
     {
       "site": "RetroShell",
       "title": "Wil Overton Reworks Super Play Debut Cover",
       "url": "https://www.retroshell.com/super-play-artist-wil-overton-reimagines-debut-cover/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Retro Gaming Weekly News #0203",
-      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0203/"
     }
   ]
 }
