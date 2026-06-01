@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-01T01:39:03Z",
+  "updated": "2026-06-01T06:57:30Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Weather: Week of 1 June",
+      "url": "https://barna.news/barcelona-weather-week-of-1-june/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona Beer and Vermut, Neighbourhood by Neighbourhood",
       "url": "https://barna.news/beyond-estrella-craft-beer-vermut-barcelona/"
-    },
-    {
-      "site": "Barna.News",
-      "title": "Badalona Secures 60 New Caprabo Jobs",
-      "url": "https://barna.news/badalona-caprabo-supermarket-jobs-residents/"
     },
     {
       "site": "Catalan.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "Retro Gaming Weekly News #0203",
-      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0203/"
+      "title": "Wil Overton Reworks Super Play Debut Cover",
+      "url": "https://www.retroshell.com/super-play-artist-wil-overton-reimagines-debut-cover/"
     },
     {
       "site": "RetroShell",
-      "title": "Sonic CD Remake Claimed by Former Sega Exec",
-      "url": "https://www.retroshell.com/former-sega-exec-claims-sonic-cd-remake/"
+      "title": "Retro Gaming Weekly News #0203",
+      "url": "https://www.retroshell.com/retro-gaming-weekly-news-0203/"
     }
   ]
 }
