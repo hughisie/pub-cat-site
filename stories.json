@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-03T00:27:22Z",
+  "updated": "2026-06-03T05:28:23Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "GameCube Keychain Becomes Working RP2040 Controller",
-      "url": "https://www.retroshell.com/gamecube-keychain-working-rp2040-controller/"
+      "title": "RomM Server Build on Acemagic Kron Mini K1",
+      "url": "https://www.retroshell.com/acemagic-kron-mini-k1-romm-server/"
     },
     {
       "site": "RetroShell",
-      "title": "Harbour Masters Adds GameCube Support",
-      "url": "https://www.retroshell.com/harbour-masters-gamecube-pc-ports/"
+      "title": "GK Handheld Gets STM32MP2 Upgrade",
+      "url": "https://www.retroshell.com/gk-handheld-console-stm32mp2-emulation-upgrade/"
     }
   ]
 }
