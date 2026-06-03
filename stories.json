@@ -1,35 +1,35 @@
 {
-  "updated": "2026-06-03T10:22:29Z",
+  "updated": "2026-06-03T15:16:18Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barceloneta Group Unveils La Salina Figurehead",
-      "url": "https://barna.news/barceloneta-dones-amb-sal-la-salina-figurehead-maritime/"
+      "title": "Barcelona Cepi-Base Closure Leaves 200 Students",
+      "url": "https://barna.news/barcelona-cepi-base-academy-closure-student-fraud/"
     },
     {
       "site": "Barna.News",
-      "title": "Barcelona Politics: PP Summons Illa Again",
-      "url": "https://barna.news/barcelona-pp-summons-salvador-illa-koldo-case/"
+      "title": "Olzinelles Street Works Underway in Sants, Barcelona",
+      "url": "https://barna.news/barcelona-olzinelles-street-expansion-sants-works/"
     },
     {
       "site": "Catalan.News",
-      "title": "AI, Human Dignity and a New Papal Text",
-      "url": "https://catalan.news/papal-encyclical-ai-human-dignity-catalonia/"
+      "title": "Tarragona doctors’ protest delays operations",
+      "url": "https://catalan.news/tarragona-doctors-protest-postpones-operations/"
     },
     {
       "site": "Catalan.News",
-      "title": "Girona Offered Martí Alsina Sketch Donation",
-      "url": "https://catalan.news/french-collector-offers-el-gran-dia-girona-sketch/"
+      "title": "Campclar Among Spain’s Cheapest Home-Buying Areas",
+      "url": "https://catalan.news/campclar-tarragona-spain-cheapest-homes-buy/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "FPGA Tech Gets a Retro Gaming Spotlight",
+      "url": "https://www.retroshell.com/fpga-tech-retro-gaming-accuracy-revival/"
     },
     {
       "site": "RetroShell",
       "title": "RomM Server Build on Acemagic Kron Mini K1",
       "url": "https://www.retroshell.com/acemagic-kron-mini-k1-romm-server/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "GK Handheld Gets STM32MP2 Upgrade",
-      "url": "https://www.retroshell.com/gk-handheld-console-stm32mp2-emulation-upgrade/"
     }
   ]
 }
