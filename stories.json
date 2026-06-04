@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-04T00:13:33Z",
+  "updated": "2026-06-04T05:21:28Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona weekend weather: 4 to 7 June",
+      "url": "https://barna.news/barcelona-weather-weekend-forecast-4-june-to-7-june/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona: La Caixa Puts €10.5M Into Social Projects",
       "url": "https://barna.news/fundacio-la-caixa-catalonia-social-projects-funding/"
-    },
-    {
-      "site": "Barna.News",
-      "title": "L'Hospitalet Project to Support Active Travel",
-      "url": "https://barna.news/hospitalet-dynamicity-active-mobility-cancer-prevention/"
     },
     {
       "site": "Catalan.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "Game Dodecahedron Runs Bare-Metal Pi 3 Code",
-      "url": "https://www.retroshell.com/game-dodecahedron-bare-metal-assembly-pi/"
+      "title": "Atlanta MomoCon 2026 Sets New Attendance Record",
+      "url": "https://www.retroshell.com/momocon-2026-wonder-festival-harada-snk/"
     },
     {
       "site": "RetroShell",
-      "title": "Jet Set Radio Trailer Leak Splits Fans",
-      "url": "https://www.retroshell.com/jet-set-radio-trailer-leak-divides-fans/"
+      "title": "Delta Demo Brings Back Speedrun Physics",
+      "url": "https://www.retroshell.com/delta-shooter-demo-speedrun-design/"
     }
   ]
 }
