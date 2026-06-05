@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T14:52:22Z",
+  "updated": "2026-06-05T17:19:36Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "SuperStation One MiniDIN Audio Swapped",
-      "url": "https://www.retroshell.com/superstation-one-sega-saturn-audio-reversed/"
+      "title": "Felipe64 Tool Aids N64 Homebrew Work",
+      "url": "https://www.retroshell.com/felipe64-nintendo-64-homebrew-tool/"
     },
     {
       "site": "RetroShell",
-      "title": "C64 Demo Sets Sail with Captain Victor Stormbeard",
-      "url": "https://www.retroshell.com/captain-victor-stormbeard-c64-platformer-demo/"
+      "title": "SuperStation One MiniDIN Audio Swapped",
+      "url": "https://www.retroshell.com/superstation-one-sega-saturn-audio-reversed/"
     }
   ]
 }
