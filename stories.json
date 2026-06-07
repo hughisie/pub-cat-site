@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-07T00:04:34Z",
+  "updated": "2026-06-07T05:06:58Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "ATtiny85 Boots CP/M by Emulating Intel 8080",
-      "url": "https://www.retroshell.com/attiny85-emulates-intel-8080-boots-cpm/"
+      "title": "Delta iOS Adds Cartridge Support via Epilogue",
+      "url": "https://www.retroshell.com/delta-ios-physical-cartridge-support-epilogue/"
     },
     {
       "site": "RetroShell",
-      "title": "Silent Planet Devs Channel Genesis Grit",
-      "url": "https://www.retroshell.com/silent-planet-genesis-grit-inspiration/"
+      "title": "Atari Plans Godzilla Remaster, Barbie Collection",
+      "url": "https://www.retroshell.com/atari-godzilla-barbie-digital-eclipse-remasters/"
     }
   ]
 }
