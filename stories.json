@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-08T00:09:04Z",
+  "updated": "2026-06-08T05:12:38Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Weather: Week of 8 June",
+      "url": "https://barna.news/barcelona-weather-week-of-8-june/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona Ferris Wheel Moves Beside Hotel W",
       "url": "https://barna.news/barcelona-monumental-ferris-wheel-hotel-w-summer/"
-    },
-    {
-      "site": "Barna.News",
-      "title": "Barcelona Motorcyclists Back New Audiovisual Projects",
-      "url": "https://barna.news/barcelona-motorcyclists-music-audiovisual-projects/"
     },
     {
       "site": "Catalan.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "Sega Genesis Vinyl Load Test Turns Heads",
-      "url": "https://www.retroshell.com/sega-genesis-vinyl-record-player-game-load/"
+      "title": "SNK's Art of Fighting, Fatal Fury Head to Screen",
+      "url": "https://www.retroshell.com/snk-art-of-fighting-fatal-fury-film-adaptations/"
     },
     {
       "site": "RetroShell",
-      "title": "Delta iOS Adds Cartridge Support via Epilogue",
-      "url": "https://www.retroshell.com/delta-ios-physical-cartridge-support-epilogue/"
+      "title": "Castlevania: Belmont’s Curse Gets October 2026 Date",
+      "url": "https://www.retroshell.com/castlevania-belmonts-curse-october-2026-release/"
     }
   ]
 }
