@@ -1,35 +1,35 @@
 {
-  "updated": "2026-06-09T07:50:31Z",
+  "updated": "2026-06-09T11:15:39Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Badalona B9 Eviction Case Closed by Judge",
+      "url": "https://barna.news/badalona-b9-eviction-case-closed-council-assistance/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona PP Proposes Up to 40% IBI Cut",
       "url": "https://barna.news/barcelona-pp-proposes-ibi-tax-cut/"
     },
     {
-      "site": "Barna.News",
-      "title": "Garraf Tunnels Reopen on Rodalies R2Sud",
-      "url": "https://barna.news/barcelona-rodalies-garraf-tunnels-reopen-repairs/"
+      "site": "Catalan.News",
+      "title": "Lleida Nuns End Communion Wafer Production",
+      "url": "https://catalan.news/lleida-carmelite-nuns-stop-communion-wafers/"
     },
     {
       "site": "Catalan.News",
-      "title": "Girona FC to earn World Cup revenue from two players",
-      "url": "https://catalan.news/girona-fc-witsel-ounahi-world-cup-revenue/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Gino Rubert Altarpiece Goes on Show in L'Escala",
-      "url": "https://catalan.news/gino-rubert-altarpiece-exhibition-lescala-mnac/"
+      "title": "Barcelona Teachers Plan Final Strike of School Year",
+      "url": "https://catalan.news/barcelona-teachers-strike-pope-visit-budget-debate/"
     },
     {
       "site": "RetroShell",
-      "title": "Super Mario Advance 4 Hack Adds e-Reader Content",
-      "url": "https://www.retroshell.com/super-mario-advance-4-e-reader-rom-hack/"
+      "title": "Tekken Team Changes Continue at Bandai Namco",
+      "url": "https://www.retroshell.com/tekken-developer-departures-bandai-namco/"
     },
     {
       "site": "RetroShell",
-      "title": "SNK Teases Rick Strowd for City of the Wolves",
-      "url": "https://www.retroshell.com/snk-teases-rick-strowd-fatal-fury-city-wolves/"
+      "title": "Switch Online GBA App Hides Easter Egg",
+      "url": "https://www.retroshell.com/switch-online-gba-app-hidden-easter-egg/"
     }
   ]
 }
