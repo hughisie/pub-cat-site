@@ -1,35 +1,35 @@
 {
-  "updated": "2026-06-11T07:14:06Z",
+  "updated": "2026-06-11T11:54:40Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barceloneta, Bon Pastor Battle for Promotion",
-      "url": "https://barna.news/barceloneta-bon-pastor-football-promotion-playoff/"
+      "title": "Poble-sec Residents Warn of Crime Rise",
+      "url": "https://barna.news/barcelona-poble-sec-crime-drugs-montjuic-residents/"
     },
     {
       "site": "Barna.News",
-      "title": "Nou Barris Opens Nursery Playgrounds as Climate Shelters",
-      "url": "https://barna.news/nou-barris-nursery-playgrounds-climate-shelters/"
+      "title": "Barcelona Marks Pope’s Sagrada Família Blessing",
+      "url": "https://barna.news/barcelona-sagrada-familia-jesus-christ-tower-blessing-pope/"
     },
     {
       "site": "Catalan.News",
-      "title": "Dalí Foundation Offers Two Art Scholarships",
-      "url": "https://catalan.news/dali-foundation-art-restoration-scholarships-figueres/"
+      "title": "Manresa Motorcyclist Hurt in Trullols Collision",
+      "url": "https://catalan.news/manresa-motorcyclist-injured-trullols-collision/"
     },
     {
       "site": "Catalan.News",
-      "title": "Salt Council Set to Vote on La Mirona Extension",
-      "url": "https://catalan.news/la-mirona-salt-concert-hall-contract-extension/"
+      "title": "Ripoll Scriptorium Reopens in Sant Pere Church",
+      "url": "https://catalan.news/ripoll-scriptorium-reopens-new-sant-pere-church/"
+    },
+    {
+      "site": "RetroShell",
+      "title": "Wii and GameCube Emulation Reaches Switch",
+      "url": "https://www.retroshell.com/wii-gamecube-emulation-nintendo-switch/"
     },
     {
       "site": "RetroShell",
       "title": "Dreamcast Site Marks 20 Years With Limited Run",
       "url": "https://www.retroshell.com/dreamcast-website-20th-anniversary-limited-run/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Castlevania: Circle of the Moon Hits Genesis",
-      "url": "https://www.retroshell.com/castlevania-circle-moon-genesis-port/"
     }
   ]
 }
