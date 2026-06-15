@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-15T00:10:16Z",
+  "updated": "2026-06-15T05:36:25Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Weather: 15 to 20 June Forecast",
+      "url": "https://barna.news/barcelona-weather-week-of-15-june/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona Area Race Draws 5,000 in El Prat",
       "url": "https://barna.news/estrella-damm-150-anniversary-race-barcelona/"
-    },
-    {
-      "site": "Barna.News",
-      "title": "Barcelona Consul Sets Out City’s Role",
-      "url": "https://barna.news/el-salvador-consul-barcelona-global-opportunities/"
     },
     {
       "site": "Catalan.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "SpongeBob Speedrunners Used Smudged Xbox Discs",
-      "url": "https://www.retroshell.com/spongebob-speedrunners-exploited-xbox-disc-smudges/"
+      "title": "Sega's Classic Sonic Re-Releases Still Lag",
+      "url": "https://www.retroshell.com/sega-classic-sonic-re-releases-collector-demand/"
     },
     {
       "site": "RetroShell",
-      "title": "Konami’s Perfect Striker and N64 Football",
-      "url": "https://www.retroshell.com/konami-jikkyo-j-league-perfect-striker-n64-impact/"
+      "title": "SpongeBob Speedrunners Used Smudged Xbox Discs",
+      "url": "https://www.retroshell.com/spongebob-speedrunners-exploited-xbox-disc-smudges/"
     }
   ]
 }
