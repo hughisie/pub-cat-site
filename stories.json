@@ -1,15 +1,20 @@
 {
-  "updated": "2026-06-16T08:26:29Z",
+  "updated": "2026-06-16T13:12:38Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "El Teu Espai Becomes Leading Psychology Centre in Santa Coloma",
-      "url": "https://barna.news/santa-coloma-psychology-centre-el-teu-espai/"
+      "title": "Zona Franca Renaming Proposed by Consorci President",
+      "url": "https://barna.news/barcelona-zona-franca-district-proposal-navarro/"
     },
     {
       "site": "Barna.News",
-      "title": "Barcelona Magnolias Bloom, Filling Streets with White and Scent",
-      "url": "https://barna.news/barcelona-magnolia-trees-bloom-summer-fragrance/"
+      "title": "Els Ocellets: Barcelona's Classic Market Cuisine Gem",
+      "url": "https://barna.news/barcelona-els-ocellets-market-cuisine-restaurant/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Barcelona cruise tax could rise to €30",
+      "url": "https://catalan.news/barcelona-cruise-tax-could-rise-to-eu30/"
     },
     {
       "site": "Catalan.News",
@@ -17,19 +22,14 @@
       "url": "https://catalan.news/foreign-workers-in-manresa-reach-21-74/"
     },
     {
-      "site": "Catalan.News",
-      "title": "Salt asks for Girona, Banyoles tram-train branch",
-      "url": "https://catalan.news/salt-asks-for-girona-banyoles-tram-train/"
+      "site": "RetroShell",
+      "title": "AYANEO Teases New Handheld, Promising Performance Leap",
+      "url": "https://www.retroshell.com/ayaneo-teases-new-handheld-performance-leap/"
     },
     {
       "site": "RetroShell",
       "title": "EarthBound Beginnings Remake Patch Released After Two Decades",
       "url": "https://www.retroshell.com/earthbound-beginnings-remake-snes-patch/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Super Street Fighter II Turbo Update Lands on Commodore 64",
-      "url": "https://www.retroshell.com/super-street-fighter-2-turbo-commodore-64-update/"
     }
   ]
 }
