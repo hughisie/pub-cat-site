@@ -1,15 +1,20 @@
 {
-  "updated": "2026-06-17T02:01:17Z",
+  "updated": "2026-06-17T07:33:20Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona's 15 Outdoor Pools This Summer: Prices From Free to €18.73",
-      "url": "https://barna.news/barcelona-outdoor-pools-2026-prices-guide/"
+      "title": "Barcelona Area Invests €1.35M in Fire Prevention",
+      "url": "https://barna.news/barcelona-fire-prevention-amb-investment/"
     },
     {
       "site": "Barna.News",
-      "title": "Police Face Criminal Complaint Over Sagrada Família Choir Expulsion",
-      "url": "https://barna.news/sagrada-familia-choir-police-criminal-complaint/"
+      "title": "Gaudí Museum Plan at Teresian College Faces City Council Distance",
+      "url": "https://barna.news/gaudi-museum-teresiana-college-barcelona-city-council-distance/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Police step up patrols in the Raval after two fights",
+      "url": "https://catalan.news/police-step-up-patrols-in-the-raval-afte/"
     },
     {
       "site": "Catalan.News",
@@ -17,19 +22,14 @@
       "url": "https://catalan.news/tirallongues-target-first-eight-floor-ca/"
     },
     {
-      "site": "Catalan.News",
-      "title": "Barcelona cruise tax could rise to €30",
-      "url": "https://catalan.news/barcelona-cruise-tax-could-rise-to-eu30/"
+      "site": "RetroShell",
+      "title": "Ocarina of Time Remake Needs More Than Visuals on Switch 2",
+      "url": "https://www.retroshell.com/ocarina-time-remake-switch-2-needs-more/"
     },
     {
       "site": "RetroShell",
-      "title": "ReStory Simulates Retro Repair with Licensed Atari Consoles",
-      "url": "https://www.retroshell.com/restory-sim-licensed-atari-consoles/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Why Nintendo Is Unlikely To Acquire Double Fine",
-      "url": "https://www.retroshell.com/nintendo-unlikely-acquire-double-fine-xbox-rumours/"
+      "title": "Super Pocket Rare Edition: Banjo-Kazooie Port Lands",
+      "url": "https://www.retroshell.com/super-pocket-rare-edition-banjo-kazooie-port-review/"
     }
   ]
 }
