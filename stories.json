@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-18T00:21:59Z",
+  "updated": "2026-06-18T05:17:10Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona weather: weekend forecast 18 June to 21 June",
+      "url": "https://barna.news/barcelona-weather-weekend-forecast-18-june-to-21-june/"
+    },
     {
       "site": "Barna.News",
       "title": "Ferran Garcia and Marina Garcés Win Premi Llibreter Awards",
       "url": "https://barna.news/premi-llibreter-awards-barcelona-authors/"
-    },
-    {
-      "site": "Barna.News",
-      "title": "Sónar 2026 Unveils New Format with The Prodigy Headlining",
-      "url": "https://barna.news/sonar-2026-new-format-the-prodigy-barcelona/"
     },
     {
       "site": "Catalan.News",
@@ -23,13 +23,13 @@
     },
     {
       "site": "RetroShell",
-      "title": "Anbernic RG Vita Pro Linux Update Brings New Features",
-      "url": "https://www.retroshell.com/anbernic-rg-vita-pro-linux-update/"
+      "title": "SNK's Ninja Masters ~Haoh Ninpo Cho~ Arrives on Steam",
+      "url": "https://www.retroshell.com/ninja-masters-haoh-ninpo-cho-steam/"
     },
     {
       "site": "RetroShell",
-      "title": "The Adventures of Elliot: A Thoughtful Retro-Inspired RPG",
-      "url": "https://www.retroshell.com/adventures-elliot-retro-rpg-analysis/"
+      "title": "Crazy Taxi 3 Arcade Unit Hits eBay for $2,500",
+      "url": "https://www.retroshell.com/crazy-taxi-3-arcade-unit-ebay-sale/"
     }
   ]
 }
