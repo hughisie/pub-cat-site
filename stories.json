@@ -1,35 +1,25 @@
 {
-  "updated": "2026-06-18T05:17:10Z",
+  "updated": "2026-06-18T09:53:52Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Airport to the city: every option, ranked",
+      "url": "https://barna.news/el-prat-to-the-city-every-option-ranked/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona weather: weekend forecast 18 June to 21 June",
       "url": "https://barna.news/barcelona-weather-weekend-forecast-18-june-to-21-june/"
     },
     {
-      "site": "Barna.News",
-      "title": "Ferran Garcia and Marina Garcés Win Premi Llibreter Awards",
-      "url": "https://barna.news/premi-llibreter-awards-barcelona-authors/"
+      "site": "Catalan.News",
+      "title": "Study links Reus church to Sagrada Família design",
+      "url": "https://catalan.news/study-links-reus-church-to-sagrada-famil/"
     },
     {
       "site": "Catalan.News",
-      "title": "Real Madrid asks UEFA to act in Negreira case",
-      "url": "https://catalan.news/real-madrid-asks-uefa-to-act-in-negreira/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Educació appoints Rubí councillor to key post",
-      "url": "https://catalan.news/educacio-appoints-rubi-councillor-to-key/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "SNK's Ninja Masters ~Haoh Ninpo Cho~ Arrives on Steam",
-      "url": "https://www.retroshell.com/ninja-masters-haoh-ninpo-cho-steam/"
-    },
-    {
-      "site": "RetroShell",
-      "title": "Crazy Taxi 3 Arcade Unit Hits eBay for $2,500",
-      "url": "https://www.retroshell.com/crazy-taxi-3-arcade-unit-ebay-sale/"
+      "title": "Camins Village backs women from central Catalonia",
+      "url": "https://catalan.news/camins-village-backs-women-from-central/"
     }
   ]
 }
