@@ -1,25 +1,25 @@
 {
-  "updated": "2026-06-25T04:45:09Z",
+  "updated": "2026-06-25T08:23:02Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona English Speakers: June Community Update",
+      "url": "https://barna.news/barcelona-english-speakers-june-community-update/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona weather: hot, dry weekend ahead",
       "url": "https://barna.news/barcelona-weather-weekend-forecast-25-june-to-28-june/"
     },
     {
-      "site": "Barna.News",
-      "title": "Settling In Barcelona: What To Sort First",
-      "url": "https://barna.news/landing-in-barcelona-beyond-the-move-and-into-the-community/"
+      "site": "Catalan.News",
+      "title": "Lleida Police Warn of Trauma in Abuse Cases",
+      "url": "https://catalan.news/lleida-police-highlight-trauma-in-abuse/"
     },
     {
       "site": "Catalan.News",
-      "title": "Girona Fire Briefly Halts High-Speed Trains",
-      "url": "https://catalan.news/fire-halts-girona-figueres-high-speed-tr/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Girona Leads PAU 2026, But Average Falls",
-      "url": "https://catalan.news/girona-tops-pau-2026-despite-lower-avera/"
+      "title": "Figueres sets Sant Pere festival for 26 June",
+      "url": "https://catalan.news/figueres-starts-sant-pere-festival-on-26/"
     }
   ]
 }
