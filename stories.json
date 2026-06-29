@@ -1,25 +1,25 @@
 {
-  "updated": "2026-06-29T13:50:47Z",
+  "updated": "2026-06-29T16:52:46Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Approves Casa Lleó Morera Plan",
-      "url": "https://barna.news/casa-lleo-morera-will-reopen-as-a-public/"
+      "title": "Barcelona puts summer police post in El Raval",
+      "url": "https://barna.news/raval-gets-fixed-summer-police-post/"
     },
     {
       "site": "Barna.News",
-      "title": "Barcelona Briefing: 23 to 29 June 2026",
-      "url": "https://barna.news/the-barcelona-briefing-23-to-29-jun-2026/"
+      "title": "Barcelona Braces For Tour Start Police Plan",
+      "url": "https://barna.news/catalunya-plans-4-500-police-for-tour-st/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Amposta to Vote on €3.5m Loan for Works",
+      "url": "https://catalan.news/amposta-to-debate-eu3-5m-loan-for-new-inv/"
     },
     {
       "site": "Catalan.News",
       "title": "Catalonia heat alerts as nights stay above 26C",
       "url": "https://catalan.news/catalonia-issues-heat-alerts-as-nights-s/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Ajuts al lloguer 2026 a Barcelona i Catalunya",
-      "url": "https://catalan.news/ajuts-al-lloguer-2026-a-barcelona-i-cata/"
     }
   ]
 }
