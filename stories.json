@@ -1,25 +1,25 @@
 {
-  "updated": "2026-06-29T03:59:39Z",
+  "updated": "2026-06-29T09:04:28Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Weather: 29 June To 5 July",
+      "url": "https://barna.news/barcelona-weather-week-of-29-june/"
+    },
     {
       "site": "Barna.News",
       "title": "El Prat cuts waste fee by 15% for 2026",
       "url": "https://barna.news/el-prat-cuts-waste-collection-fee-by-15/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona Area Hit By Tiana Wildfire",
-      "url": "https://barna.news/man-arrested-after-tiana-wildfire-prompt/"
+      "site": "Catalan.News",
+      "title": "Wimbledon Opens Without Alcaraz",
+      "url": "https://catalan.news/wimbledon-starts-with-djokovic-sinner-a/"
     },
     {
       "site": "Catalan.News",
       "title": "Girona records a 74.3-point social gap",
       "url": "https://catalan.news/girona-records-a-74-3-point-social-gap/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Figueres Hospital Adds Breast Surgery Recovery Kits",
-      "url": "https://catalan.news/figueres-hospital-adds-breast-surgery-re/"
     }
   ]
 }
