@@ -1,25 +1,25 @@
 {
-  "updated": "2026-06-30T04:44:58Z",
+  "updated": "2026-06-30T08:30:05Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Barcelona Resident Picks for Visitor Tapas",
+      "url": "https://barna.news/where-to-take-visitors-in-barcelona-without-a-tourist-trap/"
+    },
     {
       "site": "Barna.News",
       "title": "Ferrmed Warns of Rail Bottleneck Near Barcelona",
       "url": "https://barna.news/ferrmed-warns-of-rail-bottleneck-in-sout/"
     },
     {
-      "site": "Barna.News",
-      "title": "Vilanova Bus Station Works to Add New Platforms",
-      "url": "https://barna.news/vilanova-bus-station-works-start-with-ne/"
+      "site": "Catalan.News",
+      "title": "Sant Pere Pescador Ranks Low in Catalonia IST",
+      "url": "https://catalan.news/sant-pere-pescador-ranks-low-on-cataloni/"
     },
     {
       "site": "Catalan.News",
-      "title": "Ferrmed warns of rail bottlenecks in Catalonia",
-      "url": "https://catalan.news/ferrmed-warns-of-rail-bottlenecks-in-sou/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Amposta to Vote on €3.5m Loan for Works",
-      "url": "https://catalan.news/amposta-to-debate-eu3-5m-loan-for-new-inv/"
+      "title": "Collblanc power cut restored after overnight outage",
+      "url": "https://catalan.news/collblanc-power-cut-restored-after-overn/"
     }
   ]
 }
