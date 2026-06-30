@@ -1,25 +1,25 @@
 {
-  "updated": "2026-06-30T08:30:05Z",
+  "updated": "2026-06-30T11:31:24Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona Resident Picks for Visitor Tapas",
-      "url": "https://barna.news/where-to-take-visitors-in-barcelona-without-a-tourist-trap/"
+      "title": "Low Turnout in Rodalies Strike at Barcelona Sants",
+      "url": "https://barna.news/rodalies-strike-sees-low-turnout-at-barc/"
     },
     {
       "site": "Barna.News",
-      "title": "Ferrmed Warns of Rail Bottleneck Near Barcelona",
-      "url": "https://barna.news/ferrmed-warns-of-rail-bottleneck-in-sout/"
+      "title": "Power Restored After Collblanc Outage Near Barcelona",
+      "url": "https://barna.news/power-restored-after-outage-hits-11-586/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Barcelona Helps 87,000 With Regularisation",
+      "url": "https://catalan.news/barcelona-aids-87-000-in-migrant-regular/"
     },
     {
       "site": "Catalan.News",
       "title": "Sant Pere Pescador Ranks Low in Catalonia IST",
       "url": "https://catalan.news/sant-pere-pescador-ranks-low-on-cataloni/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Collblanc power cut restored after overnight outage",
-      "url": "https://catalan.news/collblanc-power-cut-restored-after-overn/"
     }
   ]
 }
