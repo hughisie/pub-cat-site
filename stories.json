@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-01T08:18:17Z",
+  "updated": "2026-07-01T11:37:50Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "L’Hospitalet backs BioClúster governance plan",
+      "url": "https://barna.news/lhospitalet-backs-biocluster-governance/"
+    },
     {
       "site": "Barna.News",
       "title": "Renfe starts Sabadell Sud station upgrade",
       "url": "https://barna.news/renfe-starts-sabadell-sud-station-upgrad/"
     },
     {
-      "site": "Barna.News",
-      "title": "Generator Fire Delays Power Return in L'Hospitalet",
-      "url": "https://barna.news/generator-fire-delays-power-return-in-l/"
+      "site": "Catalan.News",
+      "title": "Free Blues Nights Set for Nou Barris",
+      "url": "https://catalan.news/barcelona-blues-festival-sets-free-nou-b/"
     },
     {
       "site": "Catalan.News",
-      "title": "DeltaChamber returns to Amposta with central concerts",
-      "url": "https://catalan.news/deltachamber-returns-to-amposta-with-cen/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Figueres hosts Dalí admira Gaudí exhibition",
-      "url": "https://catalan.news/figueres-opens-dali-admira-gaudi-photo-e/"
+      "title": "Junts Presses Illa Over PSOE Corruption Cases",
+      "url": "https://catalan.news/junts-tells-illa-to-apologise-over-psoe/"
     }
   ]
 }
