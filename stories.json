@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-01T11:37:50Z",
+  "updated": "2026-07-01T14:36:48Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Girona Est sets free July nights programme",
+      "url": "https://barna.news/girona-est-sets-free-july-nights-program/"
+    },
     {
       "site": "Barna.News",
       "title": "L’Hospitalet backs BioClúster governance plan",
       "url": "https://barna.news/lhospitalet-backs-biocluster-governance/"
     },
     {
-      "site": "Barna.News",
-      "title": "Renfe starts Sabadell Sud station upgrade",
-      "url": "https://barna.news/renfe-starts-sabadell-sud-station-upgrad/"
+      "site": "Catalan.News",
+      "title": "Parliament sets deadline on Girona health campus",
+      "url": "https://catalan.news/parliament-sets-deadline-on-girona-healt/"
     },
     {
       "site": "Catalan.News",
-      "title": "Free Blues Nights Set for Nou Barris",
-      "url": "https://catalan.news/barcelona-blues-festival-sets-free-nou-b/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Junts Presses Illa Over PSOE Corruption Cases",
-      "url": "https://catalan.news/junts-tells-illa-to-apologise-over-psoe/"
+      "title": "Barcelona to close 100 streets for Tour start",
+      "url": "https://catalan.news/barcelona-to-close-100-streets-for-tour/"
     }
   ]
 }
