@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-02T04:39:26Z",
+  "updated": "2026-07-02T08:11:30Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Setting up your Barcelona flat: utilities, internet and the stuff nobody tells you",
+      "url": "https://barna.news/setting-up-your-flat-utilities-internet-and-the-stuff-nobody-tells-you/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona weather: weekend forecast 2 July to 5 July",
       "url": "https://barna.news/barcelona-weather-weekend-forecast-2-july-to-5-july/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona Link in Swine Fever Probe",
-      "url": "https://barna.news/police-search-irta-cresa-again-over-swin/"
+      "site": "Catalan.News",
+      "title": "Catalan budget passes, backing Illa until 2028",
+      "url": "https://catalan.news/catalan-budget-passes-backing-illa-unti/"
     },
     {
       "site": "Catalan.News",
-      "title": "Figueres to Host 25 Acústica Concerts in August",
-      "url": "https://catalan.news/acustica-figueres-sets-25-concerts-for-a/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Parlament gives six months on Girona health campus",
-      "url": "https://catalan.news/parlament-gives-six-months-on-girona-hea/"
+      "title": "Festival Acústica sets 28, 31 August dates in Figueres",
+      "url": "https://catalan.news/festival-acustica-sets-28-31-august-date/"
     }
   ]
 }
