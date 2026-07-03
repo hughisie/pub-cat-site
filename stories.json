@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-03T06:46:47Z",
+  "updated": "2026-07-03T10:04:48Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Becoming an autónomo in Barcelona: a foreigner's guide",
+      "url": "https://barna.news/becoming-an-aut-nomo-in-barcelona-a-foreigner-s-guide/"
+    },
     {
       "site": "Barna.News",
       "title": "Circuit Festival returns to Barcelona on 1 August",
       "url": "https://barna.news/circuit-festival-returns-to-barcelona-on/"
     },
     {
-      "site": "Barna.News",
-      "title": "Catalonia maps Rodalies changes up to 2040",
-      "url": "https://barna.news/catalonia-maps-rodalies-changes-up-to-20/"
+      "site": "Catalan.News",
+      "title": "Tour stage 3 leaves Catalonia via Granollers and Vic",
+      "url": "https://catalan.news/tour-stage-3-leaves-catalonia-via-granol/"
     },
     {
       "site": "Catalan.News",
-      "title": "Igualada survivor speaks after 35-year sentence",
-      "url": "https://catalan.news/igualada-survivor-speaks-after-35-year-s/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "ARC grants €330,000 for hail-damaged asbestos removal",
-      "url": "https://catalan.news/arc-grants-eu330-000-for-hail-damaged-asb/"
+      "title": "Catalonia eyes €120m boost from 2026 Tour start",
+      "url": "https://catalan.news/catalonia-eyes-eu120m-boost-from-2026-tou/"
     }
   ]
 }
