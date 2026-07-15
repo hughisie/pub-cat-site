@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-15T06:22:41Z",
+  "updated": "2026-07-15T08:42:17Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "ERC-EUiA calls for IBI cut in L'Hospitalet",
-      "url": "https://barna.news/erc-euia-calls-for-ibi-cut-in-lhospital/"
+      "title": "Financial Times cites ARA piece on Catalan healthcare",
+      "url": "https://barna.news/financial-times-cites-ara-piece-on-catal/"
     },
     {
       "site": "Barna.News",
-      "title": "Generalitat approves €78m start-up strategy",
-      "url": "https://barna.news/generalitat-approves-eu78m-start-up-strat/"
+      "title": "TMB plans one-third zero-emission buses by 2027",
+      "url": "https://barna.news/tmb-plans-one-third-zero-emission-buses/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Barcelona sets €36.6m CECOR move to Tres Xemeneies",
+      "url": "https://catalan.news/barcelona-sets-eu36-6m-cecor-move-to-tres/"
     },
     {
       "site": "Catalan.News",
       "title": "Catalonia heatwave to push inland highs above 40C",
       "url": "https://catalan.news/catalonia-heatwave-to-push-inland-highs/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Les Gavarres fire closes park after 2,400 hectares burn",
-      "url": "https://catalan.news/les-gavarres-fire-closes-park-after-2-40/"
     }
   ]
 }
