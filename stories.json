@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-15T08:42:17Z",
+  "updated": "2026-07-15T10:49:57Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Financial Times cites ARA piece on Catalan healthcare",
-      "url": "https://barna.news/financial-times-cites-ara-piece-on-catal/"
+      "title": "Barcelona reports nine traffic deaths in 2026",
+      "url": "https://barna.news/barcelona-reports-nine-traffic-deaths-in-2026/"
     },
     {
       "site": "Barna.News",
-      "title": "TMB plans one-third zero-emission buses by 2027",
-      "url": "https://barna.news/tmb-plans-one-third-zero-emission-buses/"
+      "title": "About 200 protest King Felipe VI’s Barcelona visit",
+      "url": "https://barna.news/about-200-protest-king-felipe-vis-barcelona-visit/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Mossos create central helicopter unit in Catalonia",
+      "url": "https://catalan.news/mossos-create-central-helicopter-unit-in/"
     },
     {
       "site": "Catalan.News",
       "title": "Barcelona sets €36.6m CECOR move to Tres Xemeneies",
       "url": "https://catalan.news/barcelona-sets-eu36-6m-cecor-move-to-tres/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Catalonia heatwave to push inland highs above 40C",
-      "url": "https://catalan.news/catalonia-heatwave-to-push-inland-highs/"
     }
   ]
 }
