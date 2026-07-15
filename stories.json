@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-15T16:01:28Z",
+  "updated": "2026-07-15T17:46:54Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona reports nine traffic deaths in 2026",
-      "url": "https://barna.news/barcelona-reports-nine-traffic-deaths-in-2026/"
+      "title": "Tourist flats cluster in Eixample, Gràcia and Poble Sec",
+      "url": "https://barna.news/tourist-flats-cluster-in-eixample-gracia-and-poble-sec/"
     },
     {
       "site": "Barna.News",
-      "title": "About 200 protest King Felipe VI’s Barcelona visit",
-      "url": "https://barna.news/about-200-protest-king-felipe-vis-barcelona-visit/"
+      "title": "Junts questions demographic impact of Spanish measures",
+      "url": "https://barna.news/junts-questions-demographic-impact-of-sp/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Girona to replace two football ground scoreboards",
+      "url": "https://catalan.news/girona-to-replace-two-football-ground-sc/"
     },
     {
       "site": "Catalan.News",
       "title": "R14 buses replace late trains near Lleida until Sunday",
       "url": "https://catalan.news/r14-buses-replace-late-trains-near-lleid-3/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Catalunya seeks new Medicine entry rules",
-      "url": "https://catalan.news/catalunya-seeks-new-medicine-entry-rules/"
     }
   ]
 }
