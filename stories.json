@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-16T12:59:25Z",
+  "updated": "2026-07-16T15:09:23Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "TMB tenders 35 Metro trains for faster services",
+      "url": "https://barna.news/tmb-tenders-35-metro-trains-for-faster-s/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona concert guide for summer 2026",
       "url": "https://barna.news/barcelona-concert-guide-for-summer-2026/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona inaugurates MIRÓLAB health research centre",
-      "url": "https://barna.news/barcelona-inaugurates-mirolab-health-research-centre/"
+      "site": "Catalan.News",
+      "title": "Girona old quarter faces film restrictions until 3 August",
+      "url": "https://catalan.news/girona-old-quarter-faces-film-restrictio/"
     },
     {
       "site": "Catalan.News",
       "title": "Cruïlla festival runs 9 to 12 July at Parc del Fòrum",
       "url": "https://catalan.news/cruilla-festival-runs-9-to-12-july-at-pa/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Gasol points to Barça basketball rebuild",
-      "url": "https://catalan.news/gasol-points-to-barca-basketball-rebuild/"
     }
   ]
 }
