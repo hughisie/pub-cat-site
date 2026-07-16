@@ -1,25 +1,25 @@
 {
-  "updated": "2026-07-16T06:42:52Z",
+  "updated": "2026-07-16T09:13:32Z",
   "stories": [
     {
       "site": "Barna.News",
-      "title": "Barcelona weather: weekend forecast 16 July to 19 July",
-      "url": "https://barna.news/barcelona-weather-weekend-forecast-16-july-to-19-july/"
+      "title": "Barcelona concert guide for summer 2026",
+      "url": "https://barna.news/barcelona-concert-guide-for-summer-2026/"
     },
     {
       "site": "Barna.News",
-      "title": "Tourist flats cluster in Eixample, Gràcia and Poble Sec",
-      "url": "https://barna.news/tourist-flats-cluster-in-eixample-gracia-and-poble-sec/"
+      "title": "Barcelona inaugurates MIRÓLAB health research centre",
+      "url": "https://barna.news/barcelona-inaugurates-mirolab-health-research-centre/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "CEO poll puts Aliança Catalana in third place",
+      "url": "https://catalan.news/ceo-poll-puts-alianca-catalana-in-third/"
     },
     {
       "site": "Catalan.News",
       "title": "Girona to replace two football ground scoreboards",
       "url": "https://catalan.news/girona-to-replace-two-football-ground-sc/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "R14 buses replace late trains near Lleida until Sunday",
-      "url": "https://catalan.news/r14-buses-replace-late-trains-near-lleid-3/"
     }
   ]
 }
