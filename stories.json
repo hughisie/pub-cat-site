@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-06T14:09:11Z",
+  "updated": "2026-08-07T00:23:32Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "What's on in Barcelona this weekend: 6 August to 9 August",
+      "url": "https://barna.news/whats-on-in-barcelona-this-weekend-6-august-to-9-august/"
+    },
     {
       "site": "Barna.News",
       "title": "Catalonia to release sediments from dams to restore beaches",
       "url": "https://barna.news/catalonia-to-release-sediments-from-dams-to-restore-beaches/"
     },
     {
-      "site": "Barna.News",
-      "title": "Catalonia sets €75m wildfire buffer fund for 2026",
-      "url": "https://barna.news/catalonia-sets-eu75m-wildfire-buffer-fund-for-2026/"
+      "site": "Catalan.News",
+      "title": "El Prat reaches record level of direct Asia flights",
+      "url": "https://catalan.news/el-prat-reaches-record-level-of-direct/"
     },
     {
       "site": "Catalan.News",
-      "title": "Salou mayor slams Cambrils over illegal street market",
-      "url": "https://catalan.news/salou-mayor-slams-cambrils-over-illegal/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Three held over alleged Bages rail and fibre sabotage",
-      "url": "https://catalan.news/three-held-over-alleged-bages-rail-and/"
+      "title": "Barcelona loses a quarter of haberdasheries since 2016",
+      "url": "https://catalan.news/barcelona-loses-a-quarter-of/"
     }
   ]
 }
