@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-07T11:44:56Z",
+  "updated": "2026-08-07T13:03:03Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "44% of Barcelona’s Bars and Restaurants Owned by Foreigners",
+      "url": "https://barna.news/44-of-barcelonas-bars-and-restaurants-owned-by-foreigners/"
+    },
     {
       "site": "Barna.News",
       "title": "Mossos investigate violent death in Nou Barris",
       "url": "https://barna.news/mossos-investigate-violent-death-in-nou-barris/"
     },
     {
-      "site": "Barna.News",
-      "title": "Two arrested after gunfire in Barcelona's Raval",
-      "url": "https://barna.news/two-arrested-after-gunfire-in-barcelonas-raval/"
+      "site": "Catalan.News",
+      "title": "Police intercept van with 1,200 illegal sale items in Torredembarra",
+      "url": "https://catalan.news/police-intercept-van-with-1-200-illegal/"
     },
     {
       "site": "Catalan.News",
-      "title": "Reus local water sources cover 36.1% of supply",
-      "url": "https://catalan.news/reus-local-water-sources-cover-36-1-of/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Tarragona to Build 1,276 Affordable Rents on 43 Public Plots",
-      "url": "https://catalan.news/tarragona-to-build-1-276-affordable/"
+      "title": "Tasty Poke Bar Opens in Reus City Centre",
+      "url": "https://catalan.news/tasty-poke-bar-opens-in-reus-city-centre/"
     }
   ]
 }
