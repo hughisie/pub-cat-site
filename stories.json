@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-10T12:07:50Z",
+  "updated": "2026-08-10T13:55:09Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Mossos seek 83-year-old missing near El Prat academy",
+      "url": "https://barna.news/mossos-seek-83-year-old-missing-near-el-prat-academy/"
+    },
     {
       "site": "Barna.News",
       "title": "Green Light for Olympic Pool in Badalona",
       "url": "https://barna.news/green-light-for-olympic-pool-in-badalona/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona Approves La Boqueria Revamp to Boost Local Trade",
-      "url": "https://barna.news/barcelona-approves-la-boqueria-revamp-to-boost-local-trade/"
+      "site": "Catalan.News",
+      "title": "Renfe Restores 95% of Escalators After Maintenance Crisis",
+      "url": "https://catalan.news/renfe-restores-95-of-escalators-after/"
     },
     {
       "site": "Catalan.News",
-      "title": "New Cycle Bridge Over AP-7 to Link Girona and Sant Gregori",
-      "url": "https://catalan.news/new-cycle-bridge-over-ap-7-to-link/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Crime on Barcelona Metro Falls by 34% in First Half of 2026",
-      "url": "https://catalan.news/crime-on-barcelona-metro-falls-by-34-in/"
+      "title": "CUP calls for left unity to counter rightward shift",
+      "url": "https://catalan.news/cup-calls-for-left-unity-to-counter/"
     }
   ]
 }
