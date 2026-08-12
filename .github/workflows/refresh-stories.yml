@@ -12,22 +12,61 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # actions/checkout already retries internally, but all of its attempts
+      # share one runner. On 12 August 2026 the runner came up with no CA
+      # bundle at all: "server certificate verification failed. CAfile: none".
+      # All three internal retries failed identically inside 25 seconds and the
+      # run was reported as a failure of the ticker, which it was not. Repairing
+      # the trust store between attempts is what makes retrying mean anything
+      # against that fault. The last attempt has no continue-on-error, so a
+      # genuinely broken checkout still fails the run loudly.
+      - name: Check out (attempt 1)
+        id: co1
+        uses: actions/checkout@v4
+        continue-on-error: true
+
+      - name: Repair the runner CA trust store
+        if: steps.co1.outcome == 'failure'
+        run: |
+          echo "checkout failed; repairing CA certificates before retrying"
+          sudo apt-get update -qq || true
+          sudo apt-get install -y --reinstall ca-certificates || true
+          sudo update-ca-certificates --fresh || true
+
+      - name: Check out (attempt 2)
+        id: co2
+        if: steps.co1.outcome == 'failure'
+        uses: actions/checkout@v4
+        continue-on-error: true
+
+      - name: Check out (attempt 3, final)
+        if: steps.co1.outcome == 'failure' && steps.co2.outcome == 'failure'
+        uses: actions/checkout@v4
 
       - name: Fetch top 2 stories per property
         run: |
           python3 <<'PY'
-          import urllib.request, re, json, html, datetime
+          import urllib.request, re, json, html, datetime, time
 
           HEADERS = {'User-Agent': 'Mozilla/5.0 (Pub.cat Ticker Bot)'}
+          ATTEMPTS = 3
 
-          def fetch_top_two(feed_url, site):
-              req = urllib.request.Request(feed_url, headers=HEADERS)
-              try:
-                  with urllib.request.urlopen(req, timeout=15) as r:
-                      xml = r.read().decode('utf-8', errors='ignore')
-              except Exception as e:
-                  print(f"[warn] {site} fetch failed: {e}")
+          def fetch_top_two(feed_url, site, expect_empty=False):
+              # One transient 5xx or DNS blip used to drop a whole property out
+              # of the ticker until the next half hour. Retrying costs seconds.
+              xml = None
+              for attempt in range(1, ATTEMPTS + 1):
+                  req = urllib.request.Request(feed_url, headers=HEADERS)
+                  try:
+                      with urllib.request.urlopen(req, timeout=15) as r:
+                          xml = r.read().decode('utf-8', errors='ignore')
+                      break
+                  except Exception as e:
+                      print(f"[warn] {site} attempt {attempt}/{ATTEMPTS} failed: {e}")
+                      if attempt < ATTEMPTS:
+                          time.sleep(attempt * 5)
+              if xml is None:
+                  print(f"[warn] {site} unreachable after {ATTEMPTS} attempts")
                   return []
               items = re.findall(r'<item>(.*?)</item>', xml, re.DOTALL)
               out = []
@@ -38,12 +77,48 @@ jobs:
                   link  = m_l.group(1).strip() if m_l else ''
                   if title and link:
                       out.append({'site': site, 'title': title, 'url': link})
+              # A feed can answer 200 and still carry nothing usable. On
+              # 12 August 2026 retroshell.com/rss/ was redirecting to the
+              # WooCommerce shop and returning its homepage HTML, so RetroShell
+              # had been absent from the ticker with nothing anywhere saying so.
+              # A fetch that succeeds and yields nothing is a louder problem
+              # than one that fails outright, not a quieter one.
+              #
+              # The exception is a property we already know is not publishing.
+              # Warning every half hour about an accepted state is how a log
+              # stops being read, so that case gets a note and the warning is
+              # kept for the properties where empty would be a real fault.
+              if not out:
+                  if expect_empty:
+                      print(f"[note] {site} carried no stories, which is "
+                            f"expected until its newsroom moves. Not a fault.")
+                  else:
+                      print(f"[warn] {site} answered but carried no stories "
+                            f"({len(xml)} bytes, {len(items)} item blocks). "
+                            f"Check {feed_url} still reaches the newsroom.")
               return out
 
           stories = []
           stories += fetch_top_two('https://barna.news/rss/',     'Barna.News')
           stories += fetch_top_two('https://catalan.news/rss/',   'Catalan.News')
-          stories += fetch_top_two('https://retroshell.com/rss/', 'RetroShell')
+          # EXPECTED TO CARRY NOTHING, deliberately, as of 12 August 2026.
+          # retroshell.com points at the WooCommerce shop by choice: the shop
+          # is the main site, not the Ghost newsroom. There is also no
+          # RetroShell news to carry yet. A PikaPod is standing by for the
+          # move and this line takes the new hostname when it is switched on.
+          # Until then expect_empty keeps it a note rather than a warning.
+          stories += fetch_top_two('https://retroshell.com/rss/', 'RetroShell',
+                                   expect_empty=True)
+
+          # Never publish an empty ticker. Every feed failing at once is a
+          # network fault on this runner, not three newsrooms going quiet, and
+          # writing the empty result would commit a blank ticker to the live
+          # site. Keeping the last good set is always the better answer, and
+          # the next run is thirty minutes away.
+          if not stories:
+              print("[error] every feed failed; leaving stories.json untouched "
+                    "so the ticker keeps its last good set")
+              raise SystemExit(0)
 
           data = {
               'updated': datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
