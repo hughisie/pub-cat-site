@@ -51,7 +51,7 @@ jobs:
           HEADERS = {'User-Agent': 'Mozilla/5.0 (Pub.cat Ticker Bot)'}
           ATTEMPTS = 3
 
-          def fetch_top_two(feed_url, site):
+          def fetch_top_two(feed_url, site, expect_empty=False):
               # One transient 5xx or DNS blip used to drop a whole property out
               # of the ticker until the next half hour. Retrying costs seconds.
               xml = None
@@ -83,16 +83,32 @@ jobs:
               # had been absent from the ticker with nothing anywhere saying so.
               # A fetch that succeeds and yields nothing is a louder problem
               # than one that fails outright, not a quieter one.
+              #
+              # The exception is a property we already know is not publishing.
+              # Warning every half hour about an accepted state is how a log
+              # stops being read, so that case gets a note and the warning is
+              # kept for the properties where empty would be a real fault.
               if not out:
-                  print(f"[warn] {site} answered but carried no stories "
-                        f"({len(xml)} bytes, {len(items)} item blocks). "
-                        f"Check {feed_url} still reaches the newsroom.")
+                  if expect_empty:
+                      print(f"[note] {site} carried no stories, which is "
+                            f"expected until its newsroom moves. Not a fault.")
+                  else:
+                      print(f"[warn] {site} answered but carried no stories "
+                            f"({len(xml)} bytes, {len(items)} item blocks). "
+                            f"Check {feed_url} still reaches the newsroom.")
               return out
 
           stories = []
           stories += fetch_top_two('https://barna.news/rss/',     'Barna.News')
           stories += fetch_top_two('https://catalan.news/rss/',   'Catalan.News')
-          stories += fetch_top_two('https://retroshell.com/rss/', 'RetroShell')
+          # EXPECTED TO CARRY NOTHING, deliberately, as of 12 August 2026.
+          # retroshell.com points at the WooCommerce shop by choice: the shop
+          # is the main site, not the Ghost newsroom. There is also no
+          # RetroShell news to carry yet. A PikaPod is standing by for the
+          # move and this line takes the new hostname when it is switched on.
+          # Until then expect_empty keeps it a note rather than a warning.
+          stories += fetch_top_two('https://retroshell.com/rss/', 'RetroShell',
+                                   expect_empty=True)
 
           # Never publish an empty ticker. Every feed failing at once is a
           # network fault on this runner, not three newsrooms going quiet, and
