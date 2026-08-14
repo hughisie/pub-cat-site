@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-14T07:24:49Z",
+  "updated": "2026-08-14T08:44:31Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Vueling Resumes Barcelona-Madrid Flights from October",
+      "url": "https://barna.news/vueling-resumes-barcelona-madrid-flights-from-october/"
+    },
     {
       "site": "Barna.News",
       "title": "Shooting at Affordable Homes in Can Peguera, Barcelona",
       "url": "https://barna.news/shooting-at-affordable-homes-in-can-peguera-barcelona/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona strengthens ties with consular corps",
-      "url": "https://barna.news/barcelona-strengthens-ties-with/"
+      "site": "Catalan.News",
+      "title": "159 Mossos join Girona region, Figueres gets 24",
+      "url": "https://catalan.news/159-mossos-join-girona-region-figueres/"
     },
     {
       "site": "Catalan.News",
-      "title": "Analysis puts 2025 media funding at €59.6m",
-      "url": "https://catalan.news/analysis-puts-2025-media-funding-at-59/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Girona Airport Sees Passenger Drop in July",
-      "url": "https://catalan.news/girona-airport-sees-passenger-drop-in/"
+      "title": "La Model to Host Permanent Democratic Memorial",
+      "url": "https://catalan.news/la-model-to-host-permanent-democratic/"
     }
   ]
 }
