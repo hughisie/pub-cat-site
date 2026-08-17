@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-17T14:54:34Z",
+  "updated": "2026-08-17T15:24:58Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Felip Puig rules out near-term independence attempt",
+      "url": "https://barna.news/felip-puig-rules-out-near-term-independence-attempt/"
+    },
     {
       "site": "Barna.News",
       "title": "Catalonia to Map Vacant Homes Using AI",
       "url": "https://barna.news/catalonia-to-map-vacant-homes-using-ai/"
     },
     {
-      "site": "Barna.News",
-      "title": "Silver tourism may spread visits beyond peak months",
-      "url": "https://barna.news/silver-tourism-may-spread-visits-beyond/"
+      "site": "Catalan.News",
+      "title": "ERC Demands Action Over Cleaning Staff Safety Risks",
+      "url": "https://catalan.news/erc-demands-action-over-cleaning-staff/"
     },
     {
       "site": "Catalan.News",
-      "title": "33 minors faced forced marriage in Catalonia",
-      "url": "https://catalan.news/33-minors-faced-forced-marriage-in-catalonia/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "CHE warns of flash rises in Lleida and Tarragona",
-      "url": "https://catalan.news/che-warns-of-flash-rises-in-lleida-and-tarragona/"
+      "title": "Teatre de l’Aurora hosts comedy 'Un tal Cèsar' for Igualada festival",
+      "url": "https://catalan.news/teatre-de-laurora-hosts-comedy-un-tal/"
     }
   ]
 }
