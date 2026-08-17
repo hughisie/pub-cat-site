@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-17T07:53:10Z",
+  "updated": "2026-08-17T08:42:30Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Music Schools Seek Stable Funding Amid Cuts",
+      "url": "https://barna.news/music-schools-seek-stable-funding-amid/"
+    },
     {
       "site": "Barna.News",
       "title": "Catalan Parliament backs AP-7 vignette proposal",
       "url": "https://barna.news/catalan-parliament-backs-ap-7-vignette/"
     },
     {
-      "site": "Barna.News",
-      "title": "Actress Assumpta Serna Slams Catalonia's Dependency System",
-      "url": "https://barna.news/actress-assumpta-serna-slams-catalonia/"
+      "site": "Catalan.News",
+      "title": "Figueres and Banyoles exit rental market stress zones",
+      "url": "https://catalan.news/figueres-and-banyoles-exit-rental-market-stress-zones/"
     },
     {
       "site": "Catalan.News",
-      "title": "ACA rejects drainage plan at l'Albiol solar plant",
-      "url": "https://catalan.news/aca-rejects-drainage-plan-at-lalbiol-solar-plant/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Rellinars gives Rubí residents a nearby walking base",
-      "url": "https://catalan.news/rellinars-gives-rubi-residents-a-nearby-walking-base/"
+      "title": "Lleida Pyrenees near full as inland hotels reach 50%",
+      "url": "https://catalan.news/lleida-pyrenees-near-full-as-inland-hotels-reach-50/"
     }
   ]
 }
