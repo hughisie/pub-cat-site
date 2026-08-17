@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-17T08:42:30Z",
+  "updated": "2026-08-17T09:40:57Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "One in five Barcelona metro residents is over 65",
+      "url": "https://barna.news/one-in-five-barcelona-metro-residents-is-over-65/"
+    },
     {
       "site": "Barna.News",
       "title": "Music Schools Seek Stable Funding Amid Cuts",
       "url": "https://barna.news/music-schools-seek-stable-funding-amid/"
     },
     {
-      "site": "Barna.News",
-      "title": "Catalan Parliament backs AP-7 vignette proposal",
-      "url": "https://barna.news/catalan-parliament-backs-ap-7-vignette/"
+      "site": "Catalan.News",
+      "title": "33 minors faced forced marriage in Catalonia",
+      "url": "https://catalan.news/33-minors-faced-forced-marriage-in-catalonia/"
     },
     {
       "site": "Catalan.News",
-      "title": "Figueres and Banyoles exit rental market stress zones",
-      "url": "https://catalan.news/figueres-and-banyoles-exit-rental-market-stress-zones/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Lleida Pyrenees near full as inland hotels reach 50%",
-      "url": "https://catalan.news/lleida-pyrenees-near-full-as-inland-hotels-reach-50/"
+      "title": "CHE warns of flash rises in Lleida and Tarragona",
+      "url": "https://catalan.news/che-warns-of-flash-rises-in-lleida-and-tarragona/"
     }
   ]
 }
