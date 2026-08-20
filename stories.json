@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-20T07:48:41Z",
+  "updated": "2026-08-20T08:37:59Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Heat makes metro and Rodalies waits harder",
+      "url": "https://barna.news/heat-makes-metro-and-rodalies-waits-harder/"
+    },
     {
       "site": "Barna.News",
       "title": "Rise in Commercial Premises Used as Homes in Barcelona Area",
       "url": "https://barna.news/rise-in-commercial-premises-used-as/"
     },
     {
-      "site": "Barna.News",
-      "title": "Taxi or app? Free Now, Cabify, Uber and Bolt in Barcelona",
-      "url": "https://barna.news/taxi-or-app-free-now-cabify-uber-and-bolt-in-barcelona/"
+      "site": "Catalan.News",
+      "title": "Residents and Traders in Girona's Eixample Report Proliferation of Pigeon Nests",
+      "url": "https://catalan.news/residents-and-traders-in-girona-s/"
     },
     {
       "site": "Catalan.News",
-      "title": "Barcelona plans €1.2m redesign of Plaça del Poeta Boscà",
-      "url": "https://catalan.news/barcelona-plans-1-2m-redesign-of-placa/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Lleida students struggle to find housing in Barcelona",
-      "url": "https://catalan.news/lleida-students-struggle-to-find/"
+      "title": "SOS Costa Brava calls for Posidonia safeguards",
+      "url": "https://catalan.news/sos-costa-brava-calls-for-posidonia/"
     }
   ]
 }
