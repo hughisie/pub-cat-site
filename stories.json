@@ -1,25 +1,25 @@
 {
-  "updated": "2026-08-26T14:11:04Z",
+  "updated": "2026-08-26T15:59:21Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Electric Grid Delays Over 80,000 Homes in Spain",
+      "url": "https://barna.news/electric-grid-delays-over-80-000-homes-in-spain/"
+    },
     {
       "site": "Barna.News",
       "title": "Barcelona Council Allocates €10m for Monument Repairs",
       "url": "https://barna.news/barcelona-council-allocates-10m-for/"
     },
     {
-      "site": "Barna.News",
-      "title": "Barcelona Council Admits No Sanctions for Catalan Language Breaches",
-      "url": "https://barna.news/barcelona-council-admits-no-sanctions/"
+      "site": "Catalan.News",
+      "title": "Generalitat seeks explanation over Ebro Delta cruise",
+      "url": "https://catalan.news/generalitat-seeks-explanation-over-ebro/"
     },
     {
       "site": "Catalan.News",
-      "title": "Barcelona and Catalan Government Agree on New Residences and School Upgrades",
-      "url": "https://catalan.news/barcelona-and-catalan-government-agree/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Baixa Tordera included in Girona integrated care reform",
-      "url": "https://catalan.news/baixa-tordera-included-in-girona/"
+      "title": "Mossos and Urbana extend patrols at Lleida's Parc sobre les Vies",
+      "url": "https://catalan.news/mossos-and-urbana-extend-patrols-at/"
     }
   ]
 }
