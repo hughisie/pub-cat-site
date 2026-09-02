@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T05:29:06Z",
+  "updated": "2026-09-02T09:51:16Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -8,18 +8,18 @@
     },
     {
       "site": "Barna.News",
-      "title": "Barcelona hotel prices range from €70 to over €500",
-      "url": "https://barna.news/barcelona-hotel-prices-range-from-70-to/"
+      "title": "Barcelona urges La Rambla shops to upgrade facades",
+      "url": "https://barna.news/barcelona-urges-la-rambla-shops-to/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Clínic campus consortium to meet in Esplugues",
+      "url": "https://catalan.news/clinic-campus-consortium-to-meet-in-esplugues/"
     },
     {
       "site": "Catalan.News",
       "title": "Home sales fall 8.1% in L’Hospitalet and Baix Llobregat",
       "url": "https://catalan.news/home-sales-fall-8-1-in-lhospitalet-and/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Three stolen luxury cars recovered in La Seu d’Urgell",
-      "url": "https://catalan.news/three-stolen-luxury-cars-recovered-in/"
     }
   ]
 }
