@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T15:54:10Z",
+  "updated": "2026-09-03T19:08:24Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -8,18 +8,18 @@
     },
     {
       "site": "Barna.News",
-      "title": "La Bordeta festival programme lists September events",
-      "url": "https://barna.news/la-bordeta-festival-programme-lists-september-events/"
+      "title": "Parliament Moves to Strengthen Hate Speech Sanctions",
+      "url": "https://barna.news/parliament-moves-to-strengthen-hate-speech-sanctions/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Tarragona announces 513 Santa Tecla events",
+      "url": "https://catalan.news/tarragona-announces-513-santa-tecla/"
     },
     {
       "site": "Catalan.News",
       "title": "Works begin on Sant Martí Mossos operational headquarters",
       "url": "https://catalan.news/works-begin-on-sant-marti-mossos/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Sant Cugat Without DNI Office for Two Years",
-      "url": "https://catalan.news/sant-cugat-without-dni-office-for-two/"
     }
   ]
 }
