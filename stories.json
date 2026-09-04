@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T03:14:32Z",
+  "updated": "2026-09-04T08:09:05Z",
   "stories": [
     {
       "site": "Barna.News",
@@ -8,18 +8,18 @@
     },
     {
       "site": "Barna.News",
-      "title": "Parliament Moves to Strengthen Hate Speech Sanctions",
-      "url": "https://barna.news/parliament-moves-to-strengthen-hate-speech-sanctions/"
+      "title": "European Court Upholds Protesters' Rights",
+      "url": "https://barna.news/european-court-upholds-protesters-rights/"
+    },
+    {
+      "site": "Catalan.News",
+      "title": "Mossos Dismantle 1,751-Plant Cannabis Farm",
+      "url": "https://catalan.news/mossos-dismantle-1-751-plant-cannabis-farm/"
     },
     {
       "site": "Catalan.News",
       "title": "Tarragona announces 513 Santa Tecla events",
       "url": "https://catalan.news/tarragona-announces-513-santa-tecla/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Works begin on Sant Martí Mossos operational headquarters",
-      "url": "https://catalan.news/works-begin-on-sant-marti-mossos/"
     }
   ]
 }
