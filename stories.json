@@ -1,25 +1,25 @@
 {
-  "updated": "2026-09-14T01:23:33Z",
+  "updated": "2026-09-14T06:46:47Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Two under-18s injured with bladed weapon in Carmel",
+      "url": "https://barna.news/two-under-18s-injured-with-bladed-weapon-in-carmel/"
+    },
     {
       "site": "Barna.News",
       "title": "Man Arrested in Santa Coloma for Home Burglary Attempts",
       "url": "https://barna.news/man-arrested-in-santa-coloma-for-home/"
     },
     {
-      "site": "Barna.News",
-      "title": "Vox Councillor Attacked at Sant Cugat Party Stand",
-      "url": "https://barna.news/vox-councillor-attacked-at-sant-cugat/"
+      "site": "Catalan.News",
+      "title": "Solar Panels to Power Pyrenees Tunnels",
+      "url": "https://catalan.news/solar-panels-to-power-pyrenees-tunnels/"
     },
     {
       "site": "Catalan.News",
-      "title": "Wildfire Stabilized in Sant Salvador de Guardiola",
-      "url": "https://catalan.news/wildfire-stabilized-in-sant-salvador-de-guardiola/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Catalan Museums to Get AI Management System",
-      "url": "https://catalan.news/catalan-museums-to-get-ai-management/"
+      "title": "Five Steal Cars at El Prat, Ram Store in Mataró",
+      "url": "https://catalan.news/five-steal-cars-at-el-prat-ram-store-in/"
     }
   ]
 }
