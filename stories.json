@@ -1,25 +1,25 @@
 {
-  "updated": "2026-10-11T19:56:41Z",
+  "updated": "2026-10-11T23:31:11Z",
   "stories": [
+    {
+      "site": "Barna.News",
+      "title": "Els Amics de les Arts close 20th anniversary tour at Park Güell",
+      "url": "https://barna.news/els-amics-de-les-arts-close-20th/"
+    },
     {
       "site": "Barna.News",
       "title": "Orfeó Català to perform with Dudamel in Barcelona concert",
       "url": "https://barna.news/orfeo-catala-to-perform-with-dudamel-in/"
     },
     {
-      "site": "Barna.News",
-      "title": "Besòs Flooding Revives Three Chimneys Development Debate",
-      "url": "https://barna.news/besos-flooding-revives-three-chimneys/"
+      "site": "Catalan.News",
+      "title": "Jordà and Estrems contest ERC's Girona candidacy",
+      "url": "https://catalan.news/jorda-and-estrems-contest-ercs-girona-candidacy/"
     },
     {
       "site": "Catalan.News",
       "title": "Woman injured in Figueres shooting",
       "url": "https://catalan.news/woman-injured-in-figueres-shooting/"
-    },
-    {
-      "site": "Catalan.News",
-      "title": "Halloween Events at Taiga Resorts This October",
-      "url": "https://catalan.news/halloween-events-at-taiga-resorts-this/"
     }
   ]
 }
